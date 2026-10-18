@@ -1293,6 +1293,138 @@
   "around-the-world": {
    "en": "around the world",
    "zh": "在全世界"
+  },
+  "some-others": {
+   "en": "Some …, while others …",
+   "zh": "有些……而另一些……"
+  },
+  "whether-or": {
+   "en": "Whether … or …, + 主句",
+   "zh": "无论……还是……"
+  },
+  "plan-time": {
+   "en": "plan … time",
+   "zh": "安排时间"
+  },
+  "be-happy-to": {
+   "en": "be happy to do",
+   "zh": "乐意做"
+  },
+  "the-same-as": {
+   "en": "the same as",
+   "zh": "和……一样"
+  },
+  "work-with": {
+   "en": "work with",
+   "zh": "和……一起工作"
+  },
+  "see-as": {
+   "en": "see A as B",
+   "zh": "把 A 看作 B"
+  },
+  "food-and-shelter": {
+   "en": "food and shelter",
+   "zh": "食物和住处"
+  },
+  "throw-away": {
+   "en": "throw … away",
+   "zh": "扔掉"
+  },
+  "tell-truth": {
+   "en": "tell … the truth",
+   "zh": "说实话"
+  },
+  "family-members": {
+   "en": "family members",
+   "zh": "家人"
+  },
+  "go-for-walk": {
+   "en": "go for a walk",
+   "zh": "去散步"
+  },
+  "in-recent-years": {
+   "en": "in recent years",
+   "zh": "近年来"
+  },
+  "prefer-to-b": {
+   "en": "prefer A to B（A、B 为名词或 doing）",
+   "zh": "比起 B 更喜欢 A"
+  },
+  "small-towns": {
+   "en": "small towns",
+   "zh": "小城镇"
+  },
+  "years-ago": {
+   "en": "… years ago",
+   "zh": "……年前"
+  },
+  "need-to-be-done": {
+   "en": "need to be + 过去分词",
+   "zh": "需要被……"
+  },
+  "keep-safe": {
+   "en": "keep … safe",
+   "zh": "保证……安全"
+  },
+  "leave-job": {
+   "en": "leave one's job",
+   "zh": "辞职"
+  },
+  "chance-to": {
+   "en": "a chance to do",
+   "zh": "……的机会"
+  },
+  "share-housework": {
+   "en": "share the housework",
+   "zh": "分担家务"
+  },
+  "friendly-to": {
+   "en": "be friendly to",
+   "zh": "对……友好"
+  },
+  "feel-safe": {
+   "en": "feel safe",
+   "zh": "感到安全"
+  },
+  "hold-festivals": {
+   "en": "hold festivals",
+   "zh": "举办节日活动"
+  },
+  "traditional-music": {
+   "en": "traditional music",
+   "zh": "传统音乐"
+  },
+  "its-own": {
+   "en": "one's own",
+   "zh": "自己的"
+  },
+  "fake-news": {
+   "en": "fake news",
+   "zh": "假新闻"
+  },
+  "listen-to": {
+   "en": "listen to",
+   "zh": "听"
+  },
+  "reliable-source": {
+   "en": "a reliable source",
+   "zh": "可靠的来源"
+  },
+  "whole-article": {
+   "en": "the whole article",
+   "zh": "整篇文章"
+  },
+  "turn-into": {
+   "en": "turn into",
+   "zh": "变成"
+  },
+  "results-of": {
+   "en": "the results of",
+   "zh": "……的结果"
+  },
+  "to-survive": {
+   "en": "to survive",
+   "zh": "为了生存"
   }
  },
  "sentences": [
@@ -8480,6 +8612,1216 @@
    ],
    "trap": "Good scientists are not afraid of make mistakes because they can learn from it.",
    "tip": "be afraid to do 或 be afraid of doing；mistakes 是复数，后面用 them。"
+  },
+  {
+   "id": "edu-29",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "有些学生喜欢独自学习，而另一些更喜欢小组合作。",
+   "en": "Some students like studying alone, while others prefer to work in groups.",
+   "k": [
+    [
+     "some-others",
+     "Some … while others",
+     "有些……而另一些……"
+    ],
+    [
+     "prefer-to",
+     "prefer to",
+     "更喜欢做"
+    ]
+   ],
+   "trap": "Some students like study alone, others prefer work in groups.",
+   "tip": "\"有些……而另一些……\"用 Some …, while others …，while 把两个分句连成一句，不会变成逗号连句。"
+  },
+  {
+   "id": "edu-30",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "主谓一致",
+    "并列与递进"
+   ],
+   "zh": "每间教室都有电脑和投影仪。",
+   "en": "Each of the classrooms has both a computer and a projector.",
+   "k": [
+    [
+     "each-of-has",
+     "Each of the … has",
+     "……中的每一个（谓语单数）"
+    ],
+    [
+     "both-and",
+     "both … and",
+     "……和……都"
+    ]
+   ],
+   "trap": "Every classrooms have computer and projector.",
+   "tip": "Each of the + 复数名词，谓语用单数 has；可数名词单数前要加 a。"
+  },
+  {
+   "id": "edu-31",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "无论学生住在学校还是家里，都应该认真安排学习时间。",
+   "en": "Whether students live on campus or at home, they should plan their study time carefully.",
+   "k": [
+    [
+     "whether-or",
+     "Whether … or",
+     "无论……还是……"
+    ],
+    [
+     "plan-time",
+     "plan … time",
+     "安排时间"
+    ]
+   ],
+   "trap": "No matter students live on campus or at home, they should arrange study time carefully.",
+   "tip": "\"无论 A 还是 B\"用 Whether A or B，后面直接接主句。"
+  },
+  {
+   "id": "edu-32",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "学生需要运动的时间，也需要学习的时间。",
+   "en": "Students need time for sports as well as time for study.",
+   "k": [
+    [
+     "time-for",
+     "time for",
+     "做……的时间"
+    ],
+    [
+     "as-well-as",
+     "as well as",
+     "……以及……"
+    ]
+   ],
+   "trap": "Students need sports time, also need study time.",
+   "tip": "\"做……的时间\"用 time for + 名词；两个名词用 as well as 连接。"
+  },
+  {
+   "id": "edu-33",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果你请求帮助，大多数老师都会乐意再解释一遍。",
+   "en": "If you ask for help, most teachers will be happy to explain things again.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "be-happy-to",
+     "happy to",
+     "乐意做"
+    ]
+   ],
+   "trap": "If you will ask for help, most teachers are happy explain again.",
+   "tip": "If 从句用一般现在时，主句用 will；be happy to do，to 不能漏。"
+  },
+  {
+   "id": "tech-29",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "网友并不总是和现实中的朋友一样。",
+   "en": "Online friends are not always the same as real friends.",
+   "k": [
+    [
+     "the-same-as",
+     "the same as",
+     "和……一样"
+    ],
+    [
+     "not-always",
+     "not always",
+     "并不总是"
+    ]
+   ],
+   "trap": "Online friends are not always same with real friends.",
+   "tip": "\"和……一样\"用 the same as，the 不能省，介词用 as。"
+  },
+  {
+   "id": "tech-30",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "被动语态",
+    "动词句型"
+   ],
+   "zh": "大多数游戏的设计目的就是让玩家想再玩一次。",
+   "en": "Most games are designed to make players want to play again.",
+   "k": [
+    [
+     "be-designed-to",
+     "are designed to",
+     "设计出来是为了"
+    ],
+    [
+     "make-do",
+     "make players want",
+     "让某人做某事"
+    ]
+   ],
+   "trap": "Most games are designed for making players to want playing again.",
+   "tip": "be designed to do；make + 人 + 动词原形，中间不加 to。"
+  },
+  {
+   "id": "tech-31",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "在接下来的几年里，会有更多人每天和机器人一起工作。",
+   "en": "In the next few years, more people will work with robots every day.",
+   "k": [
+    [
+     "in-the-next",
+     "In the next",
+     "在接下来的……里"
+    ],
+    [
+     "work-with",
+     "work with",
+     "和……一起工作"
+    ]
+   ],
+   "trap": "In next few years, there will have more people work with robots every day.",
+   "tip": "\"在接下来的……里\"是 in the next + 时间；不说 there will have。"
+  },
+  {
+   "id": "tech-32",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "我的父母和祖父母都不用社交媒体。",
+   "en": "Neither my parents nor my grandparents use social media.",
+   "k": [
+    [
+     "neither-nor",
+     "Neither … nor",
+     "既不……也不……"
+    ],
+    [
+     "social-media",
+     "social media",
+     "社交媒体"
+    ]
+   ],
+   "trap": "My parents and my grandparents both don't use social media.",
+   "tip": "\"两方都不\"用 Neither A nor B；谓语和靠近的那个（grandparents）一致。"
+  },
+  {
+   "id": "tech-33",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "有些人把人工智能看作威胁，而另一些人把它看作有用的工具。",
+   "en": "Some people see AI as a threat, while others see it as a useful tool.",
+   "k": [
+    [
+     "some-others",
+     "Some … while others",
+     "有些……而另一些……"
+    ],
+    [
+     "see-as",
+     "see … as",
+     "把……看作"
+    ]
+   ],
+   "trap": "Some people think AI is a threat, others think it a useful tool.",
+   "tip": "Some …, while others … 对比两种看法；\"把 A 看作 B\"用 see A as B。"
+  },
+  {
+   "id": "env-29",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "树木为很多鸟类提供食物和栖息的地方。",
+   "en": "Trees provide food and shelter for many birds.",
+   "k": [
+    [
+     "provide-for",
+     "provide … for",
+     "为……提供"
+    ],
+    [
+     "food-and-shelter",
+     "food and shelter",
+     "食物和住处"
+    ]
+   ],
+   "trap": "Trees provide many birds food and living place.",
+   "tip": "provide + 物 + for + 人/动物，或者 provide + 人 + with + 物。"
+  },
+  {
+   "id": "env-30",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "主谓一致",
+    "被动语态"
+   ],
+   "zh": "由于污染，很多海滩已经被关闭了。",
+   "en": "A number of beaches have been closed because of pollution.",
+   "k": [
+    [
+     "a-number-of",
+     "A number of",
+     "许多（谓语复数）"
+    ],
+    [
+     "because-of",
+     "because of",
+     "因为（后接名词）"
+    ]
+   ],
+   "trap": "A number of beaches has been closed because pollution.",
+   "tip": "a number of + 复数名词，谓语用复数 have；because of + 名词。"
+  },
+  {
+   "id": "env-31",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "条件从句",
+    "比较结构"
+   ],
+   "zh": "如果我们多用公共交通，我们的城市会更加宜居。",
+   "en": "If we used public transport more, our cities would be even more pleasant to live in.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "even-more",
+     "even more",
+     "更加"
+    ]
+   ],
+   "trap": "If we use public transport more, our cities will be more pleasant to live.",
+   "tip": "假设情况用 If + 过去式，主句 would；pleasant to live in，in 不能省。"
+  },
+  {
+   "id": "env-32",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "让步从句",
+    "比较结构"
+   ],
+   "zh": "虽然电动汽车很贵，但用起来便宜得多。",
+   "en": "Although electric cars are expensive, they are much cheaper to run.",
+   "k": [
+    [
+     "although",
+     "Although",
+     "虽然"
+    ],
+    [
+     "much-comparative",
+     "much cheaper",
+     "……得多"
+    ]
+   ],
+   "trap": "Although electric cars are expensive, but they are more cheaper to use.",
+   "tip": "Although 后面不加 but；比较级前用 much，不说 more cheaper。"
+  },
+  {
+   "id": "env-33",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "有些家庭什么都回收，而另一些家庭把所有垃圾都扔掉。",
+   "en": "Some families recycle everything, while others throw all their rubbish away.",
+   "k": [
+    [
+     "some-others",
+     "Some … while others",
+     "有些……而另一些……"
+    ],
+    [
+     "throw-away",
+     "throw … away",
+     "扔掉"
+    ]
+   ],
+   "trap": "Some families recycle everything, others throw away all rubbish.",
+   "tip": "两种做法对比用 Some …, while others …；throw away 的宾语可以放中间。"
+  },
+  {
+   "id": "health-29",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "有些病人不敢跟医生说实话。",
+   "en": "Some patients are afraid to tell their doctors the truth.",
+   "k": [
+    [
+     "be-afraid-to",
+     "afraid to",
+     "不敢做"
+    ],
+    [
+     "tell-truth",
+     "tell … the truth",
+     "说实话"
+    ]
+   ],
+   "trap": "Some patients are afraid telling the truth to doctors.",
+   "tip": "be afraid to do；\"跟某人说实话\"是 tell sb the truth。"
+  },
+  {
+   "id": "health-30",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "家人可以每天帮老年病人吃药。",
+   "en": "Family members can help older patients with their medicine every day.",
+   "k": [
+    [
+     "family-members",
+     "Family members",
+     "家人"
+    ],
+    [
+     "help-with",
+     "help … with",
+     "帮某人做（某事）"
+    ]
+   ],
+   "trap": "Family members can help old patients eating medicine every day.",
+   "tip": "help + 人 + with + 名词；\"吃药\"英文说 take medicine，不说 eat。"
+  },
+  {
+   "id": "health-31",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "无论你年轻还是年老，规律运动都对你有好处。",
+   "en": "Whether you are young or old, regular exercise is good for you.",
+   "k": [
+    [
+     "whether-or",
+     "Whether … or",
+     "无论……还是……"
+    ],
+    [
+     "good-for",
+     "good for",
+     "对……有好处"
+    ]
+   ],
+   "trap": "No matter you are young or old, regular exercise is good to you.",
+   "tip": "\"无论 A 还是 B\"用 Whether A or B；\"对……有好处\"是 good for。"
+  },
+  {
+   "id": "health-32",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "感到压力大的时候，你可以去散散步，也可以找朋友聊聊。",
+   "en": "When you feel stressed, you can either go for a walk or talk to a friend.",
+   "k": [
+    [
+     "either-or",
+     "either … or",
+     "可以……也可以……"
+    ],
+    [
+     "go-for-walk",
+     "go for a walk",
+     "去散步"
+    ]
+   ],
+   "trap": "When you feel stress, you can go for a walk, also can talk with friend.",
+   "tip": "两个选择用 either A or B；\"感到压力大\"是 feel stressed。"
+  },
+  {
+   "id": "health-33",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "近年来，经常锻炼的人越来越多了。",
+   "en": "The number of people who exercise regularly has increased in recent years.",
+   "k": [
+    [
+     "number-of-has",
+     "The number of … has",
+     "……的数量（谓语单数）"
+    ],
+    [
+     "in-recent-years",
+     "in recent years",
+     "近年来"
+    ]
+   ],
+   "trap": "The number of people who exercise regularly have increased in the recent years.",
+   "tip": "the number of … 谓语用单数 has；\"近年来\"是 in recent years，不加 the。"
+  },
+  {
+   "id": "city-29",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "很多人更喜欢住在小城镇，而不是大城市。",
+   "en": "Many people prefer living in small towns to living in big cities.",
+   "k": [
+    [
+     "prefer-to-b",
+     "prefer … to",
+     "比起 B 更喜欢 A"
+    ],
+    [
+     "small-towns",
+     "small towns",
+     "小城镇"
+    ]
+   ],
+   "trap": "Many people prefer to live in small towns than big cities.",
+   "tip": "prefer A to B，A、B 都用 doing 或名词；不要写 prefer … than。"
+  },
+  {
+   "id": "city-30",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "现在的城市生活和二十年前不一样了。",
+   "en": "Life in the city is not the same as it was twenty years ago.",
+   "k": [
+    [
+     "the-same-as",
+     "the same as",
+     "和……一样"
+    ],
+    [
+     "years-ago",
+     "years ago",
+     "……年前"
+    ]
+   ],
+   "trap": "The city life now is not same as twenty years ago.",
+   "tip": "\"和……一样\"用 the same as；比较对象写成完整的 it was twenty years ago 更清楚。"
+  },
+  {
+   "id": "city-31",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "条件从句",
+    "被动语态"
+   ],
+   "zh": "如果多种些树，夏天街道会凉快得多。",
+   "en": "If more trees are planted, the streets will be much cooler in summer.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "much-comparative",
+     "much cooler",
+     "……得多"
+    ]
+   ],
+   "trap": "If plant more trees, the streets will be more cool in summer.",
+   "tip": "英文要有主语：树是被种的，用 trees are planted；cool 的比较级是 cooler。"
+  },
+  {
+   "id": "city-32",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "并列与递进",
+    "被动语态"
+   ],
+   "zh": "这个地区的道路和建筑都需要维修。",
+   "en": "Both the roads and the buildings in this area need to be repaired.",
+   "k": [
+    [
+     "both-and",
+     "Both … and",
+     "……和……都"
+    ],
+    [
+     "need-to-be-done",
+     "need to be",
+     "需要被……"
+    ]
+   ],
+   "trap": "The roads and buildings in this area both need repair.",
+   "tip": "Both A and B 放在主语开头；需要被修，用 need to be repaired。"
+  },
+  {
+   "id": "city-33",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "尽管房租很高，很多年轻人还是选择住在市中心。",
+   "en": "Despite the high rents, many young people still choose to live in the city centre.",
+   "k": [
+    [
+     "despite",
+     "Despite",
+     "尽管"
+    ],
+    [
+     "city-centre",
+     "city centre",
+     "市中心"
+    ]
+   ],
+   "trap": "Despite the rent is high, many young people still choose living in city center.",
+   "tip": "Despite + 名词（the high rents），不能接句子；choose to do。"
+  },
+  {
+   "id": "work-29",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "有些员工喜欢在家办公，而另一些人想念同事。",
+   "en": "Some workers enjoy working from home, while others miss their colleagues.",
+   "k": [
+    [
+     "some-others",
+     "Some … while others",
+     "有些……而另一些……"
+    ],
+    [
+     "from-home",
+     "from home",
+     "在家"
+    ]
+   ],
+   "trap": "Some workers like to work at home, others miss their colleagues.",
+   "tip": "Some …, while others … 对比两种人；\"在家工作\"是 work from home。"
+  },
+  {
+   "id": "work-30",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "雇主有义务保证员工的安全。",
+   "en": "Employers have a duty to keep their workers safe.",
+   "k": [
+    [
+     "duty-to",
+     "a duty to",
+     "有义务做"
+    ],
+    [
+     "keep-safe",
+     "keep … safe",
+     "保证……安全"
+    ]
+   ],
+   "trap": "Employers have duty to make sure workers' safe.",
+   "tip": "have a duty to do；\"让……保持安全\"用 keep + 宾语 + safe。"
+  },
+  {
+   "id": "work-31",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果我有更多空闲时间，我会学一门新技能。",
+   "en": "If I had more free time, I would learn a new skill.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "free-time",
+     "free time",
+     "空闲时间"
+    ]
+   ],
+   "trap": "If I have more free time, I will learn a new skill.",
+   "tip": "说现在不真实的假设：If + 过去式（had），主句 would + 动词原形。"
+  },
+  {
+   "id": "work-32",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "人们辞职的主要原因之一是工资低。",
+   "en": "One of the main reasons people leave their jobs is low pay.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "leave-job",
+     "leave their jobs",
+     "辞职"
+    ]
+   ],
+   "trap": "One of the main reason why people leave their jobs are low pay.",
+   "tip": "One of the + 复数名词（reasons），谓语用单数 is。"
+  },
+  {
+   "id": "work-33",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "一份好工作不仅工资高，还能给你成长的机会。",
+   "en": "A good job not only pays well but also gives you a chance to grow.",
+   "k": [
+    [
+     "not-only-but-also",
+     "not only … but also",
+     "不仅……而且……"
+    ],
+    [
+     "chance-to",
+     "a chance to",
+     "……的机会"
+    ]
+   ],
+   "trap": "A good job not only has high salary, but also gives you chance of growing.",
+   "tip": "not only / but also 后面都接动词；\"……的机会\"用 a chance to do。"
+  },
+  {
+   "id": "soc-29",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "男人和女人都应该分担家务。",
+   "en": "Both men and women should share the housework.",
+   "k": [
+    [
+     "both-and",
+     "Both … and",
+     "……和……都"
+    ],
+    [
+     "share-housework",
+     "share the housework",
+     "分担家务"
+    ]
+   ],
+   "trap": "Men and women both should share housework.",
+   "tip": "Both A and B 放在主语开头，should 跟在后面。"
+  },
+  {
+   "id": "soc-30",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果你对邻居友好，你需要帮助时他们也会帮你。",
+   "en": "If you are friendly to your neighbours, they will help you when you need it.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "friendly-to",
+     "friendly to",
+     "对……友好"
+    ]
+   ],
+   "trap": "If you are friendly with neighbours, they will also help you when you need.",
+   "tip": "\"对某人友好\"是 be friendly to sb；need 后面要有宾语 it。"
+  },
+  {
+   "id": "soc-31",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果人们不觉得安全，晚上就不会出门。",
+   "en": "Unless people feel safe, they will not go out at night.",
+   "k": [
+    [
+     "unless",
+     "Unless",
+     "除非、如果不"
+    ],
+    [
+     "feel-safe",
+     "feel safe",
+     "感到安全"
+    ]
+   ],
+   "trap": "If people don't feel safety, they won't go out in night.",
+   "tip": "Unless + 肯定句；feel 后面接形容词 safe，不接名词 safety。"
+  },
+  {
+   "id": "soc-32",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "并列与递进",
+    "动词句型"
+   ],
+   "zh": "慈善机构为无家可归的人提供食物和衣服，还提供睡觉的地方。",
+   "en": "Charities provide food and clothes for homeless people as well as a place to sleep.",
+   "k": [
+    [
+     "provide-for",
+     "provide … for",
+     "为……提供"
+    ],
+    [
+     "as-well-as",
+     "as well as",
+     "……以及……"
+    ]
+   ],
+   "trap": "Charities provide homeless people food and clothes, also provide places to sleep.",
+   "tip": "provide + 物 + for + 人；第三样东西用 as well as 接上，不用重复 provide。"
+  },
+  {
+   "id": "soc-33",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "虽然这个小镇不大，但那里的人对游客很友好。",
+   "en": "Although the town is small, people there are very friendly to visitors.",
+   "k": [
+    [
+     "although",
+     "Although",
+     "虽然"
+    ],
+    [
+     "friendly-to",
+     "friendly to",
+     "对……友好"
+    ]
+   ],
+   "trap": "Although the town is small, but people there are very friendly with visitors.",
+   "tip": "Although 后面不加 but；\"那里的人\"是 people there。"
+  },
+  {
+   "id": "cult-29",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "很多村庄每年都举办节日活动，让传统延续下去。",
+   "en": "Many villages hold festivals every year to keep their traditions alive.",
+   "k": [
+    [
+     "hold-festivals",
+     "hold festivals",
+     "举办节日活动"
+    ],
+    [
+     "keep-traditions",
+     "keep their traditions alive",
+     "让传统延续下去"
+    ]
+   ],
+   "trap": "Many villages hold festivals every year for keeping traditions continue.",
+   "tip": "目的用 to do；\"让……延续下去\"用 keep … alive。"
+  },
+  {
+   "id": "cult-30",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "很多年轻人更喜欢现代音乐，而不是传统音乐。",
+   "en": "Many young people prefer modern music to traditional music.",
+   "k": [
+    [
+     "prefer-to-b",
+     "prefer … to",
+     "比起 B 更喜欢 A"
+    ],
+    [
+     "traditional-music",
+     "traditional music",
+     "传统音乐"
+    ]
+   ],
+   "trap": "Many young people prefer modern music than traditional music.",
+   "tip": "prefer A to B，不用 than。"
+  },
+  {
+   "id": "cult-31",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "了解一个国家最好的方法之一，是品尝它的食物。",
+   "en": "One of the best ways to learn about a country is to try its food.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "learn-about",
+     "learn about",
+     "了解"
+    ]
+   ],
+   "trap": "One of the best way to know a country are trying its food.",
+   "tip": "One of the best ways …，谓语用 is；ways 后面用 to do。"
+  },
+  {
+   "id": "cult-32",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "并列与递进",
+    "非谓语"
+   ],
+   "zh": "旅行不仅让我们了解其他文化，还帮助我们理解自己的文化。",
+   "en": "Travelling not only teaches us about other cultures but also helps us understand our own.",
+   "k": [
+    [
+     "not-only-but-also",
+     "not only … but also",
+     "不仅……而且……"
+    ],
+    [
+     "help-do",
+     "helps us understand",
+     "帮助某人做某事"
+    ]
+   ],
+   "trap": "Travel not only let us know other cultures, but also help us to understand ourselves culture.",
+   "tip": "动作做主语用 doing，谓语加 s；\"我们自己的\"用 our own。"
+  },
+  {
+   "id": "cult-33",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "每个节日都有自己的特色食物。",
+   "en": "Each of the festivals has its own special food.",
+   "k": [
+    [
+     "each-of-has",
+     "Each of the … has",
+     "……中的每一个（谓语单数）"
+    ],
+    [
+     "its-own",
+     "its own",
+     "自己的"
+    ]
+   ],
+   "trap": "Every festivals have their special foods.",
+   "tip": "Each of the + 复数名词，谓语和代词都用单数：has its own。"
+  },
+  {
+   "id": "media-28",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "很多著名歌手开了自己的视频频道。",
+   "en": "A number of famous singers have started their own video channels.",
+   "k": [
+    [
+     "a-number-of",
+     "A number of",
+     "许多（谓语复数）"
+    ],
+    [
+     "its-own",
+     "their own",
+     "自己的"
+    ]
+   ],
+   "trap": "A number of famous singers has opened their video channels by themselves.",
+   "tip": "a number of + 复数名词，谓语用复数；\"自己的\"用 their own。"
+  },
+  {
+   "id": "media-29",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果人们读得更仔细，假新闻就会传播得更慢。",
+   "en": "If people read more carefully, fake news would spread more slowly.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "fake-news",
+     "fake news",
+     "假新闻"
+    ]
+   ],
+   "trap": "If people read more careful, fake news will spread more slow.",
+   "tip": "假设用 If + 过去式，主句 would；修饰动词用副词 carefully / slowly。"
+  },
+  {
+   "id": "media-30",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "你可以在网上看新闻，也可以在收音机上听新闻。",
+   "en": "You can either read the news online or listen to it on the radio.",
+   "k": [
+    [
+     "either-or",
+     "either … or",
+     "可以……也可以……"
+    ],
+    [
+     "listen-to",
+     "listen to",
+     "听"
+    ]
+   ],
+   "trap": "You can read news on internet, also can listen it on radio.",
+   "tip": "二选一用 either A or B；listen 后面要加 to。"
+  },
+  {
+   "id": "media-31",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "除非一条消息来自可靠的来源，否则你不应该转发。",
+   "en": "Unless a story comes from a reliable source, you should not share it.",
+   "k": [
+    [
+     "unless",
+     "Unless",
+     "除非、如果不"
+    ],
+    [
+     "reliable-source",
+     "a reliable source",
+     "可靠的来源"
+    ]
+   ],
+   "trap": "If a news doesn't come from reliable source, or you shouldn't share it.",
+   "tip": "Unless 已经包含\"否则\"，主句前不再加 or；news 不可数，说 a story。"
+  },
+  {
+   "id": "media-32",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "无论标题多有趣，你都应该读完整篇文章。",
+   "en": "No matter how interesting a headline is, you should read the whole article.",
+   "k": [
+    [
+     "no-matter-how",
+     "No matter how",
+     "无论多么"
+    ],
+    [
+     "whole-article",
+     "the whole article",
+     "整篇文章"
+    ]
+   ],
+   "trap": "No matter how interesting is the headline, you should read the whole article.",
+   "tip": "No matter how + 形容词 + 主语 + 谓语，陈述语序。"
+  },
+  {
+   "id": "sci-30",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果你给冰加热，它会变成水。",
+   "en": "If you heat ice, it will turn into water.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "turn-into",
+     "turn into",
+     "变成"
+    ]
+   ],
+   "trap": "If you will heat ice, it will become to water.",
+   "tip": "If 从句用一般现在时；\"变成\"用 turn into，不说 become to。"
+  },
+  {
+   "id": "sci-31",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "第二次测试的结果和第一次一样。",
+   "en": "The results of the second test were the same as the first.",
+   "k": [
+    [
+     "results-of",
+     "The results of",
+     "……的结果"
+    ],
+    [
+     "the-same-as",
+     "the same as",
+     "和……一样"
+    ]
+   ],
+   "trap": "The second test's result was same as the first time.",
+   "tip": "\"……的结果\"用 the results of；\"和……一样\"用 the same as。"
+  },
+  {
+   "id": "sci-32",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "植物和动物都需要水才能生存。",
+   "en": "Both plants and animals need water to survive.",
+   "k": [
+    [
+     "both-and",
+     "Both … and",
+     "……和……都"
+    ],
+    [
+     "to-survive",
+     "to survive",
+     "为了生存"
+    ]
+   ],
+   "trap": "Plants and animals both need water for surviving.",
+   "tip": "Both A and B 放在主语前；目的用 to do。"
+  },
+  {
+   "id": "sci-33",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "主谓一致",
+    "非谓语"
+   ],
+   "zh": "科学家面临的最大挑战之一是获得足够的资金。",
+   "en": "One of the biggest challenges for scientists is getting enough money.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "enough-noun",
+     "enough money",
+     "足够的……"
+    ]
+   ],
+   "trap": "One of the biggest challenge for scientists are get enough money.",
+   "tip": "One of the + 复数名词，谓语用 is；is 后面用 doing（getting …）。"
+  },
+  {
+   "id": "sci-34",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "尽管蜜蜂很小，它在自然界中起着重要作用。",
+   "en": "Despite its small size, the bee plays an important role in nature.",
+   "k": [
+    [
+     "despite",
+     "Despite",
+     "尽管"
+    ],
+    [
+     "play-role-in",
+     "plays an … role in",
+     "在……中起……作用"
+    ]
+   ],
+   "trap": "Despite the bee is small, it plays important role in nature.",
+   "tip": "Despite + 名词（its small size）；接句子要用 Although。"
   }
  ]
 }
