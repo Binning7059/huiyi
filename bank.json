@@ -1,0 +1,1409 @@
+{
+ "version": 2,
+ "updated": "2026-10-18",
+ "chunks": {
+  "some-argue-that": {
+   "en": "Some argue that",
+   "zh": "有人认为（比 Some people think 书面）"
+  },
+  "primary-role": {
+   "en": "primary role",
+   "zh": "首要任务"
+  },
+  "cultivate-critical-thinking": {
+   "en": "cultivate critical thinking",
+   "zh": "培养批判性思维"
+  },
+  "rather-than": {
+   "en": "rather than (doing)",
+   "zh": "而不是、与其"
+  },
+  "rote-learning": {
+   "en": "Rote learning",
+   "zh": "死记硬背"
+  },
+  "lead-to": {
+   "en": "lead to",
+   "zh": "导致、带来"
+  },
+  "genuine-understanding": {
+   "en": "genuine understanding",
+   "zh": "真正的理解"
+  },
+  "the-material": {
+   "en": "the material",
+   "zh": "所学内容"
+  },
+  "growing-popularity-of": {
+   "en": "growing popularity of",
+   "zh": "日益普及"
+  },
+  "remote-areas": {
+   "en": "remote areas",
+   "zh": "偏远地区"
+  },
+  "have-access-to": {
+   "en": "have access to",
+   "zh": "能获得、能接触到"
+  },
+  "while": {
+   "en": "While",
+   "zh": "在……的同时（引导从句）"
+  },
+  "boosts-efficiency": {
+   "en": "boosts efficiency",
+   "zh": "提高效率"
+  },
+  "raised-concerns-about": {
+   "en": "raised concerns about",
+   "zh": "引发对……的担忧"
+  },
+  "job-losses": {
+   "en": "job losses",
+   "zh": "失业（可数）"
+  },
+  "excessive-reliance-on": {
+   "en": "Excessive reliance on",
+   "zh": "过度依赖"
+  },
+  "undermine": {
+   "en": "undermine",
+   "zh": "削弱、损害"
+  },
+  "ability-to-concentrate": {
+   "en": "ability to concentrate",
+   "zh": "集中注意力的能力"
+  },
+  "brought-people-closer-together": {
+   "en": "brought people closer together",
+   "zh": "拉近距离"
+  },
+  "yet-ironically": {
+   "en": "yet ironically",
+   "zh": "但讽刺的是"
+  },
+  "report-feeling": {
+   "en": "report feeling",
+   "zh": "表示感到"
+  },
+  "lonelier-than-ever": {
+   "en": "lonelier than ever",
+   "zh": "比以往更孤独"
+  },
+  "unless": {
+   "en": "Unless",
+   "zh": "除非、如果不"
+  },
+  "immediate-action-is-taken": {
+   "en": "immediate action is taken",
+   "zh": "立即采取行动"
+  },
+  "consequences": {
+   "en": "consequences",
+   "zh": "后果"
+  },
+  "irreversible": {
+   "en": "irreversible",
+   "zh": "不可逆转"
+  },
+  "tax-incentives": {
+   "en": "tax incentives",
+   "zh": "税收优惠"
+  },
+  "encourage-businesses-to": {
+   "en": "encourage businesses to",
+   "zh": "鼓励企业做某事"
+  },
+  "switch-to": {
+   "en": "switch to",
+   "zh": "改用、转向"
+  },
+  "matter-v": {
+   "en": "X matter(s)",
+   "zh": "（动词）很重要"
+  },
+  "meaningful-change": {
+   "en": "meaningful change",
+   "zh": "真正的改变"
+  },
+  "at-a-systemic-level": {
+   "en": "at a systemic level",
+   "zh": "在系统、制度层面"
+  },
+  "sedentary-lifestyle": {
+   "en": "sedentary lifestyle",
+   "zh": "久坐的生活方式"
+  },
+  "factors-behind": {
+   "en": "factors behind",
+   "zh": "背后的原因"
+  },
+  "rising-obesity-rates": {
+   "en": "rising obesity rates",
+   "zh": "不断上升的肥胖率"
+  },
+  "prevention-is-better-than-cure": {
+   "en": "Prevention is better than cure",
+   "zh": "预防胜于治疗（固定说法）"
+  },
+  "public-health-funding": {
+   "en": "public health funding",
+   "zh": "公共卫生经费"
+  },
+  "directed-towards": {
+   "en": "directed towards",
+   "zh": "投向、用于"
+  },
+  "have-long-been-overlooked": {
+   "en": "have long been overlooked",
+   "zh": "长期被忽视"
+  },
+  "partly-because-of": {
+   "en": "partly because of",
+   "zh": "部分原因是"
+  },
+  "stigma": {
+   "en": "stigma",
+   "zh": "污名、偏见"
+  },
+  "attached-to": {
+   "en": "attached to",
+   "zh": "附着于"
+  },
+  "rapid-urbanisation": {
+   "en": "Rapid urbanisation",
+   "zh": "快速城市化"
+  },
+  "worsening": {
+   "en": "worsening",
+   "zh": "日益严重的"
+  },
+  "traffic-congestion": {
+   "en": "traffic congestion",
+   "zh": "交通拥堵"
+  },
+  "invest-in": {
+   "en": "invest in",
+   "zh": "投资（必须带 in）"
+  },
+  "tend-to": {
+   "en": "tend to",
+   "zh": "往往"
+  },
+  "attract-more-traffic": {
+   "en": "attract more traffic",
+   "zh": "吸引更多车流"
+  },
+  "influx-of": {
+   "en": "influx of",
+   "zh": "大量涌入"
+  },
+  "in-search-of": {
+   "en": "in search of",
+   "zh": "寻找"
+  },
+  "has-left": {
+   "en": "has left",
+   "zh": "使……落得（某种结果）"
+  },
+  "ageing-population": {
+   "en": "ageing population",
+   "zh": "人口老龄化"
+  },
+  "greater-flexibility": {
+   "en": "greater flexibility",
+   "zh": "更大的灵活性"
+  },
+  "blurs-the-line-between": {
+   "en": "blurs the line between",
+   "zh": "模糊……的界限"
+  },
+  "home-life": {
+   "en": "home life",
+   "zh": "家庭生活"
+  },
+  "depends-largely-on": {
+   "en": "depends largely on",
+   "zh": "很大程度上取决于"
+  },
+  "feel-valued": {
+   "en": "feel valued",
+   "zh": "感到被重视"
+  },
+  "fast-changing": {
+   "en": "fast-changing",
+   "zh": "瞬息万变的"
+  },
+  "lifelong-learning": {
+   "en": "lifelong learning",
+   "zh": "终身学习"
+  },
+  "no-longer-optional": {
+   "en": "no longer optional",
+   "zh": "不再可有可无"
+  },
+  "essential": {
+   "en": "essential",
+   "zh": "必不可少"
+  },
+  "have-a-responsibility-to": {
+   "en": "have a responsibility to",
+   "zh": "有责任"
+  },
+  "regardless-of-income": {
+   "en": "regardless of income",
+   "zh": "无论收入高低"
+  },
+  "basic-healthcare": {
+   "en": "basic healthcare",
+   "zh": "基本医疗"
+  },
+  "harsher-punishments": {
+   "en": "Harsher punishments",
+   "zh": "更严厉的刑罚"
+  },
+  "alone": {
+   "en": "alone",
+   "zh": "仅靠（后置）"
+  },
+  "the-key-lies-in": {
+   "en": "the key lies in",
+   "zh": "关键在于"
+  },
+  "tackling-its-root-causes": {
+   "en": "tackling its root causes",
+   "zh": "解决根源"
+  },
+  "widening-gap-between-rich-and-poor": {
+   "en": "widening gap between rich and poor",
+   "zh": "不断扩大的贫富差距"
+  },
+  "pose-a-threat-to": {
+   "en": "pose a threat to",
+   "zh": "对……构成威胁"
+  },
+  "social-stability": {
+   "en": "social stability",
+   "zh": "社会稳定"
+  },
+  "fuelled-economic-growth": {
+   "en": "fuelled economic growth",
+   "zh": "推动经济增长"
+  },
+  "at-risk-of": {
+   "en": "at risk of",
+   "zh": "面临……的危险（put X at risk of）"
+  },
+  "local-cultures": {
+   "en": "local cultures",
+   "zh": "地方文化"
+  },
+  "local-communities": {
+   "en": "local communities",
+   "zh": "当地（社区）"
+  },
+  "large-numbers-of": {
+   "en": "large numbers of",
+   "zh": "大量（接可数名词）"
+  },
+  "put-pressure-on": {
+   "en": "put pressure on",
+   "zh": "给……造成压力"
+  },
+  "infrastructure": {
+   "en": "infrastructure",
+   "zh": "基础设施"
+  },
+  "not-just-about": {
+   "en": "not just about",
+   "zh": "不只是"
+  },
+  "acquiring-a-skill": {
+   "en": "acquiring a skill",
+   "zh": "掌握一项技能"
+  },
+  "a-window-into": {
+   "en": "a window into",
+   "zh": "了解……的窗口"
+  },
+  "way-of-thinking": {
+   "en": "way of thinking",
+   "zh": "思维方式"
+  },
+  "information-overload": {
+   "en": "information overload",
+   "zh": "信息过载（信息爆炸）"
+  },
+  "tell-fact-from-fiction": {
+   "en": "tell fact from fiction",
+   "zh": "辨别真假"
+  },
+  "has-never-been-more-important": {
+   "en": "has never been more important",
+   "zh": "前所未有地重要"
+  },
+  "exploits": {
+   "en": "exploits",
+   "zh": "利用（贬义）"
+  },
+  "insecurities": {
+   "en": "insecurities",
+   "zh": "不安全感（复数）"
+  },
+  "sell-them-products": {
+   "en": "sell them products",
+   "zh": "向他们推销产品"
+  },
+  "research-suggests": {
+   "en": "Research suggests",
+   "zh": "研究表明（留有余地）"
+  },
+  "a-strong-link-between": {
+   "en": "a strong link between",
+   "zh": "密切联系"
+  },
+  "adequate-sleep": {
+   "en": "adequate sleep",
+   "zh": "充足睡眠"
+  },
+  "academic-performance": {
+   "en": "academic performance",
+   "zh": "学习成绩"
+  },
+  "shows-considerable-promise": {
+   "en": "shows considerable promise",
+   "zh": "前景广阔"
+  },
+  "long-term-effects": {
+   "en": "long-term effects",
+   "zh": "长期影响"
+  },
+  "warrant-further-investigation": {
+   "en": "warrant further investigation",
+   "zh": "有待进一步研究"
+  },
+  "finding": {
+   "en": "finding",
+   "zh": "研究发现"
+  },
+  "long-held": {
+   "en": "long-held",
+   "zh": "长期持有的"
+  },
+  "widely-accepted": {
+   "en": "widely accepted",
+   "zh": "广泛接受的"
+  },
+  "assumption": {
+   "en": "assumption",
+   "zh": "观点、假设"
+  },
+  "a-lack-of-funding": {
+   "en": "A lack of funding",
+   "zh": "资金短缺"
+  },
+  "remains": {
+   "en": "remains",
+   "zh": "仍是"
+  },
+  "obstacles-to": {
+   "en": "obstacles to",
+   "zh": "对……的障碍"
+  },
+  "scientific-progress": {
+   "en": "scientific progress",
+   "zh": "科研进步"
+  }
+ },
+ "sentences": [
+  {
+   "id": "edu-01",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "让步与对比"
+   ],
+   "zh": "一些人认为，大学的首要任务应是培养批判性思维，而不仅仅是为学生就业做准备。",
+   "en": "Some argue that the primary role of a university should be to cultivate critical thinking, rather than merely to prepare students for employment.",
+   "k": [
+    [
+     "some-argue-that",
+     "Some argue that",
+     "有人认为（比 Some people think 书面）"
+    ],
+    [
+     "primary-role",
+     "primary role",
+     "首要任务"
+    ],
+    [
+     "cultivate-critical-thinking",
+     "cultivate critical thinking",
+     "培养批判性思维"
+    ],
+    [
+     "rather-than",
+     "rather than merely",
+     "而不仅仅是"
+    ]
+   ],
+   "trap": "Some people think the first task of university is to train critical thinking, not only prepare students for finding jobs.",
+   "tip": "\"任务\"不必译成 task；\"就业\"用名词 employment，比 finding jobs 正式。",
+   "alts": [
+    "Some contend that universities should prioritise developing critical thinking over simply preparing students for the job market."
+   ]
+  },
+  {
+   "id": "edu-02",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "使役改写"
+   ],
+   "zh": "死记硬背也许能帮学生通过考试，却很难让他们真正理解所学的内容。",
+   "en": "Rote learning may help students pass exams, but it rarely leads to a genuine understanding of the material.",
+   "k": [
+    [
+     "rote-learning",
+     "Rote learning",
+     "死记硬背"
+    ],
+    [
+     "lead-to",
+     "rarely leads to",
+     "很少带来"
+    ],
+    [
+     "genuine-understanding",
+     "genuine understanding",
+     "真正的理解"
+    ],
+    [
+     "the-material",
+     "the material",
+     "所学内容"
+    ]
+   ],
+   "trap": "Memorizing by heart may help students pass exams, but it is hard to let them really understand what they learn.",
+   "tip": "\"让某人……\"别直译成 let，改成\"A 带来 B\"的结构：lead to / result in。",
+   "alts": [
+    "Memorisation may get students through exams, but it seldom produces real understanding."
+   ]
+  },
+  {
+   "id": "edu-03",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "名词化"
+   ],
+   "zh": "随着网络课程日益普及，偏远地区的学生也能接触到优质的教育资源。",
+   "en": "With the growing popularity of online courses, students in remote areas now have access to high-quality educational resources.",
+   "k": [
+    [
+     "growing-popularity-of",
+     "growing popularity of",
+     "日益普及"
+    ],
+    [
+     "remote-areas",
+     "remote areas",
+     "偏远地区"
+    ],
+    [
+     "have-access-to",
+     "have access to",
+     "能接触到、能获得"
+    ]
+   ],
+   "trap": "As online courses become more and more popular, students in remote areas can also touch high-quality education resources.",
+   "tip": "\"日益……\"用 growing / increasing 修饰名词，比 more and more 紧凑。\"接触资源\"是 have access to，不是 touch。"
+  },
+  {
+   "id": "tech-01",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "让步与对比",
+    "句间连接"
+   ],
+   "zh": "人工智能在提高效率的同时，也引发了人们对大规模失业的担忧。",
+   "en": "While artificial intelligence boosts efficiency, it has also raised concerns about large-scale job losses.",
+   "k": [
+    [
+     "while",
+     "While",
+     "在……的同时（引导从句）"
+    ],
+    [
+     "boosts-efficiency",
+     "boosts efficiency",
+     "提高效率"
+    ],
+    [
+     "raised-concerns-about",
+     "raised concerns about",
+     "引发对……的担忧"
+    ],
+    [
+     "job-losses",
+     "job losses",
+     "失业（可数）"
+    ]
+   ],
+   "trap": "Artificial intelligence improves efficiency at the same time, it also causes people's worry about big unemployment.",
+   "tip": "\"在……的同时\"用 While 引导从句。两个完整句只用逗号相连（comma splice）是中国考生最常见的语法扣分点。",
+   "alts": [
+    "Although AI improves efficiency, it has also sparked fears of mass unemployment."
+   ]
+  },
+  {
+   "id": "tech-02",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "名词化"
+   ],
+   "zh": "过度依赖智能手机可能会削弱人们集中注意力的能力。",
+   "en": "Excessive reliance on smartphones may undermine people's ability to concentrate.",
+   "k": [
+    [
+     "excessive-reliance-on",
+     "Excessive reliance on",
+     "过度依赖"
+    ],
+    [
+     "undermine",
+     "undermine",
+     "削弱、损害"
+    ],
+    [
+     "ability-to-concentrate",
+     "ability to concentrate",
+     "集中注意力的能力"
+    ]
+   ],
+   "trap": "Too much depending on smartphones may weaken people's ability of focusing attention.",
+   "tip": "把动词\"依赖\"转成名词 reliance 做主语，句子更书面。ability 后面接 to do。"
+  },
+  {
+   "id": "tech-03",
+   "t": "科技",
+   "lv": "C1",
+   "tech": [
+    "让步与对比"
+   ],
+   "zh": "社交媒体拉近了人与人之间的距离，但讽刺的是，许多用户反而觉得比以往更孤独。",
+   "en": "Social media has brought people closer together, yet ironically, many users report feeling lonelier than ever.",
+   "k": [
+    [
+     "brought-people-closer-together",
+     "brought people closer together",
+     "拉近距离"
+    ],
+    [
+     "yet-ironically",
+     "yet ironically",
+     "但讽刺的是"
+    ],
+    [
+     "report-feeling",
+     "report feeling",
+     "表示感到"
+    ],
+    [
+     "lonelier-than-ever",
+     "lonelier than ever",
+     "比以往更孤独"
+    ]
+   ],
+   "trap": "Social media makes people's connection closer, but ironic is that many users feel more lonely.",
+   "tip": "\"拉近距离\"不必译出\"距离\"。report feeling 是学术写作转述研究结果的常用说法。"
+  },
+  {
+   "id": "env-01",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "被动与无主句"
+   ],
+   "zh": "如果不立即采取行动，气候变化的后果将无法逆转。",
+   "en": "Unless immediate action is taken, the consequences of climate change will be irreversible.",
+   "k": [
+    [
+     "unless",
+     "Unless",
+     "除非、如果不"
+    ],
+    [
+     "immediate-action-is-taken",
+     "immediate action is taken",
+     "立即采取行动"
+    ],
+    [
+     "consequences",
+     "consequences",
+     "后果"
+    ],
+    [
+     "irreversible",
+     "irreversible",
+     "不可逆转"
+    ]
+   ],
+   "trap": "If we don't take action immediately, the result of climate change will be unable to reverse.",
+   "tip": "中文常省略主语，英文可以用被动 action is taken，不必硬加 we。",
+   "alts": [
+    "Without immediate action, the effects of climate change could become irreversible."
+   ]
+  },
+  {
+   "id": "env-02",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "固定搭配"
+   ],
+   "zh": "政府应通过税收优惠鼓励企业改用可再生能源。",
+   "en": "Governments should offer tax incentives to encourage businesses to switch to renewable energy.",
+   "k": [
+    [
+     "tax-incentives",
+     "tax incentives",
+     "税收优惠"
+    ],
+    [
+     "encourage-businesses-to",
+     "encourage businesses to",
+     "鼓励企业做某事"
+    ],
+    [
+     "switch-to",
+     "switch to",
+     "改用、转向"
+    ]
+   ],
+   "trap": "Government should encourage companies to use renewable energy through tax preferential.",
+   "tip": "\"通过 X 做 Y\"可以拆成\"提供 X 来做 Y\"：offer X to do Y，比 through 自然。"
+  },
+  {
+   "id": "env-03",
+   "t": "环境",
+   "lv": "C1",
+   "tech": [
+    "精准用词"
+   ],
+   "zh": "个人的环保努力固然重要，但真正的改变需要在系统层面推动。",
+   "en": "Individual efforts to protect the environment matter, but meaningful change requires action at a systemic level.",
+   "k": [
+    [
+     "matter-v",
+     "matter",
+     "重要（动词）"
+    ],
+    [
+     "meaningful-change",
+     "meaningful change",
+     "真正的改变"
+    ],
+    [
+     "at-a-systemic-level",
+     "at a systemic level",
+     "在系统、制度层面"
+    ]
+   ],
+   "trap": "Personal environmental efforts are of course important, but the real change needs system level change.",
+   "tip": "\"固然重要\"直接用动词 matter，简洁有力。\"真正的\"用 meaningful，比 real 更贴切。"
+  },
+  {
+   "id": "health-01",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "精准用词",
+    "前置修饰"
+   ],
+   "zh": "久坐不动的生活方式是肥胖率上升的主要原因之一。",
+   "en": "A sedentary lifestyle is one of the main factors behind rising obesity rates.",
+   "k": [
+    [
+     "sedentary-lifestyle",
+     "sedentary lifestyle",
+     "久坐的生活方式"
+    ],
+    [
+     "factors-behind",
+     "factors behind",
+     "背后的原因"
+    ],
+    [
+     "rising-obesity-rates",
+     "rising obesity rates",
+     "不断上升的肥胖率"
+    ]
+   ],
+   "trap": "Sitting for a long time without moving lifestyle is one of the main reasons that cause the obesity rate to rise.",
+   "tip": "一个精准的词（sedentary）顶一整串描述。\"上升的 X\"用 rising 放在名词前。"
+  },
+  {
+   "id": "health-02",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "固定搭配"
+   ],
+   "zh": "预防胜于治疗，因此应将更多公共卫生经费投入健康教育。",
+   "en": "Prevention is better than cure, so more public health funding should be directed towards health education.",
+   "k": [
+    [
+     "prevention-is-better-than-cure",
+     "Prevention is better than cure",
+     "预防胜于治疗（固定说法）"
+    ],
+    [
+     "public-health-funding",
+     "public health funding",
+     "公共卫生经费"
+    ],
+    [
+     "directed-towards",
+     "directed towards",
+     "投向、用于"
+    ]
+   ],
+   "trap": "Prevention is better than treatment, so public health investment should be used more on health education.",
+   "tip": "谚语要用固定说法里的 cure，不要自己换成 treatment。"
+  },
+  {
+   "id": "health-03",
+   "t": "健康",
+   "lv": "C1",
+   "tech": [
+    "句间连接"
+   ],
+   "zh": "心理健康问题长期被忽视，部分原因是社会对其仍有偏见。",
+   "en": "Mental health problems have long been overlooked, partly because of the stigma still attached to them.",
+   "k": [
+    [
+     "have-long-been-overlooked",
+     "have long been overlooked",
+     "长期被忽视"
+    ],
+    [
+     "partly-because-of",
+     "partly because of",
+     "部分原因是"
+    ],
+    [
+     "stigma",
+     "stigma",
+     "污名、偏见"
+    ],
+    [
+     "attached-to",
+     "attached to",
+     "附着于"
+    ]
+   ],
+   "trap": "Mental health problems are ignored for a long time, part of the reason is society still has prejudice to them.",
+   "tip": "\"长期\"配现在完成时 have long been。\"部分原因是\"用 partly because of 接在后面，不要另起一句。"
+  },
+  {
+   "id": "city-01",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "省略范畴词"
+   ],
+   "zh": "城市化进程加快，导致住房短缺和交通拥堵问题日益严重。",
+   "en": "Rapid urbanisation has led to worsening housing shortages and traffic congestion.",
+   "k": [
+    [
+     "rapid-urbanisation",
+     "Rapid urbanisation",
+     "快速城市化"
+    ],
+    [
+     "lead-to",
+     "has led to",
+     "导致"
+    ],
+    [
+     "worsening",
+     "worsening",
+     "日益严重的"
+    ],
+    [
+     "traffic-congestion",
+     "traffic congestion",
+     "交通拥堵"
+    ]
+   ],
+   "trap": "The process of urbanization speeds up, which leads to housing shortage and traffic jam problems becoming more and more serious.",
+   "tip": "\"进程\"\"问题\"这类范畴词通常不译。\"加快\"变成形容词 rapid。",
+   "alts": [
+    "As cities grow rapidly, housing shortages and traffic congestion are becoming increasingly severe."
+   ]
+  },
+  {
+   "id": "city-02",
+   "t": "城市",
+   "lv": "C1",
+   "tech": [
+    "让步与对比"
+   ],
+   "zh": "与其修建更多道路，不如投资公共交通，因为新修的道路往往只会吸引更多车流。",
+   "en": "Rather than building more roads, cities should invest in public transport, as new roads tend to attract more traffic.",
+   "k": [
+    [
+     "rather-than",
+     "Rather than building",
+     "与其修建"
+    ],
+    [
+     "invest-in",
+     "invest in",
+     "投资（必须带 in）"
+    ],
+    [
+     "tend-to",
+     "tend to",
+     "往往"
+    ],
+    [
+     "attract-more-traffic",
+     "attract more traffic",
+     "吸引更多车流"
+    ]
+   ],
+   "trap": "Instead of building more roads, it's better to invest public transport, because new roads often only attract more cars.",
+   "tip": "\"与其……不如……\"用 Rather than doing，主语 should do。补上主语 cities，句子就有了行动者。"
+  },
+  {
+   "id": "city-03",
+   "t": "城市",
+   "lv": "C1",
+   "tech": [
+    "名词化",
+    "使役改写"
+   ],
+   "zh": "年轻人涌入大城市寻找机会，使许多农村地区面临人口老龄化问题。",
+   "en": "The influx of young people into big cities in search of opportunities has left many rural areas with an ageing population.",
+   "k": [
+    [
+     "influx-of",
+     "influx of",
+     "大量涌入"
+    ],
+    [
+     "in-search-of",
+     "in search of",
+     "寻找"
+    ],
+    [
+     "has-left",
+     "has left",
+     "使……落得（某种结果）"
+    ],
+    [
+     "ageing-population",
+     "ageing population",
+     "人口老龄化"
+    ]
+   ],
+   "trap": "Young people pour into big cities to find opportunities, making many rural areas face the problem of population aging.",
+   "tip": "把\"涌入\"名词化（influx）作主语，一句话就能承载因果，不必用 making 分词。"
+  },
+  {
+   "id": "work-01",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "固定搭配"
+   ],
+   "zh": "远程办公给员工带来了更大的灵活性，但也模糊了工作与生活之间的界限。",
+   "en": "Remote working gives employees greater flexibility, but it also blurs the line between work and home life.",
+   "k": [
+    [
+     "greater-flexibility",
+     "greater flexibility",
+     "更大的灵活性"
+    ],
+    [
+     "blurs-the-line-between",
+     "blurs the line between",
+     "模糊……的界限"
+    ],
+    [
+     "home-life",
+     "home life",
+     "家庭生活"
+    ]
+   ],
+   "trap": "Remote work provides staffs more flexibility, but also makes the boundary of work and life fuzzy.",
+   "tip": "\"模糊界限\"用固定搭配 blur the line。staff 是集体名词，不加 s。"
+  },
+  {
+   "id": "work-02",
+   "t": "工作",
+   "lv": "C1",
+   "tech": [
+    "精准用词"
+   ],
+   "zh": "薪酬固然重要，但工作满意度在很大程度上取决于员工是否感到被重视。",
+   "en": "Pay matters, of course, but job satisfaction depends largely on whether employees feel valued.",
+   "k": [
+    [
+     "matter-v",
+     "Pay matters, of course",
+     "薪酬当然重要"
+    ],
+    [
+     "depends-largely-on",
+     "depends largely on",
+     "很大程度上取决于"
+    ],
+    [
+     "feel-valued",
+     "feel valued",
+     "感到被重视"
+    ]
+   ],
+   "trap": "Salary is of course important, but job satisfaction largely decides on whether being recognized.",
+   "tip": "\"取决于\"是 depend on，不是 decide on。\"被重视\"用 feel + 过去分词，不必写成完整被动句。"
+  },
+  {
+   "id": "work-03",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "句间连接"
+   ],
+   "zh": "在瞬息万变的就业市场中，终身学习已不再是一种选择，而是一种必需。",
+   "en": "In a fast-changing job market, lifelong learning is no longer optional; it is essential.",
+   "k": [
+    [
+     "fast-changing",
+     "fast-changing",
+     "瞬息万变的"
+    ],
+    [
+     "lifelong-learning",
+     "lifelong learning",
+     "终身学习"
+    ],
+    [
+     "no-longer-optional",
+     "no longer optional",
+     "不再可有可无"
+    ],
+    [
+     "essential",
+     "essential",
+     "必不可少"
+    ]
+   ],
+   "trap": "In the fast changing job market, lifelong learning is not a choice anymore, but a necessary.",
+   "tip": "\"不是 A 而是 B\"用分号连两个短句，节奏更有力。necessary 是形容词，不能当名词用。",
+   "alts": [
+    "In a rapidly changing job market, lifelong learning has become a necessity rather than a choice."
+   ]
+  },
+  {
+   "id": "soc-01",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "省略范畴词"
+   ],
+   "zh": "政府有责任确保所有公民无论收入高低，都能享有基本医疗服务。",
+   "en": "Governments have a responsibility to ensure that all citizens, regardless of income, have access to basic healthcare.",
+   "k": [
+    [
+     "have-a-responsibility-to",
+     "have a responsibility to",
+     "有责任"
+    ],
+    [
+     "have-access-to",
+     "have access to",
+     "享有"
+    ],
+    [
+     "regardless-of-income",
+     "regardless of income",
+     "无论收入高低"
+    ],
+    [
+     "basic-healthcare",
+     "basic healthcare",
+     "基本医疗"
+    ]
+   ],
+   "trap": "Government has the responsibility to make sure all citizens no matter income high or low can get basic medical service.",
+   "tip": "\"无论高低、无论多少\"只需 regardless of + 名词，\"高低\"不用译。"
+  },
+  {
+   "id": "soc-02",
+   "t": "社会",
+   "lv": "C1",
+   "tech": [
+    "句间连接",
+    "精准用词"
+   ],
+   "zh": "仅靠加重刑罚并不能有效减少犯罪，关键在于解决其根源。",
+   "en": "Harsher punishments alone will not significantly reduce crime; the key lies in tackling its root causes.",
+   "k": [
+    [
+     "harsher-punishments",
+     "Harsher punishments",
+     "更严厉的刑罚"
+    ],
+    [
+     "alone",
+     "alone",
+     "仅靠（后置）"
+    ],
+    [
+     "the-key-lies-in",
+     "the key lies in",
+     "关键在于"
+    ],
+    [
+     "tackling-its-root-causes",
+     "tackling its root causes",
+     "解决根源"
+    ]
+   ],
+   "trap": "Only relying on heavier punishment cannot reduce crime effectively, solving its root problem is the key.",
+   "tip": "\"仅靠 X\"用 X alone 后置，简洁地道。两个完整句之间用分号，不用逗号。",
+   "alts": [
+    "Tougher sentences on their own will not cut crime significantly; what matters is addressing why people offend in the first place."
+   ]
+  },
+  {
+   "id": "soc-03",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "前置修饰"
+   ],
+   "zh": "贫富差距不断扩大可能会威胁社会稳定。",
+   "en": "A widening gap between rich and poor could pose a threat to social stability.",
+   "k": [
+    [
+     "widening-gap-between-rich-and-poor",
+     "widening gap between rich and poor",
+     "不断扩大的贫富差距"
+    ],
+    [
+     "pose-a-threat-to",
+     "pose a threat to",
+     "对……构成威胁"
+    ],
+    [
+     "social-stability",
+     "social stability",
+     "社会稳定"
+    ]
+   ],
+   "trap": "The enlarging of the gap between rich and poor may threaten society stable.",
+   "tip": "\"不断扩大的\"用 widening。修饰名词要用形容词 social，不用名词 society。"
+  },
+  {
+   "id": "cult-01",
+   "t": "文化",
+   "lv": "C1",
+   "tech": [
+    "使役改写"
+   ],
+   "zh": "全球化推动了经济增长，但也使许多地方文化面临消失的危险。",
+   "en": "Globalisation has fuelled economic growth, but it has also put many local cultures at risk of disappearing.",
+   "k": [
+    [
+     "fuelled-economic-growth",
+     "fuelled economic growth",
+     "推动经济增长"
+    ],
+    [
+     "at-risk-of",
+     "at risk of",
+     "面临……的危险（put X at risk of）"
+    ],
+    [
+     "local-cultures",
+     "local cultures",
+     "地方文化"
+    ]
+   ],
+   "trap": "Globalization promotes economic growth at the same time, it also makes many local cultures face the risk of disappearing.",
+   "tip": "\"使 X 面临\"不要写成 make X face，用 put X at risk of。fuel 比 promote 更生动。"
+  },
+  {
+   "id": "cult-02",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "固定搭配"
+   ],
+   "zh": "旅游业为当地带来了收入，但大批游客也给环境和基础设施造成了压力。",
+   "en": "Tourism brings income to local communities, but large numbers of visitors also put pressure on the environment and infrastructure.",
+   "k": [
+    [
+     "local-communities",
+     "local communities",
+     "当地（社区）"
+    ],
+    [
+     "large-numbers-of",
+     "large numbers of",
+     "大量（接可数名词）"
+    ],
+    [
+     "put-pressure-on",
+     "put pressure on",
+     "给……造成压力"
+    ],
+    [
+     "infrastructure",
+     "infrastructure",
+     "基础设施"
+    ]
+   ],
+   "trap": "Tourism brings income to local, but large amount of tourists also bring pressure to environment and infrastructure.",
+   "tip": "local 是形容词，\"当地\"要补名词 communities。可数名词用 numbers of，不用 amount of。"
+  },
+  {
+   "id": "cult-03",
+   "t": "文化",
+   "lv": "C1",
+   "tech": [
+    "句间连接"
+   ],
+   "zh": "学习外语不只是掌握一项技能，更是了解另一种思维方式的窗口。",
+   "en": "Learning a foreign language is not just about acquiring a skill; it offers a window into a different way of thinking.",
+   "k": [
+    [
+     "not-just-about",
+     "not just about",
+     "不只是"
+    ],
+    [
+     "acquiring-a-skill",
+     "acquiring a skill",
+     "掌握一项技能"
+    ],
+    [
+     "a-window-into",
+     "a window into",
+     "了解……的窗口"
+    ],
+    [
+     "way-of-thinking",
+     "way of thinking",
+     "思维方式"
+    ]
+   ],
+   "trap": "Learning a foreign language is not only mastering a tool, but also a way to understand another thinking way.",
+   "tip": "\"思维方式\"是 way of thinking，不是 thinking way。"
+  },
+  {
+   "id": "media-01",
+   "t": "媒体",
+   "lv": "C1",
+   "tech": [
+    "否定与比较"
+   ],
+   "zh": "在信息爆炸的时代，辨别真假信息的能力变得前所未有地重要。",
+   "en": "In an age of information overload, the ability to tell fact from fiction has never been more important.",
+   "k": [
+    [
+     "information-overload",
+     "information overload",
+     "信息过载（信息爆炸）"
+    ],
+    [
+     "tell-fact-from-fiction",
+     "tell fact from fiction",
+     "辨别真假"
+    ],
+    [
+     "has-never-been-more-important",
+     "has never been more important",
+     "前所未有地重要"
+    ]
+   ],
+   "trap": "In the era of information explosion, the ability to distinguish true and false information becomes unprecedentedly important.",
+   "tip": "\"前所未有地重要\"用否定比较 has never been more…，比 unprecedentedly 自然得多。",
+   "alts": [
+    "In an era of information overload, being able to distinguish truth from falsehood matters more than ever."
+   ]
+  },
+  {
+   "id": "media-02",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "精准用词"
+   ],
+   "zh": "广告常常利用人们的不安全感，推销他们并不需要的产品。",
+   "en": "Advertising often exploits people's insecurities to sell them products they do not need.",
+   "k": [
+    [
+     "exploits",
+     "exploits",
+     "利用（贬义）"
+    ],
+    [
+     "insecurities",
+     "insecurities",
+     "不安全感（复数）"
+    ],
+    [
+     "sell-them-products",
+     "sell them products",
+     "向他们推销产品"
+    ]
+   ],
+   "trap": "Advertisements often use people's sense of insecurity to sell products they don't need.",
+   "tip": "贬义的\"利用\"用 exploit。正式写作避免 don't 这类缩写。"
+  },
+  {
+   "id": "sci-01",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "语气限定"
+   ],
+   "zh": "研究表明，充足的睡眠与更好的学习成绩之间存在密切联系。",
+   "en": "Research suggests a strong link between adequate sleep and better academic performance.",
+   "k": [
+    [
+     "research-suggests",
+     "Research suggests",
+     "研究表明（留有余地）"
+    ],
+    [
+     "a-strong-link-between",
+     "a strong link between",
+     "密切联系"
+    ],
+    [
+     "adequate-sleep",
+     "adequate sleep",
+     "充足睡眠"
+    ],
+    [
+     "academic-performance",
+     "academic performance",
+     "学习成绩"
+    ]
+   ],
+   "trap": "Research shows that there is a close relationship between enough sleep and better study results.",
+   "tip": "相关不等于因果，用 suggests 比 shows 更严谨。去掉 there is，句子更紧凑。",
+   "alts": [
+    "Studies indicate that getting enough sleep is closely associated with better academic results."
+   ]
+  },
+  {
+   "id": "sci-02",
+   "t": "科学",
+   "lv": "C1",
+   "tech": [
+    "精准用词"
+   ],
+   "zh": "尽管这项技术前景广阔，但其长期影响仍有待进一步研究。",
+   "en": "Although the technology shows considerable promise, its long-term effects warrant further investigation.",
+   "k": [
+    [
+     "shows-considerable-promise",
+     "shows considerable promise",
+     "前景广阔"
+    ],
+    [
+     "long-term-effects",
+     "long-term effects",
+     "长期影响"
+    ],
+    [
+     "warrant-further-investigation",
+     "warrant further investigation",
+     "有待进一步研究"
+    ]
+   ],
+   "trap": "Although this technology has a broad prospect, but its long-term influence still needs to be researched further.",
+   "tip": "Although 和 but 不能同时用。\"前景广阔\"不是 broad prospect，而是 show promise。"
+  },
+  {
+   "id": "sci-03",
+   "t": "科学",
+   "lv": "C1",
+   "tech": [
+    "前置修饰"
+   ],
+   "zh": "这一发现挑战了一个长期以来被广泛接受的观点。",
+   "en": "This finding challenges a long-held and widely accepted assumption.",
+   "k": [
+    [
+     "finding",
+     "finding",
+     "研究发现"
+    ],
+    [
+     "long-held",
+     "long-held",
+     "长期持有的"
+    ],
+    [
+     "widely-accepted",
+     "widely accepted",
+     "广泛接受的"
+    ],
+    [
+     "assumption",
+     "assumption",
+     "观点、假设"
+    ]
+   ],
+   "trap": "This discovery challenged a view which has been widely accepted for a long time.",
+   "tip": "用复合形容词 long-held 放在名词前，代替冗长的定语从句。研究结论用 finding，不用 discovery。"
+  },
+  {
+   "id": "sci-04",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "冗余删减"
+   ],
+   "zh": "资金短缺仍是阻碍发展中国家科研进步的主要障碍之一。",
+   "en": "A lack of funding remains one of the main obstacles to scientific progress in developing countries.",
+   "k": [
+    [
+     "a-lack-of-funding",
+     "A lack of funding",
+     "资金短缺"
+    ],
+    [
+     "remains",
+     "remains",
+     "仍是"
+    ],
+    [
+     "obstacles-to",
+     "obstacles to",
+     "对……的障碍"
+    ],
+    [
+     "scientific-progress",
+     "scientific progress",
+     "科研进步"
+    ]
+   ],
+   "trap": "Fund shortage is one of the main obstacles hindering developing countries pushing forward scientific research.",
+   "tip": "\"阻碍……的障碍\"语义重复，英文只要 obstacle to。\"仍是\"一个 remains 就够了。",
+   "alts": [
+    "Insufficient funding is still one of the biggest barriers to scientific progress in developing countries."
+   ]
+  }
+ ]
+}
