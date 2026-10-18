@@ -76,7 +76,6 @@ button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-vis
 .kind{font-size:12px;font-weight:500;border-radius:4px;padding:1px 8px;letter-spacing:.04em}
 .kind-review{background:var(--accent-soft);color:var(--accent)}
 .kind-cloze{background:var(--warn-soft);color:var(--warn)}
-.kind-new{background:var(--ok-soft);color:var(--ok)}
 .zh{font-family:var(--f-zh);font-size:20px;font-weight:500;line-height:1.75;margin:0}
 textarea{font-family:var(--f-en);font-size:17px;line-height:1.55;width:100%;min-height:92px;resize:vertical;border:1px dashed var(--line);border-radius:6px;padding:10px 12px;background:var(--bg);color:var(--ink)}
 textarea::placeholder,input::placeholder{color:var(--muted);font-family:var(--f-ui);font-size:13.5px}
@@ -132,6 +131,9 @@ input[type="search"]{font:inherit;font-size:14px;width:100%;border:1px solid var
 .st-review{background:var(--ok-soft);color:var(--ok)}
 .st-stable{background:var(--ok-soft);color:var(--stable);font-weight:500}
 .bank-card .zh{font-size:18px}
+.bank-sum{align-items:center}
+.spacer{flex:1}
+.sep{width:1px;height:18px;background:var(--line)}
 .bank-card .en{font-size:17.5px}
 
 /* Stats */
@@ -225,7 +227,7 @@ function indexBank(b){
 
 /* ---------- storage: cloud (owner-only db) or this browser ---------- */
 const STANDALONE = !window.claude;
-const S = { mode: "loading", chunks: {}, sents: {}, settings: { newPerDay: 2, reviewCap: 25 } };
+const S = { mode: "loading", chunks: {}, sents: {}, settings: { reviewCap: 25 } };
 let DB = null;
 const LKEY = "huiyi-v2";
 function localSave(){ try { localStorage.setItem(LKEY, JSON.stringify({ chunks: S.chunks, sents: S.sents, settings: S.settings })); } catch (e) {} }
@@ -235,6 +237,11 @@ function put(coll, id, obj){
   if (S.mode !== "cloud") { localSave(); return; }
   const key = coll + "/" + id, body = JSON.parse(JSON.stringify(Object.assign({ k: id }, obj)));
   chains[key] = (chains[key] || Promise.resolve()).then(() => dbWrite(coll, id, body));
+}
+function drop(coll, id){
+  if (S.mode !== "cloud") { localSave(); return; }
+  const key = coll + "/" + id;
+  chains[key] = (chains[key] || Promise.resolve()).then(() => dbRemove(coll, id));
 }
 async function dbWrite(coll, id, body){
   try { await DB.collection(coll).doc(id).set(body); }
@@ -271,7 +278,7 @@ function applyGrade(cid, grade, sid){
   const T = today(), c = S.chunks[cid] || newChunk(), isDue = c.due <= T;
   c.att = (c.att||0) + 1; if (grade === "good" || grade === "hard") c.ok = (c.ok||0) + 1;
   c.lastSid = sid; c.last = T; c.reps = (c.reps||0) + 1;
-  if (grade === "fail") { c.lapses = (c.lapses||0) + 1; c.ease = Math.max(1.3, c.ease - 0.2); c.stage = "cloze"; c.cOk = 0; c.ivl = 0; c.due = dayOffset(1); }
+  if (grade === "fail") { c.lapses = (c.lapses||0) + 1; c.ease = Math.max(1.3, c.ease - 0.2); c.stage = "cloze"; c.cOk = 0; c.ivl = 0; c.due = T; /* cloze again today, survives a reload */ }
   else if (!isDue) { /* reviewed early inside another sentence: keep its schedule */ }
   else if (grade === "soso") { c.ivl = 1; c.ease = Math.max(1.3, c.ease - 0.15); c.stage = "review"; c.due = dayOffset(1); }
   else if (grade === "hard") { c.ivl = c.ivl < 1 ? 1 : Math.max(c.ivl + 1, Math.round(c.ivl * 1.2)); c.ease = Math.max(1.3, c.ease - 0.15); c.stage = "review"; c.due = dayOffset(c.ivl); }
@@ -285,14 +292,22 @@ function applyCloze(cid, correct){
   c.due = dayOffset(1); c.last = T;
   S.chunks[cid] = c; put("chunks", cid, c);
 }
-function learn(sid, known){
-  const T = today();
-  S.sents[sid] = { intro: T, last: known ? T : null }; put("sents", sid, S.sents[sid]);
-  SBY[sid].k.forEach(([cid]) => {
-    if (S.chunks[cid]) return;
-    const c = newChunk(); if (known) { c.stage = "review"; c.ivl = 7; c.due = dayOffset(7); }
-    S.chunks[cid] = c; put("chunks", cid, c);
-  });
+// Adding a sentence = it was read in the bank today; first recall is tomorrow.
+function addToLibrary(sid){
+  if (S.sents[sid]) return false;
+  S.sents[sid] = { intro: today(), last: null }; put("sents", sid, S.sents[sid]);
+  SBY[sid].k.forEach(([cid]) => { if (!S.chunks[cid]) { S.chunks[cid] = newChunk(); put("chunks", cid, S.chunks[cid]); } });
+  return true;
+}
+// Removing drops the sentence and any chunk no other library sentence still uses.
+function removeFromLibrary(sid){
+  delete S.sents[sid]; drop("sents", sid);
+  const gone = SBY[sid].k.map(([cid]) => cid).filter(cid => !(CHUNK_SENTS[cid] || []).some(o => S.sents[o]));
+  gone.forEach(cid => { delete S.chunks[cid]; drop("chunks", cid); });
+  // Take its pending items out of today's queue.
+  const keep = x => x.sid !== sid && (!x.cid || S.chunks[x.cid]);
+  if (Q[qi] && !keep(Q[qi])) cur = null;
+  Q = Q.slice(0, qi).concat(Q.slice(qi).filter(keep));
 }
 function pickSentence(cid){
   let c = (CHUNK_SENTS[cid] || []).map(id => SBY[id]);
@@ -303,16 +318,7 @@ function pickSentence(cid){
     return ((S.sents[a.id] && S.sents[a.id].last) || "") < ((S.sents[b.id] && S.sents[b.id].last) || "") ? -1 : 1;
   })[0] || null;
 }
-function newOrder(){
-  const out = [];
-  for (const lv of ["B2", "C1"]) {
-    const byT = {}; SENTS.filter(s => s.lv === lv).forEach(s => (byT[s.t] = byT[s.t] || []).push(s));
-    const ts = Object.keys(byT);
-    for (let i = 0, more = true; more; i++) { more = false; ts.forEach(t => { if (byT[t][i]) { out.push(byT[t][i]); more = true; } }); }
-  }
-  return out;
-}
-let Q = [], qi = 0, cur = null;
+let Q = [], qi = 0, cur = null, queueDay = null;
 function buildQueue(){
   const T = today(), due = Object.entries(S.chunks).filter(([, c]) => c.due <= T);
   const clozeC = due.filter(([, c]) => c.stage === "cloze").map(([id]) => id);
@@ -325,22 +331,14 @@ function buildQueue(){
   });
   const cl = clozeC.map(cid => { const s = pickSentence(cid); return s && { type: "cloze", cid, sid: s.id }; }).filter(Boolean);
   const cap = S.settings.reviewCap, clT = cl.slice(0, cap), rvT = rev.slice(0, Math.max(0, cap - clT.length));
-  const introToday = Object.values(S.sents).filter(x => x.intro === T).length;
-  const n = Math.max(0, S.settings.newPerDay - introToday);
-  const nw = newOrder().filter(s => !S.sents[s.id]).slice(0, n).map(s => ({ type: "new", sid: s.id }));
-  Q = [...clT, ...shuffle(rvT), ...nw]; qi = 0; cur = null;
-}
-function addNew(n){
-  const queued = new Set(Q.filter(x => x.type === "new").map(x => x.sid));
-  newOrder().filter(s => !S.sents[s.id] && !queued.has(s.id)).slice(0, n).forEach(s => Q.push({ type: "new", sid: s.id }));
-  renderToday();
+  Q = [...clT, ...shuffle(rvT)]; qi = 0; cur = null; queueDay = T;
 }
 function stageOf(c){ if (!c) return "unseen"; if (c.stage === "cloze") return "cloze"; if (c.stage === "learn") return "learn"; return c.ivl >= 21 ? "stable" : "review"; }
-const STAGE_NAME = { unseen: "未学", learn: "学习中", cloze: "填空强化", review: "复习中", stable: "稳固" };
+const STAGE_NAME = { unseen: "未加入", learn: "学习中", cloze: "填空强化", review: "复习中", stable: "稳固" };
 
 /* ---------- Today ---------- */
 function metaHTML(s, kind){
-  const k = { review: ["kind-review","整句回译"], cloze: ["kind-cloze","填空强化"], new: ["kind-new","新句"] }[kind];
+  const k = { review: ["kind-review","整句回译"], cloze: ["kind-cloze","填空强化"] }[kind];
   return `<div class="meta"><span class="kind ${k[0]}">${k[1]}</span><span>${esc(s.t)}</span><span class="lv">${s.lv}</span><span>${s.tech.map(esc).join(" · ")}</span></div>`;
 }
 function answerBlocks(s){
@@ -349,28 +347,20 @@ function answerBlocks(s){
   <div class="block trap"><span class="label">常见中式写法</span><p lang="en">${esc(s.trap)}</p></div>
   <div class="block"><span class="label">要点</span><p>${esc(s.tip)}</p></div>`;
 }
-function remaining(){ const r = { cloze: 0, review: 0, new: 0 }; Q.slice(qi).forEach(x => r[x.type]++); return r; }
+function remaining(){ const r = { cloze: 0, review: 0 }; Q.slice(qi).forEach(x => r[x.type]++); return r; }
 function updateBadge(){ const n = Q.length - qi, b = $("#todayN"); b.hidden = !(S.mode !== "loading" && n > 0); b.textContent = n; }
 function renderToday(){
   const el = $("#today"); updateBadge();
   if (S.mode === "loading") return;
   const r = remaining(), total = Q.length, doneN = qi;
-  const top = total ? `<div class="queue"><div class="queue-top"><span class="counts">还剩 <b>${total - doneN}</b> 题 · 填空 ${r.cloze} · 回译 ${r.review} · 新句 ${r.new}</span><span class="muted small">${doneN} / ${total}</span></div>
+  const top = total ? `<div class="queue"><div class="queue-top"><span class="counts">还剩 <b>${total - doneN}</b> 题 · 回译 ${r.review} · 填空 ${r.cloze}</span><span class="muted small">${doneN} / ${total}</span></div>
     <div class="meter" aria-hidden="true"><i style="width:${total ? doneN/total*100 : 0}%"></i></div></div>` : "";
   if (qi >= Q.length) { el.innerHTML = top + doneHTML(); return; }
   const item = Q[qi], s = SBY[item.sid];
   if (!cur) cur = { hints: {}, revealed: false, grades: {}, text: "", cloze: null, input: "" };
-  el.innerHTML = top + (item.type === "new" ? newHTML(s) : item.type === "cloze" ? clozeHTML(s, item.cid) : reviewHTML(s));
+  el.innerHTML = top + (item.type === "cloze" ? clozeHTML(s, item.cid) : reviewHTML(s));
   if (item.type === "review" && !cur.revealed) { const ta = $("#answer"); ta.value = cur.text; }
   if (item.type === "cloze" && cur.cloze === null) { const inp = $("#clozeIn"); inp.value = cur.input; }
-}
-function newHTML(s){
-  return `<article class="card">${metaHTML(s, "new")}
-  <p class="zh">${esc(s.zh)}</p>
-  ${answerBlocks(s)}
-  <div class="block"><span class="label">核心搭配</span><dl class="chunks">${s.k.map(([, p, g]) => `<div><dt lang="en">${esc(p)}</dt><dd>${esc(g)}</dd></div>`).join("")}</dl></div>
-  <p class="muted small" style="margin:0">今天只读不写。明天它会作为回译题出现，到时只给你看中文。</p>
-  <div class="actions"><button class="btn primary" data-act="learned">读完了</button><button class="btn" data-act="known">已经会了，跳过</button></div></article>`;
 }
 function reviewHTML(s){
   const hintRows = s.k.map(([cid, p, g]) => {
@@ -419,21 +409,25 @@ function clozeHTML(s, cid){
     <div class="actions"><button class="btn primary" data-act="cloze-commit">下一题</button>${yes ? "" : `<button class="btn" data-act="cloze-override">我写的其实也对</button>`}</div></article>`;
 }
 function doneHTML(){
+  const lib = Object.keys(S.sents).length, T = today();
+  if (!lib) return `<div class="card done"><h2>学习库还是空的</h2>
+    <p class="muted" style="margin:0">去句库读句子，把想练的点"加入学习库"。加入的句子从第二天开始出现在这里，只给中文，让你写英文。</p>
+    <div class="actions"><button class="btn primary" data-act="go-bank">去句库挑句子</button></div></div>`;
   const tomorrow = dayOffset(1), dueTomorrow = Object.values(S.chunks).filter(c => c.due <= tomorrow).length;
-  const unseen = SENTS.filter(s => !S.sents[s.id]).length;
-  return `<div class="card done"><h2>今天的任务完成了</h2>
-    <p class="muted" style="margin:0">明天到期 ${dueTomorrow} 个搭配。${unseen ? `句库里还有 ${unseen} 句没学。` : "句库里的句子都学过了。"}</p>
-    ${unseen ? `<div class="actions"><button class="btn" data-act="more">再学 2 个新句</button></div>` : ""}</div>`;
+  const addedToday = Object.values(S.sents).filter(x => x.intro === T).length, unadded = SENTS.length - lib;
+  const head = Q.length ? "今天的任务完成了" : addedToday ? "今天加入的句子明天开始复习" : "今天没有到期的复习";
+  return `<div class="card done"><h2>${head}</h2>
+    <p class="muted" style="margin:0">学习库 ${lib} 句${addedToday ? `，其中今天新加入 ${addedToday} 句` : ""}。明天到期 ${dueTomorrow} 个搭配。</p>
+    ${unadded ? `<div class="actions"><button class="btn" data-act="go-bank">去句库加句子（还有 ${unadded} 句未加入）</button></div>` : ""}</div>`;
 }
 function next(){ qi++; cur = null; renderToday(); window.scrollTo({ top: 0 }); }
 
 $("#today").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b || b.disabled) return;
   const item = Q[qi]; const s = item && SBY[item.sid];
-  if (b.dataset.act === "more") return addNew(2);
+  if (b.dataset.act === "go-bank") { B.status = "out"; return showTab("bank"); }
   if (!item) return;
   const act = b.dataset.act;
-  if (act === "learned" || act === "known") { learn(s.id, act === "known"); return next(); }
   if (act === "stuck") { cur.text = $("#answer").value; cur.showHints = true; return renderToday(); }
   if (b.dataset.hint) { cur.text = $("#answer").value; const c = b.dataset.hint; cur.hints[c] = Math.min(3, (cur.hints[c] || 0) + 1); return renderToday(); }
   if (act === "check") {
@@ -450,11 +444,8 @@ $("#today").addEventListener("click", e => {
       applyGrade(cid, grade, s.id); if (grade === "fail") failed.push(cid);
     });
     S.sents[s.id] = Object.assign(S.sents[s.id] || { intro: today() }, { last: today() }); put("sents", s.id, S.sents[s.id]);
-    // Failed chunks get one cloze later today, placed before the new-sentence block.
-    failed.forEach(cid => {
-      const alt = pickSentence(cid) || s, at = Q.findIndex((x, i) => i > qi && x.type === "new");
-      Q.splice(at < 0 ? Q.length : at, 0, { type: "cloze", cid, sid: alt.id });
-    });
+    // Failed chunks get one cloze at the end of today's queue.
+    failed.forEach(cid => Q.push({ type: "cloze", cid, sid: (pickSentence(cid) || s).id }));
     if (failed.length) toast(`没写出的 ${failed.length} 个搭配会在今天稍后以填空再出现一次。`);
     return next();
   }
@@ -474,7 +465,7 @@ $("#today").addEventListener("keydown", e => {
 $("#today").addEventListener("input", e => { if (e.target.id === "answer" && cur) cur.text = e.target.value; if (e.target.id === "clozeIn" && cur) cur.input = e.target.value; });
 
 /* ---------- Bank ---------- */
-const B = { topic: "全部", q: "", open: new Set() };
+const B = { topic: "全部", lv: "all", status: "all", q: "", open: new Set(), confirmOut: null };
 function sentStage(s){
   if (!S.sents[s.id]) return "unseen";
   const st = s.k.map(([c]) => stageOf(S.chunks[c]));
@@ -482,33 +473,56 @@ function sentStage(s){
   if (st.includes("learn")) return "learn";
   return st.every(x => x === "stable") ? "stable" : "review";
 }
+function bankList(){
+  const q = norm(B.q), qz = B.q.trim();
+  return SENTS.filter(s => (B.topic === "全部" || s.t === B.topic) && (B.lv === "all" || s.lv === B.lv) &&
+    (B.status === "all" || (B.status === "in") === !!S.sents[s.id]) &&
+    (!qz || s.zh.includes(qz) || norm(s.en).includes(q) || s.k.some(([, p, g]) => g.includes(qz) || norm(p).includes(q))));
+}
+const chipRow = (key, opts) => opts.map(([v, t]) => `<button class="chip" data-f="${key}" data-v="${v}" aria-pressed="${B[key] === v}">${t}</button>`).join("");
 function renderBank(){
-  const el = $("#bank"), topics = ["全部", ...new Set(SENTS.map(s => s.t))];
+  const el = $("#bank"), ready = S.mode !== "loading";
   if (!el.dataset.ready) {
     el.innerHTML = `<div class="filters"><input type="search" id="bankQ" placeholder="搜索中文、英文或搭配" aria-label="搜索句库">
-      <div class="row" id="bankTopics">${topics.map(t => `<button class="chip" data-t="${t}" aria-pressed="${t === B.topic}">${t}</button>`).join("")}</div>
-      <p class="muted small" style="margin:0" id="bankCount"></p></div><div id="bankList" style="display:flex;flex-direction:column;gap:12px"></div>`;
+      <div class="row" id="bankTopics"></div><div class="row" id="bankStatus"></div>
+      <div class="row bank-sum"><span class="muted small" id="bankCount"></span><span class="spacer"></span><span id="bankBatch"></span></div></div>
+      <div id="bankList" style="display:flex;flex-direction:column;gap:12px"></div>`;
     el.dataset.ready = "1";
   }
-  const q = norm(B.q), qz = B.q.trim();
-  const list = SENTS.filter(s => (B.topic === "全部" || s.t === B.topic) &&
-    (!qz || s.zh.includes(qz) || norm(s.en).includes(q) || s.k.some(([, p, g]) => g.includes(qz) || norm(p).includes(q))));
-  $("#bankCount").textContent = `共 ${SENTS.length} 句，当前显示 ${list.length} 句`;
+  $("#bankTopics").innerHTML = chipRow("topic", ["全部", ...new Set(SENTS.map(s => s.t))].map(t => [t, t]));
+  $("#bankStatus").innerHTML = chipRow("status", [["all","全部状态"],["out","未加入"],["in","学习库"]]) + `<span class="sep" aria-hidden="true"></span>` + chipRow("lv", [["all","全部级别"],["B2","B2"],["C1","C1"]]);
+  const list = bankList(), lib = Object.keys(S.sents).length, unadded = list.filter(s => !S.sents[s.id]);
+  $("#bankCount").textContent = `共 ${SENTS.length} 句 · 学习库 ${ready ? lib : "…"} 句 · 当前显示 ${list.length} 句`;
+  const narrowed = B.topic !== "全部" || B.lv !== "all" || B.q.trim();
+  $("#bankBatch").innerHTML = ready && narrowed && unadded.length > 1 ? `<button class="btn" data-batch>把这 ${unadded.length} 句都加入学习库</button>` : "";
   $("#bankList").innerHTML = list.length ? list.map(s => {
-    const st = S.mode === "loading" ? null : sentStage(s), open = B.open.has(s.id);
-    return `<article class="card bank-card" data-sid="${s.id}"><div class="meta"><span class="id">${s.id}</span><span>${esc(s.t)}</span><span class="lv">${s.lv}</span><span>${s.tech.map(esc).join(" · ")}</span>${st ? `<span class="pill st-${st}">${STAGE_NAME[st]}</span>` : ""}</div>
+    const inLib = !!S.sents[s.id], st = ready && inLib ? sentStage(s) : null, open = B.open.has(s.id);
+    const libBtn = !ready ? "" : !inLib ? `<button class="btn primary" data-add>加入学习库</button>`
+      : B.confirmOut === s.id ? `<button class="btn danger" data-out-yes>确认移出（复习记录会删除）</button><button class="btn" data-out-no>取消</button>`
+      : `<button class="btn" data-out>移出学习库</button>`;
+    return `<article class="card bank-card${inLib ? " in-lib" : ""}" data-sid="${s.id}"><div class="meta"><span class="id">${s.id}</span><span>${esc(s.t)}</span><span class="lv">${s.lv}</span><span>${s.tech.map(esc).join(" · ")}</span>${st ? `<span class="pill st-${st}">${STAGE_NAME[st]}</span>` : ""}</div>
       <p class="zh">${esc(s.zh)}</p>
-      <div class="actions"><button class="btn" data-open aria-expanded="${open}">${open ? "收起参考" : "显示参考"}</button></div>
-      ${open ? `<div class="divider">${answerBlocks(s)}<div class="block"><span class="label">核心搭配</span><dl class="chunks">${s.k.map(([cid, p, g]) => `<div><dt lang="en">${esc(p)}</dt><dd>${esc(g)}${S.mode !== "loading" ? ` · ${STAGE_NAME[stageOf(S.chunks[cid])]}` : ""}</dd></div>`).join("")}</dl></div></div>` : ""}</article>`;
-  }).join("") : `<p class="muted">没有匹配的句子。换个关键词试试。</p>`;
+      ${open ? `<div class="divider">${answerBlocks(s)}<div class="block"><span class="label">核心搭配</span><dl class="chunks">${s.k.map(([cid, p, g]) => `<div><dt lang="en">${esc(p)}</dt><dd>${esc(g)}${inLib ? ` · ${STAGE_NAME[stageOf(S.chunks[cid])]}` : ""}</dd></div>`).join("")}</dl></div></div>` : ""}
+      <div class="actions"><button class="btn" data-open aria-expanded="${open}">${open ? "收起参考" : "显示参考"}</button>${libBtn}</div></article>`;
+  }).join("") : `<p class="muted">${B.status === "in" && !lib ? "学习库还是空的。切到「未加入」挑几句吧。" : "没有匹配的句子。换个筛选或关键词试试。"}</p>`;
 }
 $("#bank").addEventListener("input", e => { if (e.target.id === "bankQ") { B.q = e.target.value; renderBank(); } });
 $("#bank").addEventListener("click", e => {
-  const t = e.target.closest("[data-t]");
-  if (t) { B.topic = t.dataset.t; document.querySelectorAll("#bankTopics [data-t]").forEach(x => x.setAttribute("aria-pressed", x === t)); return renderBank(); }
-  const o = e.target.closest("[data-open]");
-  if (o) { const id = o.closest("[data-sid]").dataset.sid; B.open.has(id) ? B.open.delete(id) : B.open.add(id); renderBank(); }
+  const f = e.target.closest("[data-f]");
+  if (f) { B[f.dataset.f] = f.dataset.v; return renderBank(); }
+  if (e.target.closest("[data-batch]")) {
+    const n = bankList().filter(s => addToLibrary(s.id)).length;
+    toast(`已加入 ${n} 句，明天开始复习。每天最多出 ${S.settings.reviewCap} 题，多出的会顺延。`); updateBadge(); return renderBank();
+  }
+  const card = e.target.closest("[data-sid]"); if (!card) return;
+  const id = card.dataset.sid;
+  if (e.target.closest("[data-open]")) { B.open.has(id) ? B.open.delete(id) : B.open.add(id); return renderBank(); }
+  if (e.target.closest("[data-add]")) { addToLibrary(id); toast("已加入学习库，明天开始复习。"); return renderBank(); }
+  if (e.target.closest("[data-out]")) { if (S.sents[id].last) { B.confirmOut = id; return renderBank(); } removeFromLibrary(id); return afterRemove(); }
+  if (e.target.closest("[data-out-no]")) { B.confirmOut = null; return renderBank(); }
+  if (e.target.closest("[data-out-yes]")) { removeFromLibrary(id); return afterRemove(); }
 });
+function afterRemove(){ B.confirmOut = null; toast("已移出学习库。"); updateBadge(); renderBank(); }
 
 /* ---------- Stats ---------- */
 let confirmReset = false;
@@ -529,8 +543,8 @@ function renderStats(){
   const leeches = Object.entries(S.chunks).filter(([, c]) => (c.lapses || 0) >= 3).sort((a, b) => b[1].lapses - a[1].lapses);
   el.innerHTML = `
   <div class="stats">
-    <div class="stat"><b>${learnedS}<span style="font-size:15px;color:var(--muted)"> / ${SENTS.length}</span></b><span>已学句子</span></div>
-    <div class="stat"><b>${allC.length - counts.unseen}<span style="font-size:15px;color:var(--muted)"> / ${allC.length}</span></b><span>已学搭配</span></div>
+    <div class="stat"><b>${learnedS}<span style="font-size:15px;color:var(--muted)"> / ${SENTS.length}</span></b><span>学习库句子</span></div>
+    <div class="stat"><b>${allC.length - counts.unseen}<span style="font-size:15px;color:var(--muted)"> / ${allC.length}</span></b><span>学习库搭配</span></div>
     <div class="stat"><b>${counts.stable}</b><span>稳固搭配（间隔 ≥ 21 天）</span></div>
     <div class="stat"><b>${practicedToday}</b><span>今天练过的句子</span></div>
   </div>
@@ -539,25 +553,24 @@ function renderStats(){
   <div class="panel"><h2>翻译技巧正确率</h2>${techRows.length ? `<p class="muted small" style="margin:0">按整句回译里每个搭配的自评统计，最弱的排在最前。</p><div class="bars">${techRows.map(x => { const p = Math.round(x.r*100); return `<div class="bar-row"><span>${esc(x.t)}</span><span class="track"><i class="${p < 50 ? "low" : p < 75 ? "mid" : ""}" style="width:${p}%"></i></span><span class="v">${p}%（${x.att} 次）</span></div>`; }).join("")}</div>` : `<p class="muted" style="margin:0">做完第一批整句回译后，这里会显示你哪类翻译技巧最弱。</p>`}</div>
   <div class="panel"><h2>顽固搭配</h2>${leeches.length ? `<p class="muted small" style="margin:0">失败 3 次以上。可以让 Claude 为它们多写几个例句。</p><div>${leeches.map(([cid, c]) => `<div class="leech"><span><b lang="en">${esc(CH[cid] ? CH[cid].en : cid)}</b> <span class="muted">${esc(CH[cid] ? CH[cid].zh : "")}</span></span><span class="muted">失败 ${c.lapses} 次</span></div>`).join("")}</div>` : `<p class="muted" style="margin:0">暂时没有。同一个搭配失败 3 次以上会出现在这里。</p>`}</div>
   <div class="panel"><h2>设置</h2>
-    <div class="setting"><label for="setNew">每天新句数<span>每句约含 3–4 个搭配</span></label><select id="setNew">${[1,2,3,4,5].map(n => `<option value="${n}" ${n === S.settings.newPerDay ? "selected" : ""}>${n} 句</option>`).join("")}</select></div>
-    <div class="setting"><label for="setCap">每天复习上限<span>填空和回译合计</span></label><select id="setCap">${[10,15,25,40,60].map(n => `<option value="${n}" ${n === S.settings.reviewCap ? "selected" : ""}>${n} 题</option>`).join("")}</select></div>
+    <div class="setting"><label for="setCap">每天复习上限<span>填空和回译合计，超出的顺延到第二天</span></label><select id="setCap">${[10,15,25,40,60].map(n => `<option value="${n}" ${n === S.settings.reviewCap ? "selected" : ""}>${n} 题</option>`).join("")}</select></div>
     <div class="setting"><span>进度保存在${S.mode === "cloud" ? "你的账户里，换设备打开也在" : "这台设备的浏览器里"}</span>
       ${confirmReset ? `<span class="actions"><button class="btn danger" data-act="reset-yes">确定清空</button><button class="btn" data-act="reset-no">取消</button></span>` : `<button class="btn danger" data-act="reset">清空全部进度</button>`}</div>
     ${confirmReset ? `<p class="small" style="margin:0;color:var(--trap)">清空后所有复习记录都会删除，不能恢复。</p>` : ""}
-    ${STANDALONE ? `<div class="setting"><label>备份进度<span>换设备或清理浏览器前，先导出一份；在新设备上导入即可继续。</span></label>
-      <span class="actions"><button class="btn" data-act="export">导出备份</button><label class="btn" for="importFile">导入备份</label><input type="file" id="importFile" accept="application/json,.json" hidden></span></div>` : ""}
+    ${STANDALONE ? backupHTML() : ""}
   </div>`;
 }
 $("#stats").addEventListener("change", e => {
-  if (e.target.id === "importFile") return importProgress(e.target.files && e.target.files[0]);
-  if (e.target.id === "setNew") S.settings.newPerDay = +e.target.value;
-  else if (e.target.id === "setCap") S.settings.reviewCap = +e.target.value;
+  if (e.target.id === "importFile") { pendingImport = null; readImport(e.target.files && e.target.files[0]); e.target.value = ""; return; }
+  if (e.target.id === "setCap") S.settings.reviewCap = +e.target.value;
   else return;
   put("meta", "settings", S.settings); buildQueue(); renderToday();
 });
 $("#stats").addEventListener("click", async e => {
   const b = e.target.closest("[data-act]"); if (!b) return;
   if (b.dataset.act === "export") return exportProgress();
+  if (b.dataset.act === "import-yes") return applyImport();
+  if (b.dataset.act === "import-no") { pendingImport = null; return renderStats(); }
   if (b.dataset.act === "reset") { confirmReset = true; return renderStats(); }
   if (b.dataset.act === "reset-no") { confirmReset = false; return renderStats(); }
   if (b.dataset.act === "reset-yes") {
@@ -570,23 +583,43 @@ $("#stats").addEventListener("click", async e => {
 });
 
 /* ---------- backup (only outside Claude, where downloads are allowed) ---------- */
+let pendingImport = null;
+function backupHTML(){
+  const lib = Object.keys(S.sents).length, last = S.settings.lastExport;
+  const days = last ? Math.round((new Date(today()) - new Date(last)) / 864e5) : null;
+  const stale = lib > 0 && (days === null || days >= 7);
+  const note = !lib ? "换设备或清理浏览器前，先导出一份；在新设备上导入即可继续。"
+    : days === null ? "还没有备份过。浏览器清理数据时，本地进度会一起丢失。" : days === 0 ? "今天已备份。" : `上次备份在 ${days} 天前。`;
+  const confirm = pendingImport ? `<div class="setting" style="color:var(--trap)"><span>导入会用 ${esc(pendingImport.exported || "这份")} 的备份（学习库 ${Object.keys(pendingImport.sents).length} 句）替换当前进度（学习库 ${lib} 句）。</span>
+      <span class="actions"><button class="btn danger" data-act="import-yes">替换</button><button class="btn" data-act="import-no">取消</button></span></div>` : "";
+  return `<div class="setting"><label>备份进度<span${stale ? ' style="color:var(--warn)"' : ""}>${note}</span></label>
+    <span class="actions"><button class="btn" data-act="export">导出备份</button><label class="btn" for="importFile">导入备份</label><input type="file" id="importFile" accept="application/json,.json" hidden></span></div>${confirm}`;
+}
 function exportProgress(){
+  S.settings.lastExport = today(); localSave();
   const blob = new Blob([JSON.stringify({ app: "huiyi", v: 2, exported: today(), chunks: S.chunks, sents: S.sents, settings: S.settings }, null, 1)], { type: "application/json" });
   const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `huiyi-progress-${today()}.json`;
   document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  renderStats();
 }
-function importProgress(file){
+function readImport(file){
   if (!file) return;
   const r = new FileReader();
   r.onload = () => {
     try {
       const o = JSON.parse(r.result);
-      if (o.app !== "huiyi" || typeof o.chunks !== "object" || typeof o.sents !== "object") throw new Error();
-      S.chunks = o.chunks; S.sents = o.sents; Object.assign(S.settings, o.settings || {});
-      localSave(); buildQueue(); renderAll(); renderStats(); toast(`已导入 ${o.exported || ""} 的备份。`);
+      if (o.app !== "huiyi" || !o.chunks || typeof o.chunks !== "object" || !o.sents || typeof o.sents !== "object") throw new Error();
+      pendingImport = o;
+      if (!Object.keys(S.sents).length) return applyImport();
+      renderStats();
     } catch (e) { toast("这个文件不是本页导出的进度备份，请重新选择。"); }
   };
   r.readAsText(file);
+}
+function applyImport(){
+  const o = pendingImport; if (!o) return; pendingImport = null;
+  S.chunks = o.chunks; S.sents = o.sents; if (o.settings && typeof o.settings.reviewCap === "number") S.settings.reviewCap = o.settings.reviewCap;
+  localSave(); buildQueue(); renderAll(); renderStats(); toast(`已导入 ${o.exported || ""} 的备份。`);
 }
 
 /* ---------- tabs & boot ---------- */
@@ -608,12 +641,19 @@ function renderAll(){
   if (db) {
     try {
       const [ch, se, meta] = await Promise.all([loadColl(db, "chunks"), loadColl(db, "sents"), db.collection("meta").doc("settings").get()]);
-      S.chunks = ch; S.sents = se; if (meta.exists) { const m = meta.data(); ["newPerDay","reviewCap"].forEach(k => { if (typeof m[k] === "number") S.settings[k] = m[k]; }); }
+      S.chunks = ch; S.sents = se; if (meta.exists) { const m = meta.data(); ["reviewCap"].forEach(k => { if (typeof m[k] === "number") S.settings[k] = m[k]; }); }
       DB = db; S.mode = "cloud";
     } catch (e) { S.mode = "local"; localLoad(); }
   } else { S.mode = "local"; localLoad(); }
   buildQueue(); renderAll();
+  // Ask the browser not to evict local progress (helps on Safari/iOS); harmless if refused.
+  if (S.mode === "local") try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
 })();
+// A page left open past midnight rebuilds its queue for the new day when it comes back into view.
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState !== "visible" || S.mode === "loading" || queueDay === today()) return;
+  buildQueue(); renderToday(); if (!$("#bank").hidden) renderBank(); if (!$("#stats").hidden) renderStats();
+});
 </script>
 
 </body>
