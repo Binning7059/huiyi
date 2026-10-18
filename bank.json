@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "updated": "2026-10-18",
  "chunks": {
   "some-argue-that": {
@@ -413,6 +413,650 @@
   "scientific-progress": {
    "en": "scientific progress",
    "zh": "科研进步"
+  },
+  "it-adj-for-to": {
+   "en": "It is + 形容词 + for 人 + to do",
+   "zh": "对某人来说做某事很……"
+  },
+  "at-the-same-time": {
+   "en": "at the same time",
+   "zh": "同时"
+  },
+  "the-more-the-more": {
+   "en": "The + 比较级 …, the + 比较级 …",
+   "zh": "越……越……"
+  },
+  "those-who": {
+   "en": "those who …",
+   "zh": "那些……的人"
+  },
+  "stay-silent": {
+   "en": "stay silent",
+   "zh": "保持沉默、一言不发"
+  },
+  "depend-on-whether": {
+   "en": "depend on whether …",
+   "zh": "取决于是否……"
+  },
+  "work-hard": {
+   "en": "work hard",
+   "zh": "努力"
+  },
+  "spend-on": {
+   "en": "spend + 时间/钱 + on …",
+   "zh": "把时间或钱花在……上"
+  },
+  "so-that-result": {
+   "en": "so + 形容词/much + that …",
+   "zh": "如此……以至于……"
+  },
+  "allow-to": {
+   "en": "allow + 人 + to do",
+   "zh": "让某人能够做某事"
+  },
+  "from-home": {
+   "en": "from home",
+   "zh": "在家（不用出门）"
+  },
+  "increasing-number": {
+   "en": "an increasing number of + 复数名词",
+   "zh": "越来越多的"
+  },
+  "keep-in-touch": {
+   "en": "keep in touch with",
+   "zh": "和……保持联系"
+  },
+  "although": {
+   "en": "Although …, …",
+   "zh": "虽然……（后面不再加 but）"
+  },
+  "make-obj-adj": {
+   "en": "make + 宾语 + 形容词",
+   "zh": "使……变得……"
+  },
+  "reduce-use-of": {
+   "en": "reduce the use of",
+   "zh": "减少……的使用"
+  },
+  "get-worse": {
+   "en": "get worse and worse",
+   "zh": "越来越严重"
+  },
+  "not-only-but-also": {
+   "en": "not only … but also …",
+   "zh": "不仅……而且……"
+  },
+  "help-do": {
+   "en": "help + 人 + 动词原形",
+   "zh": "帮助某人做某事"
+  },
+  "encourage-to": {
+   "en": "encourage + 人 + to do",
+   "zh": "鼓励某人做某事"
+  },
+  "instead-of": {
+   "en": "instead of + doing",
+   "zh": "而不是"
+  },
+  "which-clause": {
+   "en": ", which …",
+   "zh": "，这（指代前面整件事）"
+  },
+  "cause-problems-for": {
+   "en": "cause problems for",
+   "zh": "给……带来困难"
+  },
+  "have-effect-on": {
+   "en": "have a + 形容词 + effect on",
+   "zh": "对……有……影响"
+  },
+  "for-half-an-hour": {
+   "en": "for half an hour",
+   "zh": "（持续）半小时"
+  },
+  "too-to": {
+   "en": "too + 形容词 + to do",
+   "zh": "太……而不能"
+  },
+  "rely-on": {
+   "en": "rely on",
+   "zh": "依赖"
+  },
+  "so-that-purpose": {
+   "en": "so that + 句子",
+   "zh": "以便、为了"
+  },
+  "reduce-risk-of": {
+   "en": "reduce the risk of",
+   "zh": "降低……的风险"
+  },
+  "be-likely-to": {
+   "en": "be (more) likely to do",
+   "zh": "（更）可能做某事"
+  },
+  "afford": {
+   "en": "afford",
+   "zh": "买得起、负担得起"
+  },
+  "compared-with": {
+   "en": "Compared with …,",
+   "zh": "与……相比"
+  },
+  "job-opportunities": {
+   "en": "job opportunities",
+   "zh": "工作机会"
+  },
+  "it-takes": {
+   "en": "It takes + 人 + 时间 + to do",
+   "zh": "做某事需要（多长时间）"
+  },
+  "one-reason-why": {
+   "en": "One reason why … is that …",
+   "zh": "……的一个原因是……"
+  },
+  "earn-salaries": {
+   "en": "earn higher salaries",
+   "zh": "挣更高的工资"
+  },
+  "no-matter-how": {
+   "en": "No matter how + 形容词 + 主语 + 谓语",
+   "zh": "无论多么……"
+  },
+  "complain-about": {
+   "en": "complain about",
+   "zh": "抱怨（某事）"
+  },
+  "get-used-to": {
+   "en": "get used to",
+   "zh": "适应、习惯"
+  },
+  "come-up-with": {
+   "en": "come up with",
+   "zh": "想出、提出"
+  },
+  "sense-of-responsibility": {
+   "en": "a sense of responsibility",
+   "zh": "责任感"
+  },
+  "play-role-in": {
+   "en": "play a + 形容词 + role in",
+   "zh": "在……中起……作用"
+  },
+  "should-be-done": {
+   "en": "should be + 过去分词",
+   "zh": "应该被……（被动）"
+  },
+  "number-of-has": {
+   "en": "the number of + 复数名词 + 单数谓语（is / has）",
+   "zh": "……的数量（谓语用单数）"
+  },
+  "learn-about": {
+   "en": "learn about",
+   "zh": "了解"
+  },
+  "fewer": {
+   "en": "far fewer + 可数名词",
+   "zh": "少得多"
+  },
+  "used-to": {
+   "en": "used to do",
+   "zh": "过去常常"
+  },
+  "prefer-to": {
+   "en": "prefer to do",
+   "zh": "更喜欢做"
+  },
+  "what-is-that": {
+   "en": "What … is that …",
+   "zh": "……的是……（主语从句）"
+  },
+  "bring-together": {
+   "en": "bring … together",
+   "zh": "把……聚在一起"
+  },
+  "spend-doing": {
+   "en": "spend + 时间 + doing",
+   "zh": "花时间做某事"
+  },
+  "bad-for": {
+   "en": "be bad for",
+   "zh": "对……有害"
+  },
+  "make-it-easier": {
+   "en": "make it easier/harder for + 人 + to do",
+   "zh": "让某人更容易/更难做某事"
+  },
+  "not-always": {
+   "en": "not always",
+   "zh": "并不总是"
+  },
+  "make-do": {
+   "en": "make + 人 + 动词原形",
+   "zh": "让某人做某事"
+  },
+  "relative-that": {
+   "en": "名词 + that + 从句",
+   "zh": "……的（东西）"
+  },
+  "recover": {
+   "en": "recover",
+   "zh": "康复"
+  },
+  "lack-of": {
+   "en": "a lack of",
+   "zh": "缺乏"
+  },
+  "be-carried-out": {
+   "en": "be carried out",
+   "zh": "被进行（被动）"
+  },
+  "as-long-as": {
+   "en": "As long as + 句子",
+   "zh": "只要"
+  },
+  "keep-doing": {
+   "en": "keep + doing",
+   "zh": "坚持做、一直做"
+  },
+  "writing-skills": {
+   "en": "writing skills",
+   "zh": "写作能力"
+  },
+  "prepare-for": {
+   "en": "prepare for",
+   "zh": "为……做准备"
+  },
+  "enjoy-doing": {
+   "en": "enjoy + doing",
+   "zh": "喜欢做某事"
+  },
+  "at-own-pace": {
+   "en": "at one's own pace",
+   "zh": "按自己的节奏"
+  },
+  "find-it-adj": {
+   "en": "find it + 形容词 + to do",
+   "zh": "觉得做某事很……"
+  },
+  "in-front-of": {
+   "en": "in front of",
+   "zh": "在……面前"
+  },
+  "adj-enough": {
+   "en": "形容词 + enough (to do)",
+   "zh": "足够……（enough 放在形容词后）"
+  },
+  "ask-questions": {
+   "en": "ask questions",
+   "zh": "提问"
+  },
+  "the-way-clause": {
+   "en": "the way + 句子",
+   "zh": "……的方式"
+  },
+  "when-it-comes-to": {
+   "en": "When it comes to + 名词/doing",
+   "zh": "说到……、在……方面"
+  },
+  "personal-information": {
+   "en": "personal information",
+   "zh": "个人信息"
+  },
+  "even-if": {
+   "en": "Even if + 句子",
+   "zh": "即使"
+  },
+  "in-order-to": {
+   "en": "in order to do",
+   "zh": "为了"
+  },
+  "have-to": {
+   "en": "have to do",
+   "zh": "不得不、必须"
+  },
+  "not-all": {
+   "en": "Not all + 名词 + 谓语",
+   "zh": "并非所有……都"
+  },
+  "as-as": {
+   "en": "(not) as + 形容词 + as",
+   "zh": "和……一样（不如……）"
+  },
+  "at-least": {
+   "en": "at least",
+   "zh": "至少"
+  },
+  "give-up": {
+   "en": "give up",
+   "zh": "放弃、改掉"
+  },
+  "stay-up-late": {
+   "en": "stay up late",
+   "zh": "熬夜"
+  },
+  "key-to": {
+   "en": "the key to + 名词/doing",
+   "zh": "……的关键"
+  },
+  "both-and": {
+   "en": "both … and …",
+   "zh": "……和……都"
+  },
+  "important-for": {
+   "en": "important for",
+   "zh": "对……很重要"
+  },
+  "much-comparative": {
+   "en": "much + 比较级",
+   "zh": "……得多"
+  },
+  "cost-of-living": {
+   "en": "the cost of living",
+   "zh": "生活成本"
+  },
+  "city-centre": {
+   "en": "city centre",
+   "zh": "市中心"
+  },
+  "somewhere-to": {
+   "en": "somewhere to do",
+   "zh": "有地方做某事"
+  },
+  "deal-with": {
+   "en": "deal with",
+   "zh": "处理、应对"
+  },
+  "make-decisions": {
+   "en": "make + … + decisions",
+   "zh": "做决定"
+  },
+  "would-rather": {
+   "en": "would rather do … than do …",
+   "zh": "宁愿……也不……"
+  },
+  "expect-to": {
+   "en": "expect + 人 + to do",
+   "zh": "要求、期望某人做"
+  },
+  "follow-rules": {
+   "en": "follow the rules",
+   "zh": "遵守规则"
+  },
+  "learn-how-to": {
+   "en": "learn how to do",
+   "zh": "学会怎样做"
+  },
+  "good-way-to": {
+   "en": "a good way to do",
+   "zh": "……的好方法"
+  },
+  "care-about": {
+   "en": "care about",
+   "zh": "在乎、关心"
+  },
+  "way-of-life": {
+   "en": "way of life",
+   "zh": "生活方式"
+  },
+  "social-problems": {
+   "en": "social problems",
+   "zh": "社会问题"
+  },
+  "social-media": {
+   "en": "social media",
+   "zh": "社交媒体"
+  },
+  "some-of-them": {
+   "en": "some of them",
+   "zh": "其中一些"
+  },
+  "be-based-on": {
+   "en": "be based on",
+   "zh": "基于"
+  },
+  "cancel-subscription": {
+   "en": "cancel a subscription",
+   "zh": "取消订阅"
+  },
+  "than-others": {
+   "en": "than others",
+   "zh": "比别人"
+  },
+  "make-sure": {
+   "en": "make sure (that)",
+   "zh": "确保"
+  },
+  "daily-life": {
+   "en": "daily life",
+   "zh": "日常生活"
+  },
+  "such-as": {
+   "en": "such as",
+   "zh": "比如"
+  },
+  "hope-that": {
+   "en": "hope that + 句子",
+   "zh": "希望……"
+  },
+  "each-of-has": {
+   "en": "Each of the + 复数名词 + 单数谓语",
+   "zh": "……中的每一个（谓语单数）"
+  },
+  "take-part-in": {
+   "en": "take part in",
+   "zh": "参加"
+  },
+  "if-will": {
+   "en": "If + 一般现在时, … will do",
+   "zh": "如果……就会……（真实条件）"
+  },
+  "either-or": {
+   "en": "either … or …",
+   "zh": "要么……要么……、可以……也可以……"
+  },
+  "take-exam": {
+   "en": "take an exam",
+   "zh": "参加考试"
+  },
+  "by-doing": {
+   "en": "by + doing",
+   "zh": "通过做某事"
+  },
+  "a-lot-of": {
+   "en": "a lot of",
+   "zh": "很多"
+  },
+  "problem-is-that": {
+   "en": "The problem is that + 句子",
+   "zh": "问题是……"
+  },
+  "pass-exams": {
+   "en": "pass exams",
+   "zh": "通过考试"
+  },
+  "one-of-is": {
+   "en": "One of the + (最高级) + 复数名词 + is",
+   "zh": "……之一（谓语单数）"
+  },
+  "distract": {
+   "en": "distract + 人",
+   "zh": "让人分心"
+  },
+  "avoid-doing": {
+   "en": "avoid + doing",
+   "zh": "避免做某事"
+  },
+  "electronic-devices": {
+   "en": "electronic devices",
+   "zh": "电子设备"
+  },
+  "if-would": {
+   "en": "If + 过去式, … would do",
+   "zh": "假如……就会……（假设）"
+  },
+  "despite": {
+   "en": "Despite + 名词",
+   "zh": "尽管（后接名词，不接句子）"
+  },
+  "be-used-to-doing": {
+   "en": "be used to + doing",
+   "zh": "习惯于做某事"
+  },
+  "carry-cash": {
+   "en": "carry cash",
+   "zh": "带现金"
+  },
+  "sort-rubbish": {
+   "en": "sort rubbish",
+   "zh": "垃圾分类"
+  },
+  "as-well-as": {
+   "en": "A as well as B",
+   "zh": "……以及……、也"
+  },
+  "marine-life": {
+   "en": "marine life",
+   "zh": "海洋生物"
+  },
+  "carbon-emissions": {
+   "en": "carbon emissions",
+   "zh": "碳排放"
+  },
+  "a-number-of": {
+   "en": "A number of + 复数名词 + 复数谓语",
+   "zh": "许多（谓语复数）"
+  },
+  "good-for": {
+   "en": "be good for",
+   "zh": "对……有好处"
+  },
+  "office-workers": {
+   "en": "office workers",
+   "zh": "上班族"
+  },
+  "enough-noun": {
+   "en": "enough + 名词",
+   "zh": "足够的……（enough 放在名词前）"
+  },
+  "neither-nor": {
+   "en": "Neither … nor …",
+   "zh": "既不……也不……"
+  },
+  "regular-check-ups": {
+   "en": "regular check-ups",
+   "zh": "定期体检"
+  },
+  "be-worth-doing": {
+   "en": "be worth + doing",
+   "zh": "值得做"
+  },
+  "a-few": {
+   "en": "a few + 可数名词",
+   "zh": "几个"
+  },
+  "it-is-true-that": {
+   "en": "It is true that …, but …",
+   "zh": "……确实……，但……"
+  },
+  "fast-food": {
+   "en": "fast food",
+   "zh": "快餐"
+  },
+  "air-pollution": {
+   "en": "air pollution",
+   "zh": "空气污染"
+  },
+  "especially": {
+   "en": "especially",
+   "zh": "尤其是"
+  },
+  "far-from": {
+   "en": "(too) far from",
+   "zh": "离……（太）远"
+  },
+  "over-the-past": {
+   "en": "over the past + 时间",
+   "zh": "在过去……里"
+  },
+  "change-jobs": {
+   "en": "change jobs",
+   "zh": "换工作"
+  },
+  "communication-skills": {
+   "en": "communication skills",
+   "zh": "沟通能力"
+  },
+  "everyone-has": {
+   "en": "Everyone has …",
+   "zh": "每个人都有……（谓语单数）"
+  },
+  "right-to": {
+   "en": "the right to do",
+   "zh": "做……的权利"
+  },
+  "free-time": {
+   "en": "free time",
+   "zh": "空闲时间"
+  },
+  "on-their-own": {
+   "en": "on one's own",
+   "zh": "靠自己、单独"
+  },
+  "of-all-ages": {
+   "en": "of all ages",
+   "zh": "各个年龄的"
+  },
+  "economic-growth": {
+   "en": "economic growth",
+   "zh": "经济增长"
+  },
+  "spring-festival": {
+   "en": "the Spring Festival",
+   "zh": "春节"
+  },
+  "at-weekends": {
+   "en": "at weekends",
+   "zh": "在周末"
+  },
+  "fewer-and-fewer": {
+   "en": "fewer and fewer + 可数名词",
+   "zh": "越来越少的"
+  },
+  "get-into-trouble": {
+   "en": "get into trouble",
+   "zh": "惹上麻烦"
+  },
+  "main-source": {
+   "en": "the main source of",
+   "zh": "……的主要来源"
+  },
+  "last-century": {
+   "en": "the last century",
+   "zh": "上个世纪"
+  },
+  "cure-for": {
+   "en": "a cure for",
+   "zh": "治疗……的方法"
+  },
+  "can-be-used": {
+   "en": "can be used in/for",
+   "zh": "可以被用于"
+  },
+  "reach-public": {
+   "en": "reach the public",
+   "zh": "让公众知道"
+  },
+  "appearance": {
+   "en": "appearance",
+   "zh": "外表"
+  },
+  "protect-environment": {
+   "en": "protect the environment",
+   "zh": "保护环境"
+  },
+  "paid-holidays": {
+   "en": "paid holidays",
+   "zh": "带薪假期"
   }
  },
  "sentences": [
@@ -451,7 +1095,8 @@
    "tip": "\"任务\"不必译成 task；\"就业\"用名词 employment，比 finding jobs 正式。",
    "alts": [
     "Some contend that universities should prioritise developing critical thinking over simply preparing students for the job market."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "edu-02",
@@ -488,7 +1133,8 @@
    "tip": "\"让某人……\"别直译成 let，改成\"A 带来 B\"的结构：lead to / result in。",
    "alts": [
     "Memorisation may get students through exams, but it seldom produces real understanding."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "edu-03",
@@ -517,7 +1163,8 @@
     ]
    ],
    "trap": "As online courses become more and more popular, students in remote areas can also touch high-quality education resources.",
-   "tip": "\"日益……\"用 growing / increasing 修饰名词，比 more and more 紧凑。\"接触资源\"是 have access to，不是 touch。"
+   "tip": "\"日益……\"用 growing / increasing 修饰名词，比 more and more 紧凑。\"接触资源\"是 have access to，不是 touch。",
+   "retired": true
   },
   {
    "id": "tech-01",
@@ -555,7 +1202,8 @@
    "tip": "\"在……的同时\"用 While 引导从句。两个完整句只用逗号相连（comma splice）是中国考生最常见的语法扣分点。",
    "alts": [
     "Although AI improves efficiency, it has also sparked fears of mass unemployment."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "tech-02",
@@ -584,7 +1232,8 @@
     ]
    ],
    "trap": "Too much depending on smartphones may weaken people's ability of focusing attention.",
-   "tip": "把动词\"依赖\"转成名词 reliance 做主语，句子更书面。ability 后面接 to do。"
+   "tip": "把动词\"依赖\"转成名词 reliance 做主语，句子更书面。ability 后面接 to do。",
+   "retired": true
   },
   {
    "id": "tech-03",
@@ -618,7 +1267,8 @@
     ]
    ],
    "trap": "Social media makes people's connection closer, but ironic is that many users feel more lonely.",
-   "tip": "\"拉近距离\"不必译出\"距离\"。report feeling 是学术写作转述研究结果的常用说法。"
+   "tip": "\"拉近距离\"不必译出\"距离\"。report feeling 是学术写作转述研究结果的常用说法。",
+   "retired": true
   },
   {
    "id": "env-01",
@@ -655,7 +1305,8 @@
    "tip": "中文常省略主语，英文可以用被动 action is taken，不必硬加 we。",
    "alts": [
     "Without immediate action, the effects of climate change could become irreversible."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "env-02",
@@ -684,7 +1335,8 @@
     ]
    ],
    "trap": "Government should encourage companies to use renewable energy through tax preferential.",
-   "tip": "\"通过 X 做 Y\"可以拆成\"提供 X 来做 Y\"：offer X to do Y，比 through 自然。"
+   "tip": "\"通过 X 做 Y\"可以拆成\"提供 X 来做 Y\"：offer X to do Y，比 through 自然。",
+   "retired": true
   },
   {
    "id": "env-03",
@@ -713,7 +1365,8 @@
     ]
    ],
    "trap": "Personal environmental efforts are of course important, but the real change needs system level change.",
-   "tip": "\"固然重要\"直接用动词 matter，简洁有力。\"真正的\"用 meaningful，比 real 更贴切。"
+   "tip": "\"固然重要\"直接用动词 matter，简洁有力。\"真正的\"用 meaningful，比 real 更贴切。",
+   "retired": true
   },
   {
    "id": "health-01",
@@ -743,7 +1396,8 @@
     ]
    ],
    "trap": "Sitting for a long time without moving lifestyle is one of the main reasons that cause the obesity rate to rise.",
-   "tip": "一个精准的词（sedentary）顶一整串描述。\"上升的 X\"用 rising 放在名词前。"
+   "tip": "一个精准的词（sedentary）顶一整串描述。\"上升的 X\"用 rising 放在名词前。",
+   "retired": true
   },
   {
    "id": "health-02",
@@ -772,7 +1426,8 @@
     ]
    ],
    "trap": "Prevention is better than treatment, so public health investment should be used more on health education.",
-   "tip": "谚语要用固定说法里的 cure，不要自己换成 treatment。"
+   "tip": "谚语要用固定说法里的 cure，不要自己换成 treatment。",
+   "retired": true
   },
   {
    "id": "health-03",
@@ -806,7 +1461,8 @@
     ]
    ],
    "trap": "Mental health problems are ignored for a long time, part of the reason is society still has prejudice to them.",
-   "tip": "\"长期\"配现在完成时 have long been。\"部分原因是\"用 partly because of 接在后面，不要另起一句。"
+   "tip": "\"长期\"配现在完成时 have long been。\"部分原因是\"用 partly because of 接在后面，不要另起一句。",
+   "retired": true
   },
   {
    "id": "city-01",
@@ -843,7 +1499,8 @@
    "tip": "\"进程\"\"问题\"这类范畴词通常不译。\"加快\"变成形容词 rapid。",
    "alts": [
     "As cities grow rapidly, housing shortages and traffic congestion are becoming increasingly severe."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "city-02",
@@ -877,7 +1534,8 @@
     ]
    ],
    "trap": "Instead of building more roads, it's better to invest public transport, because new roads often only attract more cars.",
-   "tip": "\"与其……不如……\"用 Rather than doing，主语 should do。补上主语 cities，句子就有了行动者。"
+   "tip": "\"与其……不如……\"用 Rather than doing，主语 should do。补上主语 cities，句子就有了行动者。",
+   "retired": true
   },
   {
    "id": "city-03",
@@ -912,7 +1570,8 @@
     ]
    ],
    "trap": "Young people pour into big cities to find opportunities, making many rural areas face the problem of population aging.",
-   "tip": "把\"涌入\"名词化（influx）作主语，一句话就能承载因果，不必用 making 分词。"
+   "tip": "把\"涌入\"名词化（influx）作主语，一句话就能承载因果，不必用 making 分词。",
+   "retired": true
   },
   {
    "id": "work-01",
@@ -941,7 +1600,8 @@
     ]
    ],
    "trap": "Remote work provides staffs more flexibility, but also makes the boundary of work and life fuzzy.",
-   "tip": "\"模糊界限\"用固定搭配 blur the line。staff 是集体名词，不加 s。"
+   "tip": "\"模糊界限\"用固定搭配 blur the line。staff 是集体名词，不加 s。",
+   "retired": true
   },
   {
    "id": "work-02",
@@ -970,7 +1630,8 @@
     ]
    ],
    "trap": "Salary is of course important, but job satisfaction largely decides on whether being recognized.",
-   "tip": "\"取决于\"是 depend on，不是 decide on。\"被重视\"用 feel + 过去分词，不必写成完整被动句。"
+   "tip": "\"取决于\"是 depend on，不是 decide on。\"被重视\"用 feel + 过去分词，不必写成完整被动句。",
+   "retired": true
   },
   {
    "id": "work-03",
@@ -1007,7 +1668,8 @@
    "tip": "\"不是 A 而是 B\"用分号连两个短句，节奏更有力。necessary 是形容词，不能当名词用。",
    "alts": [
     "In a rapidly changing job market, lifelong learning has become a necessity rather than a choice."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "soc-01",
@@ -1041,7 +1703,8 @@
     ]
    ],
    "trap": "Government has the responsibility to make sure all citizens no matter income high or low can get basic medical service.",
-   "tip": "\"无论高低、无论多少\"只需 regardless of + 名词，\"高低\"不用译。"
+   "tip": "\"无论高低、无论多少\"只需 regardless of + 名词，\"高低\"不用译。",
+   "retired": true
   },
   {
    "id": "soc-02",
@@ -1079,7 +1742,8 @@
    "tip": "\"仅靠 X\"用 X alone 后置，简洁地道。两个完整句之间用分号，不用逗号。",
    "alts": [
     "Tougher sentences on their own will not cut crime significantly; what matters is addressing why people offend in the first place."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "soc-03",
@@ -1108,7 +1772,8 @@
     ]
    ],
    "trap": "The enlarging of the gap between rich and poor may threaten society stable.",
-   "tip": "\"不断扩大的\"用 widening。修饰名词要用形容词 social，不用名词 society。"
+   "tip": "\"不断扩大的\"用 widening。修饰名词要用形容词 social，不用名词 society。",
+   "retired": true
   },
   {
    "id": "cult-01",
@@ -1137,7 +1802,8 @@
     ]
    ],
    "trap": "Globalization promotes economic growth at the same time, it also makes many local cultures face the risk of disappearing.",
-   "tip": "\"使 X 面临\"不要写成 make X face，用 put X at risk of。fuel 比 promote 更生动。"
+   "tip": "\"使 X 面临\"不要写成 make X face，用 put X at risk of。fuel 比 promote 更生动。",
+   "retired": true
   },
   {
    "id": "cult-02",
@@ -1171,7 +1837,8 @@
     ]
    ],
    "trap": "Tourism brings income to local, but large amount of tourists also bring pressure to environment and infrastructure.",
-   "tip": "local 是形容词，\"当地\"要补名词 communities。可数名词用 numbers of，不用 amount of。"
+   "tip": "local 是形容词，\"当地\"要补名词 communities。可数名词用 numbers of，不用 amount of。",
+   "retired": true
   },
   {
    "id": "cult-03",
@@ -1205,7 +1872,8 @@
     ]
    ],
    "trap": "Learning a foreign language is not only mastering a tool, but also a way to understand another thinking way.",
-   "tip": "\"思维方式\"是 way of thinking，不是 thinking way。"
+   "tip": "\"思维方式\"是 way of thinking，不是 thinking way。",
+   "retired": true
   },
   {
    "id": "media-01",
@@ -1237,7 +1905,8 @@
    "tip": "\"前所未有地重要\"用否定比较 has never been more…，比 unprecedentedly 自然得多。",
    "alts": [
     "In an era of information overload, being able to distinguish truth from falsehood matters more than ever."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "media-02",
@@ -1266,7 +1935,8 @@
     ]
    ],
    "trap": "Advertisements often use people's sense of insecurity to sell products they don't need.",
-   "tip": "贬义的\"利用\"用 exploit。正式写作避免 don't 这类缩写。"
+   "tip": "贬义的\"利用\"用 exploit。正式写作避免 don't 这类缩写。",
+   "retired": true
   },
   {
    "id": "sci-01",
@@ -1303,7 +1973,8 @@
    "tip": "相关不等于因果，用 suggests 比 shows 更严谨。去掉 there is，句子更紧凑。",
    "alts": [
     "Studies indicate that getting enough sleep is closely associated with better academic results."
-   ]
+   ],
+   "retired": true
   },
   {
    "id": "sci-02",
@@ -1332,7 +2003,8 @@
     ]
    ],
    "trap": "Although this technology has a broad prospect, but its long-term influence still needs to be researched further.",
-   "tip": "Although 和 but 不能同时用。\"前景广阔\"不是 broad prospect，而是 show promise。"
+   "tip": "Although 和 but 不能同时用。\"前景广阔\"不是 broad prospect，而是 show promise。",
+   "retired": true
   },
   {
    "id": "sci-03",
@@ -1366,7 +2038,8 @@
     ]
    ],
    "trap": "This discovery challenged a view which has been widely accepted for a long time.",
-   "tip": "用复合形容词 long-held 放在名词前，代替冗长的定语从句。研究结论用 finding，不用 discovery。"
+   "tip": "用复合形容词 long-held 放在名词前，代替冗长的定语从句。研究结论用 finding，不用 discovery。",
+   "retired": true
   },
   {
    "id": "sci-04",
@@ -1403,7 +2076,4032 @@
    "tip": "\"阻碍……的障碍\"语义重复，英文只要 obstacle to。\"仍是\"一个 remains 就够了。",
    "alts": [
     "Insufficient funding is still one of the biggest barriers to scientific progress in developing countries."
+   ],
+   "retired": true
+  },
+  {
+   "id": "edu-04",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "对很多学生来说，同时学好几门科目并不容易。",
+   "en": "It is not easy for many students to study several subjects at the same time.",
+   "k": [
+    [
+     "it-adj-for-to",
+     "It is … for … to",
+     "对某人来说做某事很……"
+    ],
+    [
+     "at-the-same-time",
+     "at the same time",
+     "同时"
+    ]
+   ],
+   "trap": "For many students, study several subjects at the same time is not easy.",
+   "tip": "中文把\"做某事\"放在开头，英文先用 It is … 占住主语位置，再把 to do 放到后面，句子不会头重脚轻。",
+   "alts": [
+    "Studying several subjects at the same time is not easy for many students."
    ]
+  },
+  {
+   "id": "edu-05",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "比较结构",
+    "形式主语 it"
+   ],
+   "zh": "孩子越早开始学外语，就越容易说得流利。",
+   "en": "The earlier children start learning a foreign language, the easier it is for them to become fluent.",
+   "k": [
+    [
+     "the-more-the-more",
+     "The earlier … the easier",
+     "越……越……"
+    ],
+    [
+     "it-adj-for-to",
+     "it is … for … to",
+     "对某人来说做某事很……"
+    ]
+   ],
+   "trap": "More early children start to learn a foreign language, more easily they speak fluently.",
+   "tip": "\"越……越……\"是 the + 比较级 …, the + 比较级 …，两个 the 都不能省，中间用逗号隔开。"
+  },
+  {
+   "id": "edu-06",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "课堂上主动提问的学生，通常比一言不发的学生学到更多。",
+   "en": "Those who ask questions in class usually learn more than those who stay silent.",
+   "k": [
+    [
+     "those-who",
+     "Those who",
+     "那些……的人"
+    ],
+    [
+     "stay-silent",
+     "stay silent",
+     "一言不发"
+    ]
+   ],
+   "trap": "Students actively ask questions in class usually learn more than students keep silent.",
+   "tip": "中文\"……的学生\"在英文里要放到名词后面，用 who 引出；who 不能省，否则一句里会出现两个谓语。",
+   "alts": [
+    "Students who ask questions in class usually learn more than students who stay silent."
+   ]
+  },
+  {
+   "id": "edu-07",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "一些家长认为，孩子的成绩在很大程度上取决于他们是否努力。",
+   "en": "Some parents believe that a child's grades depend largely on whether they work hard.",
+   "k": [
+    [
+     "depend-on-whether",
+     "depend … on whether",
+     "取决于是否……"
+    ],
+    [
+     "work-hard",
+     "work hard",
+     "努力"
+    ]
+   ],
+   "trap": "Some parents think children's grades are largely decided by if they are hardworking or not.",
+   "tip": "\"取决于是否\"用 depend on whether + 完整句子；whether 引出的整个句子相当于一个名词。"
+  },
+  {
+   "id": "edu-08",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "很多学生在手机上花了太多时间，以至于没有时间读书。",
+   "en": "Many students spend so much time on their phones that they have no time to read.",
+   "k": [
+    [
+     "spend-on",
+     "spend … on",
+     "把时间花在……上"
+    ],
+    [
+     "so-that-result",
+     "so … that",
+     "如此……以至于"
+    ]
+   ],
+   "trap": "Many students spend too much time to use phones, so that they have no time reading.",
+   "tip": "\"以至于\"用 so + much/形容词 + that + 句子，把因果装进一句话；spend 后面接 on + 名词。"
+  },
+  {
+   "id": "tech-04",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "网上购物让人们在家就能买到几乎任何东西。",
+   "en": "Online shopping allows people to buy almost anything from home.",
+   "k": [
+    [
+     "allow-to",
+     "allows … to",
+     "让某人能够做"
+    ],
+    [
+     "from-home",
+     "from home",
+     "在家"
+    ]
+   ],
+   "trap": "Online shopping lets people can buy almost everything at home.",
+   "tip": "allow 的句型是 allow + 人 + to do；let 后面直接接动词原形。两种句型后面都不能再加 can。"
+  },
+  {
+   "id": "tech-05",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "越来越多的老年人开始用智能手机和家人保持联系。",
+   "en": "An increasing number of older people are using smartphones to keep in touch with their families.",
+   "k": [
+    [
+     "increasing-number",
+     "An increasing number of",
+     "越来越多的"
+    ],
+    [
+     "keep-in-touch",
+     "keep in touch with",
+     "和……保持联系"
+    ]
+   ],
+   "trap": "More and more old people begins to use smartphone to keep touch with family.",
+   "tip": "an increasing number of 后面接复数名词，谓语也用复数；\"保持联系\"是 keep in touch with，in 不能漏。"
+  },
+  {
+   "id": "tech-06",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "虽然科技让生活更方便了，但也让人变得更懒了。",
+   "en": "Although technology has made life more convenient, it has also made people lazier.",
+   "k": [
+    [
+     "although",
+     "Although",
+     "虽然"
+    ],
+    [
+     "make-obj-adj",
+     "made life more convenient",
+     "使……变得……"
+    ]
+   ],
+   "trap": "Although technology makes life more convenient, but it also makes people become lazier.",
+   "tip": "Although 和 but 只能用一个；make 后面直接接宾语 + 形容词，中间不加 become。"
+  },
+  {
+   "id": "tech-07",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "结果与目的",
+    "形式主语 it"
+   ],
+   "zh": "网上的信息太多了，人们很难判断哪些是真的。",
+   "en": "There is so much information online that it is hard for people to tell which is true.",
+   "k": [
+    [
+     "so-that-result",
+     "so … that",
+     "如此……以至于"
+    ],
+    [
+     "it-adj-for-to",
+     "it is … for … to",
+     "对某人来说做某事很……"
+    ]
+   ],
+   "trap": "The information on the internet is too much, people are difficult to judge which is true.",
+   "tip": "两个分句之间没有连词时，用 so … that 连成一句；\"人们很难\"不能写 people are difficult，要写 it is hard for people to。"
+  },
+  {
+   "id": "env-04",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果我们不减少塑料的使用，海洋污染会越来越严重。",
+   "en": "Unless we reduce the use of plastic, ocean pollution will get worse and worse.",
+   "k": [
+    [
+     "unless",
+     "Unless",
+     "除非、如果不"
+    ],
+    [
+     "reduce-use-of",
+     "reduce the use of",
+     "减少……的使用"
+    ],
+    [
+     "get-worse",
+     "get worse and worse",
+     "越来越严重"
+    ]
+   ],
+   "trap": "If we don't reduce using plastic, the ocean pollution will be more and more serious.",
+   "tip": "\"如果不\"可以用 Unless 加肯定句；条件从句用一般现在时，主句用 will。",
+   "alts": [
+    "If we do not reduce the use of plastic, ocean pollution will get worse and worse."
+   ]
+  },
+  {
+   "id": "env-05",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "并列与递进",
+    "非谓语"
+   ],
+   "zh": "骑自行车上班不仅能减少污染，还能让人保持健康。",
+   "en": "Cycling to work not only reduces pollution but also helps people stay healthy.",
+   "k": [
+    [
+     "not-only-but-also",
+     "not only … but also",
+     "不仅……而且……"
+    ],
+    [
+     "help-do",
+     "helps people stay healthy",
+     "帮助某人做某事"
+    ]
+   ],
+   "trap": "Ride bicycle to work not only reduce pollution, but also make people keep healthy.",
+   "tip": "动作做主语要用 doing（Cycling），谓语跟着加 s；not only 和 but also 后面的结构要对称。"
+  },
+  {
+   "id": "env-06",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "政府应该鼓励人们乘坐公共交通，而不是开私家车。",
+   "en": "The government should encourage people to use public transport instead of driving their own cars.",
+   "k": [
+    [
+     "encourage-to",
+     "encourage … to",
+     "鼓励某人做"
+    ],
+    [
+     "instead-of",
+     "instead of",
+     "而不是"
+    ]
+   ],
+   "trap": "The government should encourage people take public transport, not drive private cars.",
+   "tip": "encourage + 人 + to do，to 不能漏；instead of 是介词，后面的动词要用 doing。"
+  },
+  {
+   "id": "env-07",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "气候变化使极端天气越来越频繁，这给农民带来了很大的困难。",
+   "en": "Climate change has led to more frequent extreme weather, which has caused serious problems for farmers.",
+   "k": [
+    [
+     "lead-to",
+     "led to",
+     "导致"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ],
+    [
+     "cause-problems-for",
+     "caused serious problems for",
+     "给……带来困难"
+    ]
+   ],
+   "trap": "Climate change makes extreme weather more and more frequent, this brings farmers big difficulties.",
+   "tip": "中文的\"这\"指代前面整件事时，英文用 , which 接下去；用 this 另起一句再用逗号连，就成了两个句子硬连。"
+  },
+  {
+   "id": "health-04",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "每天锻炼半小时对健康有积极的影响。",
+   "en": "Exercising for half an hour every day has a positive effect on your health.",
+   "k": [
+    [
+     "have-effect-on",
+     "has a … effect on",
+     "对……有……影响"
+    ],
+    [
+     "for-half-an-hour",
+     "for half an hour",
+     "（持续）半小时"
+    ]
+   ],
+   "trap": "Exercise half an hour every day has positive influence to health.",
+   "tip": "动作做主语用 doing；\"对……有影响\"是 have an effect on，介词用 on，effect 前要有冠词。"
+  },
+  {
+   "id": "health-05",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "很多年轻人忙得没时间做饭，所以经常依赖快餐。",
+   "en": "Many young people are too busy to cook, so they often rely on fast food.",
+   "k": [
+    [
+     "too-to",
+     "too … to",
+     "太……而不能"
+    ],
+    [
+     "rely-on",
+     "rely on",
+     "依赖"
+    ]
+   ],
+   "trap": "Many young people are too busy that they have no time cooking, so they often eat fast food.",
+   "tip": "too + 形容词 + to do 本身就有否定意思，不要再加 not，也不要和 that 混用。"
+  },
+  {
+   "id": "health-06",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "医生建议人们少吃糖，以便降低患糖尿病的风险。",
+   "en": "Doctors suggest that people should eat less sugar so that they can reduce the risk of diabetes.",
+   "k": [
+    [
+     "so-that-purpose",
+     "so that",
+     "以便"
+    ],
+    [
+     "reduce-risk-of",
+     "reduce the risk of",
+     "降低……的风险"
+    ]
+   ],
+   "trap": "Doctors suggest people to eat less sugar in order to reduce the risk to get diabetes.",
+   "tip": "suggest 不能接 人 + to do，要写 suggest that 人 (should) do；\"以便\"用 so that + 句子，通常带 can。"
+  },
+  {
+   "id": "health-07",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "比较结构",
+    "定语从句"
+   ],
+   "zh": "吸烟的人比不吸烟的人更容易得肺癌。",
+   "en": "Those who smoke are much more likely to get lung cancer than those who do not.",
+   "k": [
+    [
+     "those-who",
+     "Those who",
+     "那些……的人"
+    ],
+    [
+     "be-likely-to",
+     "more likely to",
+     "更可能……"
+    ]
+   ],
+   "trap": "People who smoke have much bigger possibility to get lung cancer than people don't smoke.",
+   "tip": "\"……的可能性大\"不要直译 possibility，用 be likely to do；比较时后一组人也要带 who。"
+  },
+  {
+   "id": "city-04",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "在大城市，年轻人很难买得起房子。",
+   "en": "In big cities, it is very difficult for young people to afford a house.",
+   "k": [
+    [
+     "it-adj-for-to",
+     "it is … for … to",
+     "对某人来说做某事很……"
+    ],
+    [
+     "afford",
+     "afford",
+     "买得起"
+    ]
+   ],
+   "trap": "In big cities, young people are very difficult to buy a house.",
+   "tip": "\"某人很难做某事\"不能写 sb is difficult to do，要写 it is difficult for sb to do；\"买得起\"是 afford。"
+  },
+  {
+   "id": "city-05",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "与农村相比，城市提供的工作机会多得多。",
+   "en": "Compared with the countryside, cities offer many more job opportunities.",
+   "k": [
+    [
+     "compared-with",
+     "Compared with",
+     "与……相比"
+    ],
+    [
+     "job-opportunities",
+     "job opportunities",
+     "工作机会"
+    ]
+   ],
+   "trap": "Compare with countryside, city provides more work chances.",
+   "tip": "\"与……相比\"放在句首用 Compared with；比较级前加 many / much 表示\"多得多\"。"
+  },
+  {
+   "id": "city-06",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "交通太堵了，很多人上班要花一个多小时。",
+   "en": "Traffic is so bad that it takes many people more than an hour to get to work.",
+   "k": [
+    [
+     "so-that-result",
+     "so … that",
+     "如此……以至于"
+    ],
+    [
+     "it-takes",
+     "it takes … to",
+     "做某事需要（时间）"
+    ]
+   ],
+   "trap": "The traffic jam is very serious, many people spend more than one hour to go to work.",
+   "tip": "\"花多长时间做某事\"可以用 it takes + 人 + 时间 + to do；前后两件事用 so … that 连成一句。"
+  },
+  {
+   "id": "city-07",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "很多人搬到大城市的一个原因是在那里能挣到更高的工资。",
+   "en": "One reason why many people move to big cities is that they can earn higher salaries there.",
+   "k": [
+    [
+     "one-reason-why",
+     "One reason why … is that",
+     "……的一个原因是"
+    ],
+    [
+     "earn-salaries",
+     "earn higher salaries",
+     "挣更高的工资"
+    ]
+   ],
+   "trap": "Many people move to big cities, the reason is because the salary there is higher.",
+   "tip": "\"原因是\"用 The reason why … is that …；不要写 the reason is because，意思重复了。"
+  },
+  {
+   "id": "work-04",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "越来越多的人选择在家工作，而不是每天去办公室。",
+   "en": "An increasing number of people choose to work from home instead of going to the office every day.",
+   "k": [
+    [
+     "increasing-number",
+     "An increasing number of",
+     "越来越多的"
+    ],
+    [
+     "from-home",
+     "from home",
+     "在家"
+    ],
+    [
+     "instead-of",
+     "instead of",
+     "而不是"
+    ]
+   ],
+   "trap": "More and more people choose working at home, not go to office every day.",
+   "tip": "choose 后面接 to do；instead of 后面接 doing。"
+  },
+  {
+   "id": "work-05",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "无论工作多辛苦，他从来都不抱怨。",
+   "en": "No matter how hard his job is, he never complains about it.",
+   "k": [
+    [
+     "no-matter-how",
+     "No matter how",
+     "无论多么"
+    ],
+    [
+     "complain-about",
+     "complains about",
+     "抱怨（某事）"
+    ]
+   ],
+   "trap": "No matter how hard is the work, he never complains it.",
+   "tip": "No matter how + 形容词 + 主语 + 谓语，语序和陈述句一样；complain 后面要加 about。"
+  },
+  {
+   "id": "work-06",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "新员工花了好几个月才适应公司的工作方式。",
+   "en": "It took the new employees several months to get used to the way the company works.",
+   "k": [
+    [
+     "it-takes",
+     "It took … to",
+     "做某事花了（时间）"
+    ],
+    [
+     "get-used-to",
+     "get used to",
+     "适应"
+    ]
+   ],
+   "trap": "The new staffs spent several months to get used to the company's working way.",
+   "tip": "\"花了多长时间才……\"用 It took + 人 + 时间 + to do；staff 是集体名词，不加 s。"
+  },
+  {
+   "id": "work-07",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "好的经理应该鼓励员工提出新想法。",
+   "en": "A good manager should encourage employees to come up with new ideas.",
+   "k": [
+    [
+     "encourage-to",
+     "encourage … to",
+     "鼓励某人做"
+    ],
+    [
+     "come-up-with",
+     "come up with",
+     "想出、提出"
+    ]
+   ],
+   "trap": "A good leader should encourage staffs put forward new ideas.",
+   "tip": "encourage + 人 + to do；\"提出想法\"最常用 come up with ideas。"
+  },
+  {
+   "id": "soc-04",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "做志愿者可以帮助年轻人培养责任感。",
+   "en": "Volunteering can help young people develop a sense of responsibility.",
+   "k": [
+    [
+     "help-do",
+     "help young people develop",
+     "帮助某人做某事"
+    ],
+    [
+     "sense-of-responsibility",
+     "a sense of responsibility",
+     "责任感"
+    ]
+   ],
+   "trap": "Volunteer activities can help young people cultivating responsibility sense.",
+   "tip": "help + 人 + 动词原形（to 可加可不加），不用 doing；\"责任感\"是 a sense of responsibility。"
+  },
+  {
+   "id": "soc-05",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "父母在帮助孩子成长方面起着非常重要的作用。",
+   "en": "Parents play a very important role in helping their children grow up.",
+   "k": [
+    [
+     "play-role-in",
+     "play a … role in",
+     "在……中起……作用"
+    ],
+    [
+     "help-do",
+     "helping their children grow up",
+     "帮助某人做某事"
+    ]
+   ],
+   "trap": "Parents play a very important role in children's growing process.",
+   "tip": "play a role in 后面接名词或 doing；\"成长过程\"不必直译 process，用 help children grow up 更直接。"
+  },
+  {
+   "id": "soc-06",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "被动语态",
+    "定语从句"
+   ],
+   "zh": "一些人认为，应该禁止在公共场所吸烟，以保护不吸烟的人。",
+   "en": "Some people believe that smoking should be banned in public places to protect those who do not smoke.",
+   "k": [
+    [
+     "should-be-done",
+     "should be banned",
+     "应该被禁止"
+    ],
+    [
+     "those-who",
+     "those who",
+     "那些……的人"
+    ]
+   ],
+   "trap": "Some people think public places should forbid smoking to protect people don't smoke.",
+   "tip": "被禁止的是\"吸烟\"，所以让 smoking 做主语，用被动 should be banned；\"不吸烟的人\"用 those who do not smoke。"
+  },
+  {
+   "id": "soc-07",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "名词从句",
+    "主谓一致"
+   ],
+   "zh": "犯罪率上升的一个原因是失业的人越来越多。",
+   "en": "One reason why crime rates are rising is that the number of unemployed people has increased.",
+   "k": [
+    [
+     "one-reason-why",
+     "One reason why … is that",
+     "……的一个原因是"
+    ],
+    [
+     "number-of-has",
+     "the number of … has",
+     "……的数量（谓语单数）"
+    ]
+   ],
+   "trap": "One reason of crime rate rising is because unemployed people become more and more.",
+   "tip": "\"……越来越多\"可以改写成\"……的数量增加了\"：the number of + 复数名词，谓语用单数 has。"
+  },
+  {
+   "id": "cult-04",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "出国旅行可以让年轻人了解不同的文化。",
+   "en": "Travelling abroad allows young people to learn about different cultures.",
+   "k": [
+    [
+     "allow-to",
+     "allows … to",
+     "让某人能够做"
+    ],
+    [
+     "learn-about",
+     "learn about",
+     "了解"
+    ]
+   ],
+   "trap": "Travel abroad can let young people know different culture.",
+   "tip": "动作做主语用 doing；\"了解文化\"用 learn about，know 只表示\"知道\"。"
+  },
+  {
+   "id": "cult-05",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "和过去相比，现在的年轻人读的纸质书少多了。",
+   "en": "Compared with the past, young people today read far fewer printed books.",
+   "k": [
+    [
+     "compared-with",
+     "Compared with",
+     "与……相比"
+    ],
+    [
+     "fewer",
+     "far fewer",
+     "少得多"
+    ]
+   ],
+   "trap": "Compare with past, nowadays young people read less paper books.",
+   "tip": "可数名词的\"更少\"用 fewer，不可数名词用 less；\"纸质书\"是 printed books。"
+  },
+  {
+   "id": "cult-06",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "很多老人以前常去电影院，但现在更喜欢在家看电视。",
+   "en": "Many older people used to go to the cinema, but now they prefer to watch TV at home.",
+   "k": [
+    [
+     "used-to",
+     "used to",
+     "过去常常"
+    ],
+    [
+     "prefer-to",
+     "prefer to",
+     "更喜欢做"
+    ]
+   ],
+   "trap": "Many old people were used to go to cinema, but now they more like watching TV at home.",
+   "tip": "\"过去常常\"是 used to do；be used to doing 是\"习惯于\"，两个不要混。"
+  },
+  {
+   "id": "cult-07",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "传统节日之所以重要，是因为它们能把家人聚在一起。",
+   "en": "What makes traditional festivals important is that they bring families together.",
+   "k": [
+    [
+     "what-is-that",
+     "What … is that",
+     "……的是……"
+    ],
+    [
+     "bring-together",
+     "bring … together",
+     "把……聚在一起"
+    ]
+   ],
+   "trap": "Traditional festivals are important is because they make family get together.",
+   "tip": "\"之所以……是因为……\"可以写成 What makes … important is that …；最简单的写法是 … are important because …。",
+   "alts": [
+    "Traditional festivals are important because they bring families together."
+   ]
+  },
+  {
+   "id": "media-03",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "孩子们花太多时间看视频，这对他们的视力不好。",
+   "en": "Children spend too much time watching videos, which is bad for their eyesight.",
+   "k": [
+    [
+     "spend-doing",
+     "spend … watching",
+     "花时间做某事"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ],
+    [
+     "bad-for",
+     "bad for",
+     "对……有害"
+    ]
+   ],
+   "trap": "Children spend too much time to watch videos, this is harmful to their eyes.",
+   "tip": "spend + 时间 + doing，不是 to do；指代前面整件事用 , which。"
+  },
+  {
+   "id": "media-04",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "社交媒体让人们更容易和朋友保持联系。",
+   "en": "Social media makes it easier for people to keep in touch with their friends.",
+   "k": [
+    [
+     "make-it-easier",
+     "makes it easier for … to",
+     "让某人更容易做某事"
+    ],
+    [
+     "keep-in-touch",
+     "keep in touch with",
+     "和……保持联系"
+    ]
+   ],
+   "trap": "Social media makes people more easily keep contact with friends.",
+   "tip": "\"让某人更容易做\"用 make it easier for sb to do，it 是占位的形式宾语，不能省。"
+  },
+  {
+   "id": "media-05",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "虽然网上新闻更新很快，但不一定可靠。",
+   "en": "Although online news is updated quickly, it is not always reliable.",
+   "k": [
+    [
+     "although",
+     "Although",
+     "虽然"
+    ],
+    [
+     "not-always",
+     "not always",
+     "并不总是"
+    ]
+   ],
+   "trap": "Although online news updates very fast, but it is not always reliable.",
+   "tip": "Although 后面不能再用 but；news 是被更新的，用被动 is updated，而且 news 是不可数名词，谓语用单数。"
+  },
+  {
+   "id": "media-06",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "动词句型",
+    "定语从句"
+   ],
+   "zh": "广告让孩子们想买很多他们并不真正需要的东西。",
+   "en": "Advertisements make children want to buy many things that they do not really need.",
+   "k": [
+    [
+     "make-do",
+     "make children want",
+     "让某人做某事"
+    ],
+    [
+     "relative-that",
+     "many things that",
+     "……的东西"
+    ]
+   ],
+   "trap": "Advertisements make children want to buy many things they are not really need.",
+   "tip": "make + 人 + 动词原形，中间不加 to；\"他们不需要的东西\"用 things that they do not need。"
+  },
+  {
+   "id": "sci-05",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "科学家希望这种新药能帮助病人更快康复。",
+   "en": "Scientists hope that this new medicine will help patients recover more quickly.",
+   "k": [
+    [
+     "hope-that",
+     "hope that",
+     "希望……"
+    ],
+    [
+     "recover",
+     "recover",
+     "康复"
+    ]
+   ],
+   "trap": "Scientists hope this new medicine can help patients recovering faster.",
+   "tip": "hope that + 完整句子；help + 人 + 动词原形（help patients recover），不用 doing。"
+  },
+  {
+   "id": "sci-06",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "这项研究表明，睡眠不足会让人更难集中注意力。",
+   "en": "This study shows that a lack of sleep makes it harder for people to concentrate.",
+   "k": [
+    [
+     "make-it-easier",
+     "makes it harder for … to",
+     "让某人更难做某事"
+    ],
+    [
+     "lack-of",
+     "a lack of",
+     "缺乏"
+    ]
+   ],
+   "trap": "This research shows sleep not enough will make people more difficult to concentrate.",
+   "tip": "把\"睡眠不足\"转成名词短语 a lack of sleep 做主语；\"让人更难做\"用 make it harder for sb to do。"
+  },
+  {
+   "id": "sci-07",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "被动语态",
+    "定语从句"
+   ],
+   "zh": "很多实验是在动物身上做的，这引起了一些伦理问题。",
+   "en": "Many experiments are carried out on animals, which raises some ethical questions.",
+   "k": [
+    [
+     "be-carried-out",
+     "are carried out",
+     "被进行"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ]
+   ],
+   "trap": "Many experiments are done in animals, this causes some moral problems.",
+   "tip": "\"实验是……做的\"用被动 be carried out；指代前面整件事用 , which，后面谓语用单数。"
+  },
+  {
+   "id": "sci-08",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "太空探索太昂贵了，很多国家负担不起。",
+   "en": "Space exploration is too expensive for many countries to afford.",
+   "k": [
+    [
+     "too-to",
+     "too … to",
+     "太……而不能"
+    ],
+    [
+     "afford",
+     "afford",
+     "负担得起"
+    ]
+   ],
+   "trap": "Space exploration is too expensive that many countries can't afford it.",
+   "tip": "too … for sb to do 已经包含否定；不要和 that 混用，句末也不要再加 it。"
+  },
+  {
+   "id": "edu-09",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "只要学生每天坚持练习，他们的英语就会进步。",
+   "en": "As long as students keep practising every day, their English will improve.",
+   "k": [
+    [
+     "as-long-as",
+     "As long as",
+     "只要"
+    ],
+    [
+     "keep-doing",
+     "keep practising",
+     "坚持做"
+    ]
+   ],
+   "trap": "Only if students insist practising every day, their English will be improved.",
+   "tip": "\"只要\"用 As long as + 一般现在时，主句用 will；\"坚持做\"是 keep doing，insist 后面不能直接接 doing。"
+  },
+  {
+   "id": "edu-10",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "学生读的书越多，写作能力提高得就越快。",
+   "en": "The more books students read, the faster their writing skills improve.",
+   "k": [
+    [
+     "the-more-the-more",
+     "The more … the faster",
+     "越……越……"
+    ],
+    [
+     "writing-skills",
+     "writing skills",
+     "写作能力"
+    ]
+   ],
+   "trap": "Students read more books, their writing level improves faster.",
+   "tip": "\"越……越……\"把两个比较级都提到句首：The more books …, the faster …，后面再接主语和谓语。"
+  },
+  {
+   "id": "edu-11",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "很多大学让学生去实习，以便为将来的工作做准备。",
+   "en": "Many universities ask students to do an internship so that they can prepare for their future jobs.",
+   "k": [
+    [
+     "so-that-purpose",
+     "so that",
+     "以便"
+    ],
+    [
+     "prepare-for",
+     "prepare for",
+     "为……做准备"
+    ]
+   ],
+   "trap": "Many universities let students to do internship for preparing their future jobs.",
+   "tip": "目的用 so that + 句子（常带 can）；\"为……做准备\"是 prepare for，for 不能漏。"
+  },
+  {
+   "id": "edu-12",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "名词从句",
+    "比较结构"
+   ],
+   "zh": "一个学生能否成功，更多取决于他是否喜欢学习，而不是他有多聪明。",
+   "en": "A student's success depends more on whether they enjoy learning than on how clever they are.",
+   "k": [
+    [
+     "depend-on-whether",
+     "depends … on whether",
+     "取决于是否……"
+    ],
+    [
+     "enjoy-doing",
+     "enjoy learning",
+     "喜欢做某事"
+    ]
+   ],
+   "trap": "A student can success or not depends on he likes study or not, not how clever is he.",
+   "tip": "把\"能否成功\"变成名词 success 做主语，后面用 depends on whether + 句子；how clever they are 是陈述语序。"
+  },
+  {
+   "id": "edu-13",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "网课让学生可以按照自己的节奏学习。",
+   "en": "Online courses allow students to learn at their own pace.",
+   "k": [
+    [
+     "allow-to",
+     "allow … to",
+     "让某人能够做"
+    ],
+    [
+     "at-own-pace",
+     "at their own pace",
+     "按自己的节奏"
+    ]
+   ],
+   "trap": "Online courses let students can learn according to their own speed.",
+   "tip": "allow + 人 + to do，后面不加 can；\"按自己的节奏\"是固定说法 at one's own pace。"
+  },
+  {
+   "id": "edu-14",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "很多学生觉得在别人面前说英语很难。",
+   "en": "Many students find it difficult to speak English in front of others.",
+   "k": [
+    [
+     "find-it-adj",
+     "find it difficult to",
+     "觉得做某事很难"
+    ],
+    [
+     "in-front-of",
+     "in front of",
+     "在……面前"
+    ]
+   ],
+   "trap": "Many students feel speaking English in front of others is difficult.",
+   "tip": "\"觉得做某事很……\"用 find it + 形容词 + to do，it 先占位，真正的内容放在 to do 里。"
+  },
+  {
+   "id": "edu-15",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "有些学生不够自信，不敢在课堂上提问。",
+   "en": "Some students are not confident enough to ask questions in class.",
+   "k": [
+    [
+     "adj-enough",
+     "confident enough to",
+     "足够……去做"
+    ],
+    [
+     "ask-questions",
+     "ask questions",
+     "提问"
+    ]
+   ],
+   "trap": "Some students are not enough confident to ask question in class.",
+   "tip": "enough 修饰形容词时放在形容词后面：confident enough to do。"
+  },
+  {
+   "id": "tech-08",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "定语从句",
+    "比较结构"
+   ],
+   "zh": "每天花好几个小时玩手机的孩子更容易出现视力问题。",
+   "en": "Children who spend hours playing on their phones are more likely to have eye problems.",
+   "k": [
+    [
+     "spend-doing",
+     "spend … playing",
+     "花时间做某事"
+    ],
+    [
+     "be-likely-to",
+     "more likely to",
+     "更可能……"
+    ]
+   ],
+   "trap": "Children spend many hours to play phones every day are easier to have eye problems.",
+   "tip": "\"……的孩子\"用 who 引出；\"更容易出现……\"不是 easier to，而是 more likely to。"
+  },
+  {
+   "id": "tech-09",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "智能手机不仅改变了我们交流的方式，也改变了我们购物的方式。",
+   "en": "Smartphones have changed not only the way we communicate but also the way we shop.",
+   "k": [
+    [
+     "not-only-but-also",
+     "not only … but also",
+     "不仅……而且……"
+    ],
+    [
+     "the-way-clause",
+     "the way",
+     "……的方式"
+    ]
+   ],
+   "trap": "Smartphones not only changed our communicating way, but also changed our shopping way.",
+   "tip": "\"……的方式\"用 the way + 句子（the way we shop）；not only 和 but also 后面放结构相同的部分。"
+  },
+  {
+   "id": "tech-10",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "说到网络安全，很多人还是不够小心。",
+   "en": "When it comes to online safety, many people are still not careful enough.",
+   "k": [
+    [
+     "when-it-comes-to",
+     "When it comes to",
+     "说到"
+    ],
+    [
+     "adj-enough",
+     "careful enough",
+     "足够……"
+    ]
+   ],
+   "trap": "Talking about online safety, many people are still not enough careful.",
+   "tip": "\"说到……\"可以用 When it comes to + 名词开头；enough 放在形容词后面。"
+  },
+  {
+   "id": "tech-11",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "我爷爷以前常写信，现在他更喜欢给我们发语音消息。",
+   "en": "My grandfather used to write letters, but now he prefers to send us voice messages.",
+   "k": [
+    [
+     "used-to",
+     "used to",
+     "过去常常"
+    ],
+    [
+     "prefer-to",
+     "prefers to",
+     "更喜欢做"
+    ]
+   ],
+   "trap": "My grandfather was used to write letters, now he more likes to send us voice messages.",
+   "tip": "\"以前常常\"是 used to do；\"更喜欢\"用 prefer to do，不说 more like；两个句子之间加 but。"
+  },
+  {
+   "id": "tech-12",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "被动语态"
+   ],
+   "zh": "网上的个人信息应该得到更好的保护。",
+   "en": "Personal information online should be better protected.",
+   "k": [
+    [
+     "should-be-done",
+     "should be … protected",
+     "应该被……"
+    ],
+    [
+     "personal-information",
+     "Personal information",
+     "个人信息"
+    ]
+   ],
+   "trap": "Personal information on internet should get better protect.",
+   "tip": "信息是被保护的，用被动 should be protected；副词 better 放在 be 和过去分词之间。"
+  },
+  {
+   "id": "env-08",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "即使只有一个人少用塑料袋，也能对环境产生积极的影响。",
+   "en": "Even if only one person uses fewer plastic bags, it can have a positive effect on the environment.",
+   "k": [
+    [
+     "even-if",
+     "Even if",
+     "即使"
+    ],
+    [
+     "have-effect-on",
+     "have a … effect on",
+     "对……有……影响"
+    ]
+   ],
+   "trap": "Even one person uses less plastic bags, it also can have positive influence to environment.",
+   "tip": "\"即使\"用 Even if + 句子；bags 是可数名词，\"更少\"用 fewer。"
+  },
+  {
+   "id": "env-09",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "结果与目的",
+    "被动语态"
+   ],
+   "zh": "为了保护野生动物，很多森林应该被划为自然保护区。",
+   "en": "In order to protect wild animals, many forests should be turned into nature reserves.",
+   "k": [
+    [
+     "in-order-to",
+     "In order to",
+     "为了"
+    ],
+    [
+     "should-be-done",
+     "should be turned",
+     "应该被……"
+    ]
+   ],
+   "trap": "For protecting wild animals, many forests should be listed as protect areas.",
+   "tip": "\"为了做某事\"用 In order to do，不用 for doing；森林是被划为保护区，用被动。"
+  },
+  {
+   "id": "env-10",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "空气污染太严重了，很多人出门不得不戴口罩。",
+   "en": "Air pollution has become so bad that many people have to wear masks outside.",
+   "k": [
+    [
+     "so-that-result",
+     "so … that",
+     "如此……以至于"
+    ],
+    [
+     "have-to",
+     "have to",
+     "不得不"
+    ]
+   ],
+   "trap": "The air pollution is too serious, many people must wear masks when go out.",
+   "tip": "两个分句用 so … that 连成一句；\"不得不\"用 have to，表示外部情况迫使。"
+  },
+  {
+   "id": "env-11",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "并不是所有环保产品都像广告说的那么环保。",
+   "en": "Not all green products are as eco-friendly as their advertisements claim.",
+   "k": [
+    [
+     "not-all",
+     "Not all",
+     "并非所有"
+    ],
+    [
+     "as-as",
+     "as … as",
+     "和……一样"
+    ]
+   ],
+   "trap": "All green products are not as environmental friendly as advertisements say.",
+   "tip": "\"并非所有\"用 Not all … 开头；All … are not 容易被理解成\"全都不\"。"
+  },
+  {
+   "id": "env-12",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "全球变暖导致海平面上升，这对沿海城市是一种威胁。",
+   "en": "Global warming has led to rising sea levels, which is a threat to coastal cities.",
+   "k": [
+    [
+     "lead-to",
+     "led to",
+     "导致"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ]
+   ],
+   "trap": "Global warming leads sea level rise, this is a threat for coastal cities.",
+   "tip": "lead 后面要加 to；\"这\"指代前面整件事，用 , which 接下去。"
+  },
+  {
+   "id": "health-08",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "为了保持健康，人们每天应该至少走三十分钟。",
+   "en": "In order to stay healthy, people should walk for at least thirty minutes every day.",
+   "k": [
+    [
+     "in-order-to",
+     "In order to",
+     "为了"
+    ],
+    [
+     "at-least",
+     "at least",
+     "至少"
+    ]
+   ],
+   "trap": "For keep healthy, people every day should walk at least thirty minutes.",
+   "tip": "\"为了\"用 In order to + 动词原形；时间状语 every day 放在句末。"
+  },
+  {
+   "id": "health-09",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "并列与递进",
+    "比较结构"
+   ],
+   "zh": "压力太大不仅影响睡眠，还会让人更容易生病。",
+   "en": "Too much stress not only affects sleep but also makes people more likely to get ill.",
+   "k": [
+    [
+     "not-only-but-also",
+     "not only … but also",
+     "不仅……而且……"
+    ],
+    [
+     "be-likely-to",
+     "more likely to",
+     "更可能……"
+    ]
+   ],
+   "trap": "Too much pressure not only influences sleeping, but also lets people easier to get sick.",
+   "tip": "\"让人更容易生病\"= make people more likely to get ill；not only / but also 后面都是动词。"
+  },
+  {
+   "id": "health-10",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "对很多人来说，改掉熬夜的习惯很难。",
+   "en": "It is hard for many people to give up the habit of staying up late.",
+   "k": [
+    [
+     "it-adj-for-to",
+     "It is … for … to",
+     "对某人来说做某事很……"
+    ],
+    [
+     "give-up",
+     "give up",
+     "改掉、放弃"
+    ],
+    [
+     "stay-up-late",
+     "staying up late",
+     "熬夜"
+    ]
+   ],
+   "trap": "Many people are hard to change the habit of staying up late.",
+   "tip": "\"某人很难做某事\"用 It is hard for sb to do；habit of 后面接 doing。"
+  },
+  {
+   "id": "health-11",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "健康饮食的关键是均衡，而不是完全不吃某些食物。",
+   "en": "The key to healthy eating is balance rather than cutting out certain foods completely.",
+   "k": [
+    [
+     "key-to",
+     "The key to",
+     "……的关键"
+    ],
+    [
+     "rather-than",
+     "rather than",
+     "而不是"
+    ]
+   ],
+   "trap": "The key of healthy eating is balance, not completely don't eat some food.",
+   "tip": "\"……的关键\"是 the key to，介词用 to；rather than 后面接 doing，和前面对比。"
+  },
+  {
+   "id": "health-12",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "主谓一致",
+    "定语从句"
+   ],
+   "zh": "老年病人的数量每年都在增加，这给医院带来了压力。",
+   "en": "The number of elderly patients is rising every year, which puts pressure on hospitals.",
+   "k": [
+    [
+     "number-of-has",
+     "The number of … is",
+     "……的数量（谓语单数）"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ],
+    [
+     "put-pressure-on",
+     "puts pressure on",
+     "给……带来压力"
+    ]
+   ],
+   "trap": "The number of old patients are increasing every year, this brings pressure to hospitals.",
+   "tip": "the number of 的中心词是 number，谓语用单数 is；\"带来压力\"是 put pressure on。"
+  },
+  {
+   "id": "health-13",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "很多人觉得头几周过后很难坚持锻炼。",
+   "en": "Many people find it hard to keep exercising after the first few weeks.",
+   "k": [
+    [
+     "find-it-adj",
+     "find it hard to",
+     "觉得做某事很难"
+    ],
+    [
+     "keep-doing",
+     "keep exercising",
+     "坚持做"
+    ]
+   ],
+   "trap": "Many people feel it is hard to insist exercising after the first few weeks.",
+   "tip": "find it hard to do；\"坚持做某事\"用 keep doing。"
+  },
+  {
+   "id": "health-14",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "饮食和运动对减肥都很重要。",
+   "en": "Both diet and exercise are important for losing weight.",
+   "k": [
+    [
+     "both-and",
+     "Both … and",
+     "……和……都"
+    ],
+    [
+     "important-for",
+     "important for",
+     "对……很重要"
+    ]
+   ],
+   "trap": "Diet and exercise both are important to lose weight.",
+   "tip": "\"A 和 B 都\"用 Both A and B 开头，谓语用复数；important for 后面接 doing。"
+  },
+  {
+   "id": "city-08",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it",
+    "比较结构"
+   ],
+   "zh": "在城里开车比坐地铁花的时间长得多。",
+   "en": "It takes much longer to drive in the city than to take the underground.",
+   "k": [
+    [
+     "it-takes",
+     "It takes … to",
+     "做某事需要（时间）"
+    ],
+    [
+     "much-comparative",
+     "much longer",
+     "……得多"
+    ]
+   ],
+   "trap": "Driving in the city spends much more time than taking subway.",
+   "tip": "\"花时间\"的主语不是事情本身，用 It takes + 时间 + to do；比较对象也用 to do 对齐。"
+  },
+  {
+   "id": "city-09",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "与小城镇相比，大城市的生活成本要高得多。",
+   "en": "Compared with small towns, the cost of living in big cities is much higher.",
+   "k": [
+    [
+     "compared-with",
+     "Compared with",
+     "与……相比"
+    ],
+    [
+     "cost-of-living",
+     "the cost of living",
+     "生活成本"
+    ],
+    [
+     "much-comparative",
+     "much higher",
+     "……得多"
+    ]
+   ],
+   "trap": "Compare with small towns, big cities' living cost is more higher.",
+   "tip": "比较级前面用 much 表示\"……得多\"，不能说 more higher。"
+  },
+  {
+   "id": "city-10",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "很多年轻人更喜欢住在市中心，因为那里交通方便。",
+   "en": "Many young people prefer to live in the city centre because transport there is convenient.",
+   "k": [
+    [
+     "prefer-to",
+     "prefer to",
+     "更喜欢做"
+    ],
+    [
+     "city-centre",
+     "city centre",
+     "市中心"
+    ]
+   ],
+   "trap": "Many young people more like living in city center, because there transport is convenient.",
+   "tip": "\"更喜欢\"用 prefer to do；\"那里的交通\"是 transport there，地点副词放在名词后面。"
+  },
+  {
+   "id": "city-11",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "结果与目的"
+   ],
+   "zh": "城市应该多建公园，让居民有地方放松。",
+   "en": "Cities should build more parks so that residents have somewhere to relax.",
+   "k": [
+    [
+     "so-that-purpose",
+     "so that",
+     "以便"
+    ],
+    [
+     "somewhere-to",
+     "somewhere to relax",
+     "有地方做某事"
+    ]
+   ],
+   "trap": "City should build more parks for residents have place to relax.",
+   "tip": "for 后面不能接句子，目的用 so that + 句子；\"有地方做某事\"是 have somewhere to do。"
+  },
+  {
+   "id": "city-12",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "无论城市变得多么现代，它仍然要应对交通问题。",
+   "en": "No matter how modern a city becomes, it still has to deal with traffic problems.",
+   "k": [
+    [
+     "no-matter-how",
+     "No matter how",
+     "无论多么"
+    ],
+    [
+     "have-to",
+     "has to",
+     "不得不"
+    ],
+    [
+     "deal-with",
+     "deal with",
+     "应对"
+    ]
+   ],
+   "trap": "No matter how modern does a city become, it still needs to face the traffic problem.",
+   "tip": "No matter how + 形容词 + 主语 + 谓语，不用倒装；\"应对问题\"常用 deal with。"
+  },
+  {
+   "id": "city-13",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "小城镇的生活没有大城市方便，但是便宜得多。",
+   "en": "Life in a small town is not as convenient as life in a big city, but it is much cheaper.",
+   "k": [
+    [
+     "as-as",
+     "as … as",
+     "和……一样"
+    ],
+    [
+     "much-comparative",
+     "much cheaper",
+     "……得多"
+    ]
+   ],
+   "trap": "The life of small town is not convenient as big city, but it is more cheaper.",
+   "tip": "\"没有……那么……\"用 not as + 形容词 + as；比较的两边要对等：life in a small town 对 life in a big city。"
+  },
+  {
+   "id": "work-08",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "很多人一边工作一边学习，这非常累。",
+   "en": "Many people work and study at the same time, which is very tiring.",
+   "k": [
+    [
+     "at-the-same-time",
+     "at the same time",
+     "同时"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ]
+   ],
+   "trap": "Many people work while study, this is very tired.",
+   "tip": "\"一边……一边……\"用 at the same time；让人累用 tiring，人自己觉得累用 tired。"
+  },
+  {
+   "id": "work-09",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "员工工作时越开心，效率往往就越高。",
+   "en": "The happier employees are at work, the more productive they tend to be.",
+   "k": [
+    [
+     "the-more-the-more",
+     "The happier … the more productive",
+     "越……越……"
+    ],
+    [
+     "tend-to",
+     "tend to",
+     "往往"
+    ]
+   ],
+   "trap": "Employees are more happy at work, their working efficiency is higher.",
+   "tip": "\"越……越……\"用 the + 比较级 + 主语 + 谓语；\"往往\"用 tend to do。"
+  },
+  {
+   "id": "work-10",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "好老板会让员工自己做决定。",
+   "en": "A good boss allows employees to make their own decisions.",
+   "k": [
+    [
+     "allow-to",
+     "allows … to",
+     "让某人能够做"
+    ],
+    [
+     "make-decisions",
+     "make … decisions",
+     "做决定"
+    ]
+   ],
+   "trap": "A good boss lets employees to make decisions by themselves.",
+   "tip": "allow + 人 + to do；let 后面不加 to。\"做决定\"的动词用 make。"
+  },
+  {
+   "id": "work-11",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "有些人宁愿少挣点钱，也不愿放弃空闲时间。",
+   "en": "Some people would rather earn less money than give up their free time.",
+   "k": [
+    [
+     "would-rather",
+     "would rather … than",
+     "宁愿……也不"
+    ],
+    [
+     "give-up",
+     "give up",
+     "放弃"
+    ]
+   ],
+   "trap": "Some people rather earn less money also don't want to give up their free time.",
+   "tip": "\"宁愿 A 也不 B\"用 would rather do A than do B，两边都用动词原形。"
+  },
+  {
+   "id": "work-12",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "动词句型",
+    "定语从句"
+   ],
+   "zh": "很多公司要求员工加班，这会对他们的健康产生负面影响。",
+   "en": "Many companies expect employees to work overtime, which can have a negative effect on their health.",
+   "k": [
+    [
+     "expect-to",
+     "expect … to",
+     "要求某人做"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ],
+    [
+     "have-effect-on",
+     "have a … effect on",
+     "对……有……影响"
+    ]
+   ],
+   "trap": "Many companies ask staffs work overtime, this will have negative influence on their health.",
+   "tip": "expect + 人 + to do；指代前面整件事用 , which。"
+  },
+  {
+   "id": "work-13",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "在家办公改变了很多人安排一天的方式。",
+   "en": "Working from home has changed the way many people organise their day.",
+   "k": [
+    [
+     "from-home",
+     "from home",
+     "在家"
+    ],
+    [
+     "the-way-clause",
+     "the way",
+     "……的方式"
+    ]
+   ],
+   "trap": "Work at home has changed many people's arranging way of a day.",
+   "tip": "动作做主语用 doing；\"……的方式\"用 the way + 句子，不要堆成 arranging way。"
+  },
+  {
+   "id": "soc-08",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "只要每个人都遵守规则，社会就会更安全。",
+   "en": "As long as everyone follows the rules, society will be safer.",
+   "k": [
+    [
+     "as-long-as",
+     "As long as",
+     "只要"
+    ],
+    [
+     "follow-rules",
+     "follows the rules",
+     "遵守规则"
+    ]
+   ],
+   "trap": "Only everyone obeys the rules, the society will be more safe.",
+   "tip": "As long as 后面用一般现在时，everyone 是单数，动词加 s；safe 的比较级是 safer。"
+  },
+  {
+   "id": "soc-09",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "并不是所有家庭都负担得起送孩子上私立学校。",
+   "en": "Not all families can afford to send their children to private schools.",
+   "k": [
+    [
+     "not-all",
+     "Not all",
+     "并非所有"
+    ],
+    [
+     "afford",
+     "afford",
+     "负担得起"
+    ]
+   ],
+   "trap": "All families can't afford sending their children to private schools.",
+   "tip": "\"并非所有\"用 Not all；afford 后面接 to do。"
+  },
+  {
+   "id": "soc-10",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "让步从句",
+    "形式主语 it"
+   ],
+   "zh": "即使通过了新法律，政府仍然很难完全阻止网络暴力。",
+   "en": "Even if new laws are passed, it is still difficult for the government to stop online bullying completely.",
+   "k": [
+    [
+     "even-if",
+     "Even if",
+     "即使"
+    ],
+    [
+     "it-adj-for-to",
+     "it is … for … to",
+     "对某人来说做某事很……"
+    ]
+   ],
+   "trap": "Even if there have new laws, government is still difficult to stop online bullying.",
+   "tip": "法律是被通过的，用 laws are passed；\"政府很难做\"用 it is difficult for the government to do。"
+  },
+  {
+   "id": "soc-11",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "年轻人和老年人都应该学会使用网上银行。",
+   "en": "Both young and old people should learn how to use online banking.",
+   "k": [
+    [
+     "both-and",
+     "Both … and",
+     "……和……都"
+    ],
+    [
+     "learn-how-to",
+     "learn how to",
+     "学会怎样做"
+    ]
+   ],
+   "trap": "Young people and old people both should learn using online bank.",
+   "tip": "Both A and B 放在主语开头；\"学会做\"用 learn how to do 或 learn to do，不用 learn doing。"
+  },
+  {
+   "id": "soc-12",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "结果与目的",
+    "定语从句"
+   ],
+   "zh": "很多人在社区做志愿者，为了帮助有需要的人。",
+   "en": "Many people volunteer in their community in order to help those who are in need.",
+   "k": [
+    [
+     "in-order-to",
+     "in order to",
+     "为了"
+    ],
+    [
+     "those-who",
+     "those who",
+     "那些……的人"
+    ]
+   ],
+   "trap": "Many people do volunteer in community for helping people who need help.",
+   "tip": "\"为了\"用 in order to do；\"有需要的人\"用 those who are in need。"
+  },
+  {
+   "id": "cult-08",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "学外语是了解另一种文化的好方法。",
+   "en": "Learning a foreign language is a good way to learn about another culture.",
+   "k": [
+    [
+     "good-way-to",
+     "a good way to",
+     "……的好方法"
+    ],
+    [
+     "learn-about",
+     "learn about",
+     "了解"
+    ]
+   ],
+   "trap": "Learn a foreign language is a good method to know another culture.",
+   "tip": "动作做主语用 doing；\"……的好方法\"用 a good way to do。"
+  },
+  {
+   "id": "cult-09",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "说到传统节日，很多年轻人更在乎放假，而不是节日习俗。",
+   "en": "When it comes to traditional festivals, many young people care more about the holidays than the customs.",
+   "k": [
+    [
+     "when-it-comes-to",
+     "When it comes to",
+     "说到"
+    ],
+    [
+     "care-about",
+     "care … about",
+     "在乎"
+    ]
+   ],
+   "trap": "Talking about traditional festivals, many young people care holidays more than customs.",
+   "tip": "care 后面要接 about；比较时 more 放在 care 和 about 之间。"
+  },
+  {
+   "id": "cult-10",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "被动语态",
+    "结果与目的"
+   ],
+   "zh": "博物馆应该免费开放，这样就能有更多人去参观。",
+   "en": "Entry to museums should be made free so that more people can visit them.",
+   "k": [
+    [
+     "should-be-done",
+     "should be made",
+     "应该被……"
+    ],
+    [
+     "so-that-purpose",
+     "so that",
+     "以便"
+    ]
+   ],
+   "trap": "Museums should free so more people can visit.",
+   "tip": "should 后面要有动词；用被动 should be made free；\"这样就能\"用 so that + can。"
+  },
+  {
+   "id": "cult-11",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "去一个村庄的游客越多，它传统的生活方式就消失得越快。",
+   "en": "The more tourists visit a village, the faster its traditional way of life disappears.",
+   "k": [
+    [
+     "the-more-the-more",
+     "The more … the faster",
+     "越……越……"
+    ],
+    [
+     "way-of-life",
+     "way of life",
+     "生活方式"
+    ]
+   ],
+   "trap": "Tourists more visit a village, its traditional life way disappears faster.",
+   "tip": "the more + 名词 + 谓语, the faster + 主语 + 谓语；\"生活方式\"是 way of life。"
+  },
+  {
+   "id": "cult-12",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "好电影能让人思考重要的社会问题。",
+   "en": "Good films can make people think about important social problems.",
+   "k": [
+    [
+     "make-do",
+     "make people think",
+     "让某人做某事"
+    ],
+    [
+     "social-problems",
+     "social problems",
+     "社会问题"
+    ]
+   ],
+   "trap": "Good films can make people to think important social problems.",
+   "tip": "make + 人 + 动词原形，中间不加 to；think 后面要加 about。"
+  },
+  {
+   "id": "cult-13",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "定语从句",
+    "非谓语"
+   ],
+   "zh": "很多退休老人喜欢在广场上跳舞，这有时会打扰到邻居。",
+   "en": "Many retired people enjoy dancing in public squares, which sometimes annoys their neighbours.",
+   "k": [
+    [
+     "enjoy-doing",
+     "enjoy dancing",
+     "喜欢做某事"
+    ],
+    [
+     "which-clause",
+     ", which",
+     "，这"
+    ]
+   ],
+   "trap": "Many retired old people enjoy to dance in squares, this sometimes disturbs neighbours.",
+   "tip": "enjoy 后面接 doing；指代前面整件事用 , which，谓语用单数 annoys。"
+  },
+  {
+   "id": "media-07",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "很多年轻人每天花好几个小时刷社交媒体。",
+   "en": "Many young people spend several hours scrolling through social media every day.",
+   "k": [
+    [
+     "spend-doing",
+     "spend … scrolling",
+     "花时间做某事"
+    ],
+    [
+     "social-media",
+     "social media",
+     "社交媒体"
+    ]
+   ],
+   "trap": "Many young people spend several hours to brush social media every day.",
+   "tip": "spend + 时间 + doing；\"刷手机、刷网页\"用 scroll through。"
+  },
+  {
+   "id": "media-08",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "被动语态"
+   ],
+   "zh": "网上的评论不一定可信，因为其中一些是公司花钱买的。",
+   "en": "Online reviews are not always trustworthy because some of them are paid for by companies.",
+   "k": [
+    [
+     "not-always",
+     "not always",
+     "并不总是"
+    ],
+    [
+     "some-of-them",
+     "some of them",
+     "其中一些"
+    ]
+   ],
+   "trap": "Online comments are not always believable, because some are bought by companies use money.",
+   "tip": "\"不一定\"用 not always；\"其中一些\"用 some of them；公司付钱买的用被动 are paid for by。"
+  },
+  {
+   "id": "media-09",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "被动语态"
+   ],
+   "zh": "新闻报道应该基于事实，而不是个人观点。",
+   "en": "News reports should be based on facts instead of personal opinions.",
+   "k": [
+    [
+     "be-based-on",
+     "be based on",
+     "基于"
+    ],
+    [
+     "instead-of",
+     "instead of",
+     "而不是"
+    ]
+   ],
+   "trap": "News reports should base on facts, not personal opinions.",
+   "tip": "\"基于\"要用被动 be based on；instead of 后面接名词。"
+  },
+  {
+   "id": "media-10",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "让很多家长担心的是，孩子花在手机上的时间太多了。",
+   "en": "What worries many parents is that their children spend too much time on their phones.",
+   "k": [
+    [
+     "what-is-that",
+     "What … is that",
+     "……的是……"
+    ],
+    [
+     "spend-on",
+     "spend … on",
+     "把时间花在……上"
+    ]
+   ],
+   "trap": "Many parents worry is that their children spend too much time in phones.",
+   "tip": "\"让……担心的是\"用 What worries … is that + 句子；花在手机上用 spend time on。"
+  },
+  {
+   "id": "media-11",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "有些网站让用户很难找到取消订阅的按钮。",
+   "en": "Some websites make it hard for users to find the button to cancel their subscription.",
+   "k": [
+    [
+     "make-it-easier",
+     "make it hard for … to",
+     "让某人很难做某事"
+    ],
+    [
+     "cancel-subscription",
+     "cancel their subscription",
+     "取消订阅"
+    ]
+   ],
+   "trap": "Some websites make users difficult to find the cancel subscription button.",
+   "tip": "\"让某人很难做\"用 make it hard for sb to do，it 不能省；\"取消订阅的按钮\"用 the button to cancel …。"
+  },
+  {
+   "id": "media-12",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "人们往往更愿意相信和自己观点一致的新闻。",
+   "en": "People tend to believe news that matches their own opinions.",
+   "k": [
+    [
+     "tend-to",
+     "tend to",
+     "往往"
+    ],
+    [
+     "relative-that",
+     "news that",
+     "……的（东西）"
+    ]
+   ],
+   "trap": "People tend to believe the news which is same as their own opinions.",
+   "tip": "\"往往\"用 tend to do；\"和自己观点一致的新闻\"用 news that matches their own opinions。"
+  },
+  {
+   "id": "sci-09",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "名词从句",
+    "比较结构"
+   ],
+   "zh": "科学家还在研究，为什么有些人比别人更容易得这种病。",
+   "en": "Scientists are still studying why some people are more likely to get this disease than others.",
+   "k": [
+    [
+     "be-likely-to",
+     "more likely to",
+     "更可能……"
+    ],
+    [
+     "than-others",
+     "than others",
+     "比别人"
+    ]
+   ],
+   "trap": "Scientists are still researching why some people are easier to get this disease than others.",
+   "tip": "\"更容易得病\"是 more likely to get；why 后面用陈述语序。"
+  },
+  {
+   "id": "sci-10",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "被动语态",
+    "结果与目的"
+   ],
+   "zh": "这个实验必须重复很多次，以确保结果准确。",
+   "en": "The experiment has to be repeated many times to make sure that the results are accurate.",
+   "k": [
+    [
+     "have-to",
+     "has to",
+     "不得不、必须"
+    ],
+    [
+     "make-sure",
+     "make sure that",
+     "确保"
+    ]
+   ],
+   "trap": "This experiment must repeat many times to ensure the result is accurate.",
+   "tip": "实验是被重复的，用被动 has to be repeated；\"确保\"用 make sure that + 句子。"
+  },
+  {
+   "id": "sci-11",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "被动语态"
+   ],
+   "zh": "并不是所有科学发现都能马上用在日常生活中。",
+   "en": "Not all scientific discoveries can be used in daily life straight away.",
+   "k": [
+    [
+     "not-all",
+     "Not all",
+     "并非所有"
+    ],
+    [
+     "daily-life",
+     "daily life",
+     "日常生活"
+    ]
+   ],
+   "trap": "All scientific discoveries can not be used in daily life at once.",
+   "tip": "\"并非所有\"用 Not all；发现是被使用的，用被动 can be used。"
+  },
+  {
+   "id": "sci-12",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "虽然太空研究很昂贵，但它带来了很多有用的发明，比如更好的手机摄像头。",
+   "en": "Although space research is expensive, it has led to many useful inventions, such as better phone cameras.",
+   "k": [
+    [
+     "although",
+     "Although",
+     "虽然"
+    ],
+    [
+     "lead-to",
+     "led to",
+     "带来"
+    ],
+    [
+     "such-as",
+     "such as",
+     "比如"
+    ]
+   ],
+   "trap": "Although space research is expensive, but it brought many useful inventions, for example better phone camera.",
+   "tip": "Although 和 but 只能用一个；在句中举例用 such as + 名词。"
+  },
+  {
+   "id": "sci-13",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "条件从句",
+    "被动语态"
+   ],
+   "zh": "如果没有足够的资金，很多研究项目就无法进行。",
+   "en": "Unless there is enough funding, many research projects cannot be carried out.",
+   "k": [
+    [
+     "unless",
+     "Unless",
+     "除非、如果不"
+    ],
+    [
+     "be-carried-out",
+     "be carried out",
+     "被进行"
+    ]
+   ],
+   "trap": "If there is not enough money, many research projects can't carry out.",
+   "tip": "Unless 后面接肯定句；项目是被进行的，用被动 be carried out。"
+  },
+  {
+   "id": "edu-16",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "这所学校的每个学生都必须参加至少一项课外活动。",
+   "en": "Each of the students at this school has to take part in at least one after-school activity.",
+   "k": [
+    [
+     "each-of-has",
+     "Each of the … has",
+     "……中的每一个（谓语单数）"
+    ],
+    [
+     "take-part-in",
+     "take part in",
+     "参加"
+    ],
+    [
+     "at-least",
+     "at least",
+     "至少"
+    ]
+   ],
+   "trap": "Every students in this school must take part in at least one after-school activities.",
+   "tip": "\"每个……\"用 Each of the + 复数名词，谓语用单数 has；one 后面的名词用单数。"
+  },
+  {
+   "id": "edu-17",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "条件从句",
+    "形式主语 it"
+   ],
+   "zh": "如果学生睡眠不足，他们上课就会很难集中注意力。",
+   "en": "If students do not get enough sleep, they will find it hard to concentrate in class.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "find-it-adj",
+     "find it hard to",
+     "觉得做某事很难"
+    ]
+   ],
+   "trap": "If students sleep not enough, they will be hard to concentrate in class.",
+   "tip": "If 从句用一般现在时，主句用 will；\"他们很难做\"不写 they are hard，用 find it hard to do。"
+  },
+  {
+   "id": "edu-18",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "学生可以选择在网上考试，也可以去考场考试。",
+   "en": "Students can either take the exam online or sit it at a test centre.",
+   "k": [
+    [
+     "either-or",
+     "either … or",
+     "可以……也可以……"
+    ],
+    [
+     "take-exam",
+     "take the exam",
+     "参加考试"
+    ]
+   ],
+   "trap": "Students can choose online exam, also can choose go to the test center.",
+   "tip": "\"可以 A 也可以 B（二选一）\"用 either A or B，A 和 B 都是动词短语，结构对称。"
+  },
+  {
+   "id": "edu-19",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "通过每天读英文新闻，你可以学到很多有用的表达。",
+   "en": "By reading English news every day, you can learn a lot of useful expressions.",
+   "k": [
+    [
+     "by-doing",
+     "By reading",
+     "通过做某事"
+    ],
+    [
+     "a-lot-of",
+     "a lot of",
+     "很多"
+    ]
+   ],
+   "trap": "Through read English news every day, you can learn many useful expression.",
+   "tip": "\"通过做某事\"用 By + doing 放在句首；through 后面不能直接接动词。"
+  },
+  {
+   "id": "edu-20",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "问题是，很多学生学习只是为了通过考试。",
+   "en": "The problem is that many students only study to pass exams.",
+   "k": [
+    [
+     "problem-is-that",
+     "The problem is that",
+     "问题是"
+    ],
+    [
+     "pass-exams",
+     "pass exams",
+     "通过考试"
+    ]
+   ],
+   "trap": "The problem is many students study only for pass the exams.",
+   "tip": "\"问题是……\"用 The problem is that + 完整句子；for 后面不能接动词原形，目的用 to do。"
+  },
+  {
+   "id": "edu-21",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "学校应该让学生为真实生活做好准备，而不只是为了考试。",
+   "en": "Schools should prepare students for real life rather than just for exams.",
+   "k": [
+    [
+     "prepare-for",
+     "prepare … for",
+     "让某人为……做准备"
+    ],
+    [
+     "rather-than",
+     "rather than",
+     "而不是"
+    ]
+   ],
+   "trap": "Schools should let students prepare real life, not only for exams.",
+   "tip": "\"让某人为……做准备\"用 prepare + 人 + for；rather than 前后放同类成分（for real life / for exams）。"
+  },
+  {
+   "id": "tech-13",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "主谓一致",
+    "名词从句"
+   ],
+   "zh": "智能手机最大的问题之一是它们让人分心。",
+   "en": "One of the biggest problems with smartphones is that they distract people.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "distract",
+     "distract people",
+     "让人分心"
+    ]
+   ],
+   "trap": "One of the biggest problem of smartphones are they make people distracted.",
+   "tip": "One of the + 最高级 + 复数名词，谓语跟 one 一致用 is；后面接 that + 句子。"
+  },
+  {
+   "id": "tech-14",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "人们睡前应该避免使用电子设备。",
+   "en": "People should avoid using electronic devices before going to bed.",
+   "k": [
+    [
+     "avoid-doing",
+     "avoid using",
+     "避免做某事"
+    ],
+    [
+     "electronic-devices",
+     "electronic devices",
+     "电子设备"
+    ]
+   ],
+   "trap": "People should avoid to use electronic products before sleep.",
+   "tip": "avoid 后面接 doing；before 是介词，后面也用 doing（before going to bed）。"
+  },
+  {
+   "id": "tech-15",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "条件从句",
+    "比较结构"
+   ],
+   "zh": "如果没有互联网，人们查找信息会难得多。",
+   "en": "If there were no internet, it would be much harder for people to find information.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "much-comparative",
+     "much harder",
+     "……得多"
+    ]
+   ],
+   "trap": "If there is no internet, people will be much more difficult to find information.",
+   "tip": "假设和现在事实相反的情况：If + 过去式（were），主句用 would + 动词原形。"
+  },
+  {
+   "id": "tech-16",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "社交媒体让很多青少年对自己的外表不那么自信了。",
+   "en": "Social media has made many teenagers less confident about their appearance.",
+   "k": [
+    [
+     "make-obj-adj",
+     "made many teenagers less confident",
+     "使……变得……"
+    ],
+    [
+     "appearance",
+     "their appearance",
+     "外表"
+    ]
+   ],
+   "trap": "Social media made many teenagers become not confident to their looks.",
+   "tip": "make + 宾语 + 形容词，中间不加 become；\"对外表不自信\"用 less confident about one's appearance。"
+  },
+  {
+   "id": "tech-17",
+   "t": "科技",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "尽管网上购物很方便，很多人还是更喜欢在商店买衣服。",
+   "en": "Despite the convenience of online shopping, many people still prefer to buy clothes in shops.",
+   "k": [
+    [
+     "despite",
+     "Despite",
+     "尽管"
+    ],
+    [
+     "prefer-to",
+     "prefer to",
+     "更喜欢做"
+    ]
+   ],
+   "trap": "Despite online shopping is convenient, many people still prefer buying clothes in shops.",
+   "tip": "Despite 是介词，后面接名词（the convenience of …），不能接句子；接句子要用 Although。"
+  },
+  {
+   "id": "tech-18",
+   "t": "科技",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "很多老人还不习惯用手机付款，所以他们仍然带现金。",
+   "en": "Many older people are not used to paying by phone, so they still carry cash.",
+   "k": [
+    [
+     "be-used-to-doing",
+     "used to paying",
+     "习惯于做某事"
+    ],
+    [
+     "carry-cash",
+     "carry cash",
+     "带现金"
+    ]
+   ],
+   "trap": "Many old people are not used to pay by phone, so they still take cash.",
+   "tip": "be used to doing 是\"习惯于\"，to 是介词，后面接 doing；used to do 才是\"过去常常\"。"
+  },
+  {
+   "id": "env-13",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "这个城市的每户家庭都必须进行垃圾分类。",
+   "en": "Each of the households in this city has to sort its rubbish.",
+   "k": [
+    [
+     "each-of-has",
+     "Each of the … has",
+     "……中的每一个（谓语单数）"
+    ],
+    [
+     "sort-rubbish",
+     "sort its rubbish",
+     "垃圾分类"
+    ]
+   ],
+   "trap": "Every families in this city need to classify the garbage.",
+   "tip": "Each of the + 复数名词，谓语用单数，代词也用单数 its。"
+  },
+  {
+   "id": "env-14",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "条件从句",
+    "比较结构"
+   ],
+   "zh": "如果每个人每周少开一天车，空气就会干净得多。",
+   "en": "If everyone drove one day less each week, the air would be much cleaner.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "much-comparative",
+     "much cleaner",
+     "……得多"
+    ]
+   ],
+   "trap": "If everyone drives one day less every week, the air will be cleaner much.",
+   "tip": "这是假设，用 If + 过去式，主句 would；much 放在比较级前面。"
+  },
+  {
+   "id": "env-15",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "塑料污染伤害人类健康，也伤害海洋生物。",
+   "en": "Plastic pollution harms human health as well as marine life.",
+   "k": [
+    [
+     "as-well-as",
+     "as well as",
+     "……以及……"
+    ],
+    [
+     "marine-life",
+     "marine life",
+     "海洋生物"
+    ]
+   ],
+   "trap": "Plastic pollution harms human health, also harms ocean animals.",
+   "tip": "连接两个名词宾语用 as well as，动词不用重复；also 不能用来连接两个句子。"
+  },
+  {
+   "id": "env-16",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "我们可以通过少吃肉来减少碳排放。",
+   "en": "We can reduce carbon emissions by eating less meat.",
+   "k": [
+    [
+     "by-doing",
+     "by eating",
+     "通过做某事"
+    ],
+    [
+     "carbon-emissions",
+     "carbon emissions",
+     "碳排放"
+    ]
+   ],
+   "trap": "We can through eating less meat to reduce carbon emission.",
+   "tip": "\"通过做某事来做……\"：先说结果 reduce …，再用 by + doing 说方法。"
+  },
+  {
+   "id": "env-17",
+   "t": "环境",
+   "lv": "B2",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "缺水给很多农村地区带来了很大压力。",
+   "en": "A lack of water has put great pressure on many rural areas.",
+   "k": [
+    [
+     "lack-of",
+     "A lack of",
+     "缺乏"
+    ],
+    [
+     "put-pressure-on",
+     "put … pressure on",
+     "给……带来压力"
+    ]
+   ],
+   "trap": "Lack of water brings big pressure to many countryside areas.",
+   "tip": "\"……不足\"变成名词短语 a lack of … 做主语；\"带来压力\"用 put pressure on。"
+  },
+  {
+   "id": "health-15",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "许多研究表明，吃早餐对健康有好处。",
+   "en": "A number of studies have shown that eating breakfast is good for your health.",
+   "k": [
+    [
+     "a-number-of",
+     "A number of",
+     "许多（谓语复数）"
+    ],
+    [
+     "good-for",
+     "good for",
+     "对……有好处"
+    ]
+   ],
+   "trap": "A number of studies has shown that eat breakfast is good to health.",
+   "tip": "a number of + 复数名词 = 许多，谓语用复数；the number of 才用单数。"
+  },
+  {
+   "id": "health-16",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "很多上班族已经习惯了很晚才吃晚饭。",
+   "en": "Many office workers are used to eating dinner late.",
+   "k": [
+    [
+     "be-used-to-doing",
+     "are used to eating",
+     "习惯于做某事"
+    ],
+    [
+     "office-workers",
+     "office workers",
+     "上班族"
+    ]
+   ],
+   "trap": "Many office workers are used to eat dinner late.",
+   "tip": "be used to doing（习惯于），to 后面接 doing；不要和 used to do（过去常常）混用。"
+  },
+  {
+   "id": "health-17",
+   "t": "健康",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果你每天喝足够的水，你会觉得更有精神。",
+   "en": "If you drink enough water every day, you will feel more energetic.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "enough-noun",
+     "enough water",
+     "足够的……"
+    ]
+   ],
+   "trap": "If you drink water enough every day, you will feel more energy.",
+   "tip": "enough 修饰名词放在名词前（enough water），修饰形容词放在形容词后（careful enough）。"
+  },
+  {
+   "id": "health-18",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "吃得太多和吃得太少都对身体不好。",
+   "en": "Neither eating too much nor eating too little is good for your body.",
+   "k": [
+    [
+     "neither-nor",
+     "Neither … nor",
+     "既不……也不……"
+    ],
+    [
+     "good-for",
+     "good for",
+     "对……有好处"
+    ]
+   ],
+   "trap": "Eating too much and eating too little both are not good for body.",
+   "tip": "\"两个都不\"用 Neither A nor B；A、B 都是 doing 时谓语用单数。"
+  },
+  {
+   "id": "health-19",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "定期体检可以降低患严重疾病的风险。",
+   "en": "Having regular check-ups can reduce the risk of serious illness.",
+   "k": [
+    [
+     "regular-check-ups",
+     "regular check-ups",
+     "定期体检"
+    ],
+    [
+     "reduce-risk-of",
+     "reduce the risk of",
+     "降低……的风险"
+    ]
+   ],
+   "trap": "Do regular body check can reduce the risk to get serious illness.",
+   "tip": "动作做主语用 doing（Having …）；the risk of + 名词。"
+  },
+  {
+   "id": "health-20",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "学着做几道健康的菜是很值得的。",
+   "en": "It is worth learning to cook a few healthy dishes.",
+   "k": [
+    [
+     "be-worth-doing",
+     "is worth learning",
+     "值得做"
+    ],
+    [
+     "a-few",
+     "a few",
+     "几个"
+    ]
+   ],
+   "trap": "It is worth to learn cooking a few healthy dishes.",
+   "tip": "be worth 后面接 doing；learn 后面接 to do。"
+  },
+  {
+   "id": "health-21",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "名词从句",
+    "让步从句"
+   ],
+   "zh": "快餐确实便宜，但往往不健康。",
+   "en": "It is true that fast food is cheap, but it is often unhealthy.",
+   "k": [
+    [
+     "it-is-true-that",
+     "It is true that … but",
+     "……确实……，但……"
+    ],
+    [
+     "fast-food",
+     "fast food",
+     "快餐"
+    ]
+   ],
+   "trap": "Fast food is indeed cheap, but often is not healthy.",
+   "tip": "先承认再转折可以用 It is true that …, but …；often 放在 be 动词后面。"
+  },
+  {
+   "id": "city-14",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "大城市最严重的问题之一是空气污染。",
+   "en": "One of the most serious problems in big cities is air pollution.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "air-pollution",
+     "air pollution",
+     "空气污染"
+    ]
+   ],
+   "trap": "One of the most serious problem in big cities are air pollution.",
+   "tip": "One of the + 复数名词，谓语用单数 is。"
+  },
+  {
+   "id": "city-15",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "这座城市的老街很值得去逛逛，尤其是在晚上。",
+   "en": "The old streets in this city are worth visiting, especially in the evening.",
+   "k": [
+    [
+     "be-worth-doing",
+     "are worth visiting",
+     "值得做"
+    ],
+    [
+     "especially",
+     "especially",
+     "尤其是"
+    ]
+   ],
+   "trap": "The old streets of this city are worth to visit, especially at evening.",
+   "tip": "be worth + doing；\"在晚上\"是 in the evening。"
+  },
+  {
+   "id": "city-16",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "问题是，很多新建的公寓离地铁站太远了。",
+   "en": "The problem is that many new flats are too far from metro stations.",
+   "k": [
+    [
+     "problem-is-that",
+     "The problem is that",
+     "问题是"
+    ],
+    [
+     "far-from",
+     "too far from",
+     "离……太远"
+    ]
+   ],
+   "trap": "The problem is many new apartments are too far away to subway stations.",
+   "tip": "\"离……远\"用 far from，介词用 from。"
+  },
+  {
+   "id": "city-17",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果政府不多建学校，很多孩子将不得不走很远的路去上学。",
+   "en": "If the government does not build more schools, many children will have to travel a long way to school.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "have-to",
+     "have to",
+     "不得不"
+    ]
+   ],
+   "trap": "If government don't build more schools, many children will must go to far place for school.",
+   "tip": "will 后面不能再接 must，要说 will have to；government 是单数，用 does not。"
+  },
+  {
+   "id": "city-18",
+   "t": "城市",
+   "lv": "B2",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "公共交通在解决交通拥堵方面起着关键作用。",
+   "en": "Public transport plays a key role in dealing with traffic jams.",
+   "k": [
+    [
+     "play-role-in",
+     "plays a … role in",
+     "在……中起……作用"
+    ],
+    [
+     "deal-with",
+     "dealing with",
+     "应对、解决"
+    ]
+   ],
+   "trap": "Public transport plays a key role in solve traffic jam.",
+   "tip": "role in 后面接名词或 doing。"
+  },
+  {
+   "id": "work-14",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "过去十年里，做自由职业的人越来越多。",
+   "en": "The number of people who work as freelancers has increased over the past ten years.",
+   "k": [
+    [
+     "number-of-has",
+     "The number of … has",
+     "……的数量（谓语单数）"
+    ],
+    [
+     "over-the-past",
+     "over the past",
+     "在过去……里"
+    ]
+   ],
+   "trap": "The number of people who do freelance have increased in recent ten years.",
+   "tip": "\"……越来越多\"写成\"……的数量增加了\"：the number of …，谓语用单数；\"过去十年\"用 over the past ten years。"
+  },
+  {
+   "id": "work-15",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "非谓语",
+    "结果与目的"
+   ],
+   "zh": "很多员工为了避免和老板争吵，选择什么都不说。",
+   "en": "Many employees say nothing in order to avoid arguing with their boss.",
+   "k": [
+    [
+     "in-order-to",
+     "in order to",
+     "为了"
+    ],
+    [
+     "avoid-doing",
+     "avoid arguing",
+     "避免做某事"
+    ]
+   ],
+   "trap": "Many staffs choose to say nothing for avoiding to argue with boss.",
+   "tip": "\"为了\"用 in order to do；avoid 后面接 doing。"
+  },
+  {
+   "id": "work-16",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "很多年轻人宁愿换工作，也不愿做自己不喜欢的工作。",
+   "en": "Many young people would rather change jobs than stay in a job they do not enjoy.",
+   "k": [
+    [
+     "would-rather",
+     "would rather … than",
+     "宁愿……也不"
+    ],
+    [
+     "change-jobs",
+     "change jobs",
+     "换工作"
+    ]
+   ],
+   "trap": "Many young people rather change job than do a job they don't like.",
+   "tip": "would rather do A than do B，would 不能省；\"换工作\"用复数 change jobs。"
+  },
+  {
+   "id": "work-17",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "经理希望每个团队都能想出省钱的新办法。",
+   "en": "The manager expects every team to come up with new ways to save money.",
+   "k": [
+    [
+     "expect-to",
+     "expects … to",
+     "要求某人做"
+    ],
+    [
+     "come-up-with",
+     "come up with",
+     "想出"
+    ]
+   ],
+   "trap": "The manager hopes every team can think out new methods to save cost.",
+   "tip": "expect + 人 + to do（hope 不能这样用）；\"想出办法\"用 come up with ways。"
+  },
+  {
+   "id": "work-18",
+   "t": "工作",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "好员工需要专业知识，也需要沟通能力。",
+   "en": "A good employee needs communication skills as well as professional knowledge.",
+   "k": [
+    [
+     "as-well-as",
+     "as well as",
+     "……以及……"
+    ],
+    [
+     "communication-skills",
+     "communication skills",
+     "沟通能力"
+    ]
+   ],
+   "trap": "A good staff needs professional skills, also needs communication ability.",
+   "tip": "两个名词宾语用 as well as 连接，不用重复 needs。"
+  },
+  {
+   "id": "work-19",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "形式主语 it"
+   ],
+   "zh": "刚毕业的学生通常需要一段时间才能适应全职工作。",
+   "en": "It usually takes new graduates some time to get used to working full-time.",
+   "k": [
+    [
+     "it-takes",
+     "It usually takes … to",
+     "做某事需要（时间）"
+    ],
+    [
+     "get-used-to",
+     "get used to",
+     "适应"
+    ]
+   ],
+   "trap": "New graduates usually need some time to get used to work full-time.",
+   "tip": "get used to 后面接 doing；\"需要一段时间才能\"用 It takes + 人 + 时间 + to do。"
+  },
+  {
+   "id": "soc-13",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "每个人都有权利接受良好的教育。",
+   "en": "Everyone has the right to receive a good education.",
+   "k": [
+    [
+     "everyone-has",
+     "Everyone has",
+     "每个人都有"
+    ],
+    [
+     "right-to",
+     "the right to",
+     "……的权利"
+    ]
+   ],
+   "trap": "Everyone have the right to receive good education.",
+   "tip": "Everyone 是单数，谓语用 has；\"做……的权利\"是 the right to do。"
+  },
+  {
+   "id": "soc-14",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果有更多人在空闲时间做志愿者，我们的社区会友好得多。",
+   "en": "If more people volunteered in their free time, our communities would be much friendlier.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "free-time",
+     "free time",
+     "空闲时间"
+    ]
+   ],
+   "trap": "If more people do volunteer in free time, our community will become more friendly.",
+   "tip": "假设情况：If + 过去式，主句 would；friendly 的比较级是 friendlier。"
+  },
+  {
+   "id": "soc-15",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "政府和慈善机构都不能单独解决贫困问题。",
+   "en": "Neither the government nor charities can solve the problem of poverty on their own.",
+   "k": [
+    [
+     "neither-nor",
+     "Neither … nor",
+     "既不……也不……"
+    ],
+    [
+     "on-their-own",
+     "on their own",
+     "靠自己、单独"
+    ]
+   ],
+   "trap": "Both the government and charities can't solve poverty problem alone.",
+   "tip": "\"两个都不能\"用 Neither A nor B；Both … can't 容易被理解成\"不是两个都能\"。"
+  },
+  {
+   "id": "soc-16",
+   "t": "社会",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "社区活动能把各个年龄的人聚在一起。",
+   "en": "Community events can bring people of all ages together.",
+   "k": [
+    [
+     "bring-together",
+     "bring … together",
+     "把……聚在一起"
+    ],
+    [
+     "of-all-ages",
+     "of all ages",
+     "各个年龄的"
+    ]
+   ],
+   "trap": "Community activities can make different ages people get together.",
+   "tip": "bring + 人 + together；\"各个年龄的人\"是 people of all ages，修饰语放在名词后面。"
+  },
+  {
+   "id": "soc-17",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "尽管经济在增长，很多年轻人还是找不到工作。",
+   "en": "Despite economic growth, many young people still cannot find jobs.",
+   "k": [
+    [
+     "despite",
+     "Despite",
+     "尽管"
+    ],
+    [
+     "economic-growth",
+     "economic growth",
+     "经济增长"
+    ]
+   ],
+   "trap": "Although the economy is growing, but many young people still can't find jobs.",
+   "tip": "Despite + 名词；或者 Although + 句子。两种写法后面都不能再加 but。"
+  },
+  {
+   "id": "cult-14",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "中国最受欢迎的节日之一是春节。",
+   "en": "One of the most popular festivals in China is the Spring Festival.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "spring-festival",
+     "the Spring Festival",
+     "春节"
+    ]
+   ],
+   "trap": "One of the most popular festival in China are the Spring Festival.",
+   "tip": "One of the + 最高级 + 复数名词（festivals），谓语用单数 is。"
+  },
+  {
+   "id": "cult-15",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "通过看电影，人们可以了解其他国家的生活方式。",
+   "en": "By watching films, people can learn about the way of life in other countries.",
+   "k": [
+    [
+     "by-doing",
+     "By watching",
+     "通过做某事"
+    ],
+    [
+     "learn-about",
+     "learn about",
+     "了解"
+    ],
+    [
+     "way-of-life",
+     "way of life",
+     "生活方式"
+    ]
+   ],
+   "trap": "Through watching films, people can know other countries' life way.",
+   "tip": "By + doing 说方法；\"其他国家的生活方式\"是 the way of life in other countries。"
+  },
+  {
+   "id": "cult-16",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "名词从句",
+    "动词句型"
+   ],
+   "zh": "互联网确实让文化交流更容易了，但也让一些传统被遗忘了。",
+   "en": "It is true that the internet makes cultural exchange easier, but it also causes some traditions to be forgotten.",
+   "k": [
+    [
+     "it-is-true-that",
+     "It is true that … but",
+     "……确实……，但……"
+    ],
+    [
+     "make-obj-adj",
+     "makes cultural exchange easier",
+     "使……变得……"
+    ]
+   ],
+   "trap": "The internet indeed makes culture exchange more convenient, but also makes some traditions forgotten.",
+   "tip": "先承认再转折用 It is true that …, but …；\"让……被遗忘\"可以用 cause … to be forgotten。"
+  },
+  {
+   "id": "cult-17",
+   "t": "文化",
+   "lv": "B1",
+   "tech": [
+    "并列与递进"
+   ],
+   "zh": "周末，人们可以去博物馆，也可以去看演出。",
+   "en": "At weekends, people can either visit a museum or go to a show.",
+   "k": [
+    [
+     "either-or",
+     "either … or",
+     "可以……也可以……"
+    ],
+    [
+     "at-weekends",
+     "At weekends",
+     "在周末"
+    ]
+   ],
+   "trap": "In weekend, people can go to museum, also can go to see a show.",
+   "tip": "二选一用 either A or B；\"在周末\"英式说 at weekends，美式说 on weekends。"
+  },
+  {
+   "id": "cult-18",
+   "t": "文化",
+   "lv": "B2",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "现在关心本地历史的年轻人越来越少了。",
+   "en": "Fewer and fewer young people care about local history these days.",
+   "k": [
+    [
+     "fewer-and-fewer",
+     "Fewer and fewer",
+     "越来越少的"
+    ],
+    [
+     "care-about",
+     "care about",
+     "关心"
+    ]
+   ],
+   "trap": "Young people who care local history are less and less now.",
+   "tip": "可数名词\"越来越少\"用 fewer and fewer + 复数名词，直接放在句首做主语。"
+  },
+  {
+   "id": "media-13",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "许多网站会收集用户的个人信息。",
+   "en": "A number of websites collect their users' personal information.",
+   "k": [
+    [
+     "a-number-of",
+     "A number of",
+     "许多（谓语复数）"
+    ],
+    [
+     "personal-information",
+     "personal information",
+     "个人信息"
+    ]
+   ],
+   "trap": "A number of websites collects users personal informations.",
+   "tip": "a number of + 复数名词，谓语用复数 collect；information 不可数，不加 s。"
+  },
+  {
+   "id": "media-14",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "条件从句"
+   ],
+   "zh": "如果你在网上分享太多个人信息，你可能会惹上麻烦。",
+   "en": "If you share too much personal information online, you will probably get into trouble.",
+   "k": [
+    [
+     "if-will",
+     "If … will",
+     "如果……就会……"
+    ],
+    [
+     "get-into-trouble",
+     "get into trouble",
+     "惹上麻烦"
+    ]
+   ],
+   "trap": "If you share too many personal informations on internet, you may meet troubles.",
+   "tip": "information 不可数，用 too much；\"惹上麻烦\"是 get into trouble，trouble 不加 s。"
+  },
+  {
+   "id": "media-15",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "非谓语",
+    "结果与目的"
+   ],
+   "zh": "有些记者为了吸引更多读者，会避免报道复杂的问题。",
+   "en": "Some journalists avoid reporting complex issues in order to attract more readers.",
+   "k": [
+    [
+     "avoid-doing",
+     "avoid reporting",
+     "避免做某事"
+    ],
+    [
+     "in-order-to",
+     "in order to",
+     "为了"
+    ]
+   ],
+   "trap": "Some journalists avoid to report complicated problems for attracting readers.",
+   "tip": "avoid + doing；目的用 in order to do，放在句末。"
+  },
+  {
+   "id": "media-16",
+   "t": "媒体",
+   "lv": "B2",
+   "tech": [
+    "让步从句"
+   ],
+   "zh": "尽管假新闻很多，社交媒体仍然是很多人获取新闻的主要来源。",
+   "en": "Despite the amount of fake news, social media is still the main source of news for many people.",
+   "k": [
+    [
+     "despite",
+     "Despite",
+     "尽管"
+    ],
+    [
+     "main-source",
+     "the main source of",
+     "……的主要来源"
+    ]
+   ],
+   "trap": "Despite there is a lot of fake news, social media is still many people's main news source.",
+   "tip": "Despite 后面接名词短语（the amount of fake news），不能接 there is 句子。"
+  },
+  {
+   "id": "media-17",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "很多老人依靠电视获取新闻，比如天气预报和本地消息。",
+   "en": "Many older people rely on television for news, such as weather reports and local stories.",
+   "k": [
+    [
+     "rely-on",
+     "rely on",
+     "依靠"
+    ],
+    [
+     "such-as",
+     "such as",
+     "比如"
+    ]
+   ],
+   "trap": "Many old people depend TV to get news, for example weather and local news.",
+   "tip": "rely on / depend on 后面都要加 on；句中举例用 such as + 名词。"
+  },
+  {
+   "id": "sci-14",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "上个世纪最重要的发明之一是电脑。",
+   "en": "One of the most important inventions of the last century is the computer.",
+   "k": [
+    [
+     "one-of-is",
+     "One of the … is",
+     "……之一（谓语单数）"
+    ],
+    [
+     "last-century",
+     "the last century",
+     "上个世纪"
+    ]
+   ],
+   "trap": "One of the most important invention in last century are computer.",
+   "tip": "One of the + 复数名词，谓语用 is；\"上个世纪\"前面要加 the。"
+  },
+  {
+   "id": "sci-15",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "条件从句",
+    "被动语态"
+   ],
+   "zh": "如果科学家找到治愈癌症的方法，数百万人的生命就会得救。",
+   "en": "If scientists found a cure for cancer, millions of lives would be saved.",
+   "k": [
+    [
+     "if-would",
+     "If … would",
+     "假如……就会……"
+    ],
+    [
+     "cure-for",
+     "a cure for",
+     "治疗……的方法"
+    ]
+   ],
+   "trap": "If scientists can find the method to cure cancer, millions of people's lives will be saved.",
+   "tip": "这是假设，用 If + 过去式，主句 would；\"治愈……的方法\"是 a cure for。"
+  },
+  {
+   "id": "sci-16",
+   "t": "科学",
+   "lv": "B1",
+   "tech": [
+    "非谓语"
+   ],
+   "zh": "科学家通过反复检查数据，来确保结果正确。",
+   "en": "Scientists make sure their results are correct by checking the data again and again.",
+   "k": [
+    [
+     "make-sure",
+     "make sure",
+     "确保"
+    ],
+    [
+     "by-doing",
+     "by checking",
+     "通过做某事"
+    ]
+   ],
+   "trap": "Scientists through checking data again and again to ensure the result is correct.",
+   "tip": "先说目的 make sure + 句子，再用 by + doing 说方法。"
+  },
+  {
+   "id": "sci-17",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "并列与递进",
+    "被动语态"
+   ],
+   "zh": "这项技术可以用于医学，也可以用于农业。",
+   "en": "This technology can be used in agriculture as well as in medicine.",
+   "k": [
+    [
+     "can-be-used",
+     "can be used",
+     "可以被用于"
+    ],
+    [
+     "as-well-as",
+     "as well as",
+     "……以及……"
+    ]
+   ],
+   "trap": "This technology can use in medicine, also can use in agriculture.",
+   "tip": "技术是被使用的，用被动 can be used；两个介词短语用 as well as 连接。"
+  },
+  {
+   "id": "sci-18",
+   "t": "科学",
+   "lv": "B2",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "问题是，很多研究成果从来没有让公众知道。",
+   "en": "The problem is that many research findings never reach the public.",
+   "k": [
+    [
+     "problem-is-that",
+     "The problem is that",
+     "问题是"
+    ],
+    [
+     "reach-public",
+     "reach the public",
+     "让公众知道"
+    ]
+   ],
+   "trap": "The problem is that many research results never be known by the public.",
+   "tip": "The problem is that + 完整句子；\"让公众知道\"可以简单说成 reach the public。"
+  },
+  {
+   "id": "edu-22",
+   "t": "教育",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "参加社团是学会与别人合作的好方法。",
+   "en": "Joining a club is a good way to learn how to work with others.",
+   "k": [
+    [
+     "good-way-to",
+     "a good way to",
+     "……的好方法"
+    ],
+    [
+     "learn-how-to",
+     "learn how to",
+     "学会怎样做"
+    ]
+   ],
+   "trap": "Join a club is a good method to learn working with others.",
+   "tip": "动作做主语用 doing（Joining）；a good way to do；\"学会做\"用 learn how to do。"
+  },
+  {
+   "id": "health-22",
+   "t": "健康",
+   "lv": "B2",
+   "tech": [
+    "名词从句",
+    "非谓语"
+   ],
+   "zh": "睡个好觉的关键是白天有足够的运动。",
+   "en": "The key to a good night's sleep is getting enough exercise during the day.",
+   "k": [
+    [
+     "key-to",
+     "The key to",
+     "……的关键"
+    ],
+    [
+     "enough-noun",
+     "enough exercise",
+     "足够的……"
+    ]
+   ],
+   "trap": "The key of sleeping well is have exercise enough in the daytime.",
+   "tip": "the key to + 名词；is 后面用 doing（getting …）；enough 放在名词前。"
+  },
+  {
+   "id": "media-18",
+   "t": "媒体",
+   "lv": "B1",
+   "tech": [
+    "比较结构"
+   ],
+   "zh": "过去十年里，买报纸的人少多了。",
+   "en": "Over the past ten years, far fewer people have bought newspapers.",
+   "k": [
+    [
+     "over-the-past",
+     "Over the past",
+     "在过去……里"
+    ],
+    [
+     "fewer",
+     "far fewer",
+     "少得多"
+    ]
+   ],
+   "trap": "In the past ten years, people who buy newspapers become much less.",
+   "tip": "\"过去……年里\"用 over the past + 时间，配现在完成时；可数名词\"少得多\"用 far fewer。"
+  },
+  {
+   "id": "city-19",
+   "t": "城市",
+   "lv": "B1",
+   "tech": [
+    "比较结构",
+    "动词句型"
+   ],
+   "zh": "买得起市中心房子的家庭越来越少了。",
+   "en": "Fewer and fewer families can afford a house in the city centre.",
+   "k": [
+    [
+     "fewer-and-fewer",
+     "Fewer and fewer",
+     "越来越少的"
+    ],
+    [
+     "afford",
+     "afford",
+     "买得起"
+    ],
+    [
+     "city-centre",
+     "city centre",
+     "市中心"
+    ]
+   ],
+   "trap": "Families who can afford the city center house are less and less.",
+   "tip": "\"越来越少的……\"用 Fewer and fewer + 复数名词，直接做主语，句子更短。"
+  },
+  {
+   "id": "env-18",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "名词从句"
+   ],
+   "zh": "很多专家希望几年后清洁能源会比石油便宜。",
+   "en": "Many experts hope that in a few years clean energy will be cheaper than oil.",
+   "k": [
+    [
+     "hope-that",
+     "hope that",
+     "希望……"
+    ],
+    [
+     "a-few",
+     "a few",
+     "几个"
+    ]
+   ],
+   "trap": "Many experts hope clean energy can be more cheap than oil after few years.",
+   "tip": "hope that + 句子，用 will；\"几年后\"是 in a few years，a 不能省（few 单用表示\"几乎没有\"）。"
+  },
+  {
+   "id": "env-19",
+   "t": "环境",
+   "lv": "B1",
+   "tech": [
+    "主谓一致"
+   ],
+   "zh": "在保护环境这件事上，每个人都有一份责任。",
+   "en": "Everyone has a part to play in protecting the environment.",
+   "k": [
+    [
+     "everyone-has",
+     "Everyone has",
+     "每个人都有"
+    ],
+    [
+     "protect-environment",
+     "protecting the environment",
+     "保护环境"
+    ]
+   ],
+   "trap": "Everyone have responsibility to protect environment.",
+   "tip": "Everyone 后面用单数 has；\"在……中有一份责任\"可以说 have a part to play in doing。"
+  },
+  {
+   "id": "work-20",
+   "t": "工作",
+   "lv": "B1",
+   "tech": [
+    "动词句型"
+   ],
+   "zh": "员工有权每年享受带薪假期。",
+   "en": "Workers have the right to take paid holidays every year.",
+   "k": [
+    [
+     "right-to",
+     "the right to",
+     "……的权利"
+    ],
+    [
+     "paid-holidays",
+     "paid holidays",
+     "带薪假期"
+    ]
+   ],
+   "trap": "Workers have the right of enjoying paid holiday every year.",
+   "tip": "\"有权做某事\"用 have the right to do；holidays 用复数。"
+  },
+  {
+   "id": "edu-23",
+   "t": "教育",
+   "lv": "B2",
+   "tech": [
+    "定语从句"
+   ],
+   "zh": "学生需要一个安静的地方学习，不被任何东西打扰。",
+   "en": "Students need somewhere quiet to study, where nothing can distract them.",
+   "k": [
+    [
+     "somewhere-to",
+     "somewhere … to",
+     "有地方做某事"
+    ],
+    [
+     "distract",
+     "distract them",
+     "让人分心"
+    ]
+   ],
+   "trap": "Students need a quiet place to study, there is nothing can disturb them.",
+   "tip": "形容词放在 somewhere 后面（somewhere quiet to study）；补充说明这个地方用 , where + 句子。"
+  },
+  {
+   "id": "soc-18",
+   "t": "社会",
+   "lv": "B2",
+   "tech": [
+    "被动语态",
+    "动词句型"
+   ],
+   "zh": "应该允许年轻人自己决定自己的未来。",
+   "en": "Young people should be allowed to make their own decisions about their future.",
+   "k": [
+    [
+     "should-be-done",
+     "should be allowed",
+     "应该被……"
+    ],
+    [
+     "make-decisions",
+     "make … decisions",
+     "做决定"
+    ]
+   ],
+   "trap": "Should allow young people make decisions of their own future.",
+   "tip": "英文句子要有主语：让 young people 做主语，用被动 should be allowed to do；\"关于……的决定\"用 decisions about。"
   }
  ]
 }

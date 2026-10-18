@@ -206,11 +206,28 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const shuffle = a => { a = a.slice(); for (let i = a.length-1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const norm = s => String(s).toLowerCase().replace(/[’‘]/g,"'").replace(/isation/g,"ization").replace(/ageing/g,"aging").replace(/fuelled/g,"fueled")
   .replace(/[^a-z0-9'\- ]+/g," ").replace(/\s+/g," ").trim();
-const contains = (text, phrase) => (" "+norm(text)+" ").includes(" "+norm(phrase)+" ");
+// A chunk surface may be a frame with gaps, written "so … that"; each literal part is matched in order.
+const SEP = " … ";
+const partsOf = surface => surface.split(SEP);
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function findParts(en, surface){
+  const spans = []; let pos = 0;
+  for (const p of partsOf(surface)) {
+    const re = new RegExp((/^[A-Za-z]/.test(p) ? "(?<![A-Za-z])" : "") + reEsc(p) + (/[A-Za-z]$/.test(p) ? "(?![A-Za-z])" : ""), "g");
+    re.lastIndex = pos; const m = re.exec(en); if (!m) return null;
+    spans.push([m.index, m.index + p.length]); pos = m.index + p.length;
+  }
+  return spans;
+}
+function contains(text, surface){
+  const t = " " + norm(text) + " "; let pos = 0;
+  for (const p of partsOf(surface)) { const n = " " + norm(p) + " ", i = t.indexOf(n, pos); if (i < 0) return false; pos = i + n.length - 1; }
+  return true;
+}
 const hintText = (surface, lvl) => lvl >= 3 ? surface
   : surface.replace(/[A-Za-z]+/g, w => { const keep = lvl === 2 ? Math.ceil(w.length/2) : 1; return w.slice(0, keep) + "_".repeat(w.length - keep); });
 function highlight(en, k){
-  const r = []; k.forEach(([, p]) => { const i = en.indexOf(p); if (i >= 0) r.push([i, i+p.length]); });
+  const r = []; k.forEach(([, p]) => (findParts(en, p) || []).forEach(span => r.push(span)));
   r.sort((a,b) => a[0]-b[0]); let out = "", pos = 0;
   r.forEach(([a,b]) => { if (a < pos) return; out += esc(en.slice(pos,a)) + "<mark>" + esc(en.slice(a,b)) + "</mark>"; pos = b; });
   return out + esc(en.slice(pos));
@@ -224,6 +241,9 @@ function indexBank(b){
   BANK = b; SENTS = b.sentences; CH = b.chunks;
   SENTS.forEach(s => { SBY[s.id] = s; s.k.forEach(([c]) => (CHUNK_SENTS[c] = CHUNK_SENTS[c] || []).push(s.id)); });
 }
+// Retired sentences stay in the data so saved progress keeps working; they only show if already in the library.
+const visible = s => !s.retired || !!S.sents[s.id];
+const VIS = () => SENTS.filter(visible);
 
 /* ---------- storage: cloud (owner-only db) or this browser ---------- */
 const STANDALONE = !window.claude;
@@ -357,10 +377,10 @@ function renderToday(){
     <div class="meter" aria-hidden="true"><i style="width:${total ? doneN/total*100 : 0}%"></i></div></div>` : "";
   if (qi >= Q.length) { el.innerHTML = top + doneHTML(); return; }
   const item = Q[qi], s = SBY[item.sid];
-  if (!cur) cur = { hints: {}, revealed: false, grades: {}, text: "", cloze: null, input: "" };
+  if (!cur) cur = { hints: {}, revealed: false, grades: {}, text: "", cloze: null, input: [] };
   el.innerHTML = top + (item.type === "cloze" ? clozeHTML(s, item.cid) : reviewHTML(s));
   if (item.type === "review" && !cur.revealed) { const ta = $("#answer"); ta.value = cur.text; }
-  if (item.type === "cloze" && cur.cloze === null) { const inp = $("#clozeIn"); inp.value = cur.input; }
+  if (item.type === "cloze" && cur.cloze === null) document.querySelectorAll(".cloze-in").forEach((inp, j) => inp.value = (cur.input || [])[j] || "");
 }
 function reviewHTML(s){
   const hintRows = s.k.map(([cid, p, g]) => {
@@ -392,20 +412,26 @@ function reviewHTML(s){
     <div class="actions"><button class="btn primary" data-act="commit" ${left ? "disabled" : ""}>记下，下一题</button>${left ? `<span class="muted small">还有 ${left} 个搭配没评</span>` : ""}</div></article>`;
 }
 function clozeHTML(s, cid){
-  const k = s.k.find(x => x[0] === cid), surface = k[1], i = s.en.indexOf(surface);
-  const before = s.en.slice(0, i), after = s.en.slice(i + surface.length), words = surface.split(/\s+/).length;
+  const k = s.k.find(x => x[0] === cid), surface = k[1], parts = partsOf(surface), spans = findParts(s.en, surface) || [];
+  const words = parts.join(" ").split(/\s+/).filter(w => /[A-Za-z]/.test(w)).length;
   if (cur.cloze === null) {
+    let line = "", pos = 0;
+    spans.forEach(([a, b], j) => {
+      line += esc(s.en.slice(pos, a)) + `<input id="clozeIn${j}" class="cloze-in" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:${Math.max(5, parts[j].length + 3)}ch" aria-label="第 ${j + 1} 个空">`;
+      pos = b;
+    });
+    line += esc(s.en.slice(pos));
     return `<article class="card">${metaHTML(s, "cloze")}
     <p class="zh">${esc(s.zh)}</p>
-    <p class="cloze-line" lang="en">${esc(before)}<input id="clozeIn" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:${Math.max(6, surface.length + 2)}ch" aria-label="填入搭配">${esc(after)}</p>
-    <p class="muted small" style="margin:0">填入：${esc(k[2])}（${words} 个词${cur.firstLetter ? `，${esc(hintText(surface, 1))}` : ""}）</p>
+    <p class="cloze-line" lang="en">${line}</p>
+    <p class="muted small" style="margin:0">填入：${esc(k[2])}（${parts.length > 1 ? `${parts.length} 个空，` : ""}共 ${words} 个词${cur.firstLetter ? `，${esc(hintText(surface, 1))}` : ""}）</p>
     <div class="actions"><button class="btn primary" data-act="cloze-check">检查</button>${cur.firstLetter ? "" : `<button class="btn" data-act="cloze-hint">看首字母</button>`}</div></article>`;
   }
   const yes = cur.cloze;
   return `<article class="card">${metaHTML(s, "cloze")}
     <p class="zh">${esc(s.zh)}</p>
     <p class="en" lang="en">${highlight(s.en, [k])}</p>
-    <div class="result">${yes ? `<span class="yes">对了。</span>` : `<span class="no">参考答案：<span lang="en">${esc(surface)}</span></span><span class="muted">你写的：<span lang="en">${esc(cur.input) || "（空）"}</span></span>`}</div>
+    <div class="result">${yes ? `<span class="yes">对了。</span>` : `<span class="no">参考答案：<span lang="en">${esc(surface)}</span></span><span class="muted">你写的：<span lang="en">${(cur.input || []).some(x => x.trim()) ? esc(cur.input.map(x => x.trim() || "＿").join(SEP)) : "（空）"}</span></span>`}</div>
     <div class="actions"><button class="btn primary" data-act="cloze-commit">下一题</button>${yes ? "" : `<button class="btn" data-act="cloze-override">我写的其实也对</button>`}</div></article>`;
 }
 function doneHTML(){
@@ -414,7 +440,7 @@ function doneHTML(){
     <p class="muted" style="margin:0">去句库读句子，把想练的点"加入学习库"。加入的句子从第二天开始出现在这里，只给中文，让你写英文。</p>
     <div class="actions"><button class="btn primary" data-act="go-bank">去句库挑句子</button></div></div>`;
   const tomorrow = dayOffset(1), dueTomorrow = Object.values(S.chunks).filter(c => c.due <= tomorrow).length;
-  const addedToday = Object.values(S.sents).filter(x => x.intro === T).length, unadded = SENTS.length - lib;
+  const addedToday = Object.values(S.sents).filter(x => x.intro === T).length, unadded = SENTS.filter(s => !s.retired && !S.sents[s.id]).length;
   const head = Q.length ? "今天的任务完成了" : addedToday ? "今天加入的句子明天开始复习" : "今天没有到期的复习";
   return `<div class="card done"><h2>${head}</h2>
     <p class="muted" style="margin:0">学习库 ${lib} 句${addedToday ? `，其中今天新加入 ${addedToday} 句` : ""}。明天到期 ${dueTomorrow} 个搭配。</p>
@@ -449,20 +475,25 @@ $("#today").addEventListener("click", e => {
     if (failed.length) toast(`没写出的 ${failed.length} 个搭配会在今天稍后以填空再出现一次。`);
     return next();
   }
-  if (act === "cloze-hint") { cur.input = $("#clozeIn").value; cur.firstLetter = true; return renderToday(); }
+  if (act === "cloze-hint") { cur.input = clozeValues(); cur.firstLetter = true; return renderToday(); }
   if (act === "cloze-check") { checkCloze(item); return; }
   if (act === "cloze-override") { cur.cloze = true; return renderToday(); }
   if (act === "cloze-commit") { applyCloze(item.cid, cur.cloze); return next(); }
 });
 function checkCloze(item){
   const k = SBY[item.sid].k.find(x => x[0] === item.cid);
-  cur.input = $("#clozeIn").value; cur.cloze = norm(cur.input) === norm(k[1]); renderToday();
+  cur.input = clozeValues();
+  cur.cloze = partsOf(k[1]).every((p, j) => norm(cur.input[j] || "") === norm(p)); renderToday();
 }
+const clozeValues = () => [...document.querySelectorAll(".cloze-in")].map(i => i.value);
 $("#today").addEventListener("keydown", e => {
-  if (e.target.id === "clozeIn" && e.key === "Enter") { e.preventDefault(); checkCloze(Q[qi]); }
+  if (e.target.classList.contains("cloze-in") && e.key === "Enter") {
+    e.preventDefault(); const nextIn = document.getElementById("clozeIn" + (+e.target.id.slice(7) + 1));
+    nextIn ? nextIn.focus() : checkCloze(Q[qi]);
+  }
   if (e.target.id === "answer" && e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); $('[data-act="check"]').click(); }
 });
-$("#today").addEventListener("input", e => { if (e.target.id === "answer" && cur) cur.text = e.target.value; if (e.target.id === "clozeIn" && cur) cur.input = e.target.value; });
+$("#today").addEventListener("input", e => { if (e.target.id === "answer" && cur) cur.text = e.target.value; if (e.target.classList.contains("cloze-in") && cur) cur.input = clozeValues(); });
 
 /* ---------- Bank ---------- */
 const B = { topic: "全部", lv: "all", status: "all", q: "", open: new Set(), confirmOut: null };
@@ -475,7 +506,7 @@ function sentStage(s){
 }
 function bankList(){
   const q = norm(B.q), qz = B.q.trim();
-  return SENTS.filter(s => (B.topic === "全部" || s.t === B.topic) && (B.lv === "all" || s.lv === B.lv) &&
+  return VIS().filter(s => (B.topic === "全部" || s.t === B.topic) && (B.lv === "all" || s.lv === B.lv) &&
     (B.status === "all" || (B.status === "in") === !!S.sents[s.id]) &&
     (!qz || s.zh.includes(qz) || norm(s.en).includes(q) || s.k.some(([, p, g]) => g.includes(qz) || norm(p).includes(q))));
 }
@@ -489,10 +520,11 @@ function renderBank(){
       <div id="bankList" style="display:flex;flex-direction:column;gap:12px"></div>`;
     el.dataset.ready = "1";
   }
-  $("#bankTopics").innerHTML = chipRow("topic", ["全部", ...new Set(SENTS.map(s => s.t))].map(t => [t, t]));
-  $("#bankStatus").innerHTML = chipRow("status", [["all","全部状态"],["out","未加入"],["in","学习库"]]) + `<span class="sep" aria-hidden="true"></span>` + chipRow("lv", [["all","全部级别"],["B2","B2"],["C1","C1"]]);
+  const vis = VIS(), levels = [...new Set(vis.map(s => s.lv))].sort();
+  $("#bankTopics").innerHTML = chipRow("topic", ["全部", ...new Set(vis.map(s => s.t))].map(t => [t, t]));
+  $("#bankStatus").innerHTML = chipRow("status", [["all","全部状态"],["out","未加入"],["in","学习库"]]) + `<span class="sep" aria-hidden="true"></span>` + chipRow("lv", [["all","全部级别"], ...levels.map(l => [l, l])]);
   const list = bankList(), lib = Object.keys(S.sents).length, unadded = list.filter(s => !S.sents[s.id]);
-  $("#bankCount").textContent = `共 ${SENTS.length} 句 · 学习库 ${ready ? lib : "…"} 句 · 当前显示 ${list.length} 句`;
+  $("#bankCount").textContent = `共 ${vis.length} 句 · 学习库 ${ready ? lib : "…"} 句 · 当前显示 ${list.length} 句`;
   const narrowed = B.topic !== "全部" || B.lv !== "all" || B.q.trim();
   $("#bankBatch").innerHTML = ready && narrowed && unadded.length > 1 ? `<button class="btn" data-batch>把这 ${unadded.length} 句都加入学习库</button>` : "";
   $("#bankList").innerHTML = list.length ? list.map(s => {
@@ -500,7 +532,7 @@ function renderBank(){
     const libBtn = !ready ? "" : !inLib ? `<button class="btn primary" data-add>加入学习库</button>`
       : B.confirmOut === s.id ? `<button class="btn danger" data-out-yes>确认移出（复习记录会删除）</button><button class="btn" data-out-no>取消</button>`
       : `<button class="btn" data-out>移出学习库</button>`;
-    return `<article class="card bank-card${inLib ? " in-lib" : ""}" data-sid="${s.id}"><div class="meta"><span class="id">${s.id}</span><span>${esc(s.t)}</span><span class="lv">${s.lv}</span><span>${s.tech.map(esc).join(" · ")}</span>${st ? `<span class="pill st-${st}">${STAGE_NAME[st]}</span>` : ""}</div>
+    return `<article class="card bank-card${inLib ? " in-lib" : ""}" data-sid="${s.id}"><div class="meta"><span class="id">${s.id}</span><span>${esc(s.t)}</span><span class="lv">${s.lv}</span><span>${s.tech.map(esc).join(" · ")}</span>${s.retired ? `<span>旧版句子</span>` : ""}${st ? `<span class="pill st-${st}">${STAGE_NAME[st]}</span>` : ""}</div>
       <p class="zh">${esc(s.zh)}</p>
       ${open ? `<div class="divider">${answerBlocks(s)}<div class="block"><span class="label">核心搭配</span><dl class="chunks">${s.k.map(([cid, p, g]) => `<div><dt lang="en">${esc(p)}</dt><dd>${esc(g)}${inLib ? ` · ${STAGE_NAME[stageOf(S.chunks[cid])]}` : ""}</dd></div>`).join("")}</dl></div></div>` : ""}
       <div class="actions"><button class="btn" data-open aria-expanded="${open}">${open ? "收起参考" : "显示参考"}</button>${libBtn}</div></article>`;
@@ -528,29 +560,29 @@ function afterRemove(){ B.confirmOut = null; toast("已移出学习库。"); upd
 let confirmReset = false;
 function renderStats(){
   const el = $("#stats"); if (S.mode === "loading") { el.innerHTML = `<p class="muted">正在载入……</p>`; return; }
-  const T = today(), allC = Object.keys(CH), counts = { unseen: 0, learn: 0, cloze: 0, review: 0, stable: 0 };
+  const vis = VIS(), T = today(), allC = [...new Set(vis.flatMap(s => s.k.map(([c]) => c)))], counts = { unseen: 0, learn: 0, cloze: 0, review: 0, stable: 0 };
   allC.forEach(c => counts[stageOf(S.chunks[c])]++);
-  const learnedS = SENTS.filter(s => S.sents[s.id]).length;
+  const learnedS = vis.filter(s => S.sents[s.id]).length;
   const practicedToday = Object.values(S.sents).filter(x => x.last === T).length;
   const stackHTML = ["stable","review","cloze","learn","unseen"].map(k => counts[k] ? `<i class="c-${k}" style="width:${counts[k]/allC.length*100}%"></i>` : "").join("");
   const legend = ["stable","review","cloze","learn","unseen"].map(k => `<span><i class="c-${k}"></i>${STAGE_NAME[k]} ${counts[k]}</span>`).join("");
   const days = [...Array(7)].map((_, i) => { const d = dayOffset(i); return { d, n: Object.values(S.chunks).filter(c => i === 0 ? c.due <= d : c.due === d).length, label: i === 0 ? "今天" : i === 1 ? "明天" : d.slice(5).replace("-", "/") }; });
   const maxN = Math.max(1, ...days.map(x => x.n));
   const techs = {};
-  SENTS.forEach(s => s.tech.forEach(t => { techs[t] = techs[t] || new Set(); s.k.forEach(([c]) => techs[t].add(c)); }));
+  vis.forEach(s => s.tech.forEach(t => { techs[t] = techs[t] || new Set(); s.k.forEach(([c]) => techs[t].add(c)); }));
   const techRows = Object.entries(techs).map(([t, set]) => { let att = 0, ok = 0; set.forEach(c => { const x = S.chunks[c]; if (x) { att += x.att || 0; ok += x.ok || 0; } }); return { t, att, ok, r: att ? ok/att : null }; })
     .filter(x => x.att).sort((a, b) => a.r - b.r);
   const leeches = Object.entries(S.chunks).filter(([, c]) => (c.lapses || 0) >= 3).sort((a, b) => b[1].lapses - a[1].lapses);
   el.innerHTML = `
   <div class="stats">
-    <div class="stat"><b>${learnedS}<span style="font-size:15px;color:var(--muted)"> / ${SENTS.length}</span></b><span>学习库句子</span></div>
+    <div class="stat"><b>${learnedS}<span style="font-size:15px;color:var(--muted)"> / ${vis.length}</span></b><span>学习库句子</span></div>
     <div class="stat"><b>${allC.length - counts.unseen}<span style="font-size:15px;color:var(--muted)"> / ${allC.length}</span></b><span>学习库搭配</span></div>
     <div class="stat"><b>${counts.stable}</b><span>稳固搭配（间隔 ≥ 21 天）</span></div>
     <div class="stat"><b>${practicedToday}</b><span>今天练过的句子</span></div>
   </div>
   <div class="panel"><h2>搭配掌握阶段</h2><div class="stack" aria-hidden="true">${stackHTML}</div><div class="legend">${legend}</div></div>
   <div class="panel"><h2>未来 7 天到期</h2><div class="forecast">${days.map(x => `<div><b>${x.n}</b><i style="height:${x.n/maxN*80}%"></i><span>${x.label}</span></div>`).join("")}</div></div>
-  <div class="panel"><h2>翻译技巧正确率</h2>${techRows.length ? `<p class="muted small" style="margin:0">按整句回译里每个搭配的自评统计，最弱的排在最前。</p><div class="bars">${techRows.map(x => { const p = Math.round(x.r*100); return `<div class="bar-row"><span>${esc(x.t)}</span><span class="track"><i class="${p < 50 ? "low" : p < 75 ? "mid" : ""}" style="width:${p}%"></i></span><span class="v">${p}%（${x.att} 次）</span></div>`; }).join("")}</div>` : `<p class="muted" style="margin:0">做完第一批整句回译后，这里会显示你哪类翻译技巧最弱。</p>`}</div>
+  <div class="panel"><h2>造句结构正确率</h2>${techRows.length ? `<p class="muted small" style="margin:0">按整句回译里每个搭配的自评统计，最弱的排在最前。</p><div class="bars">${techRows.map(x => { const p = Math.round(x.r*100); return `<div class="bar-row"><span>${esc(x.t)}</span><span class="track"><i class="${p < 50 ? "low" : p < 75 ? "mid" : ""}" style="width:${p}%"></i></span><span class="v">${p}%（${x.att} 次）</span></div>`; }).join("")}</div>` : `<p class="muted" style="margin:0">做完第一批整句回译后，这里会显示你哪类句子结构最弱。</p>`}</div>
   <div class="panel"><h2>顽固搭配</h2>${leeches.length ? `<p class="muted small" style="margin:0">失败 3 次以上。可以让 Claude 为它们多写几个例句。</p><div>${leeches.map(([cid, c]) => `<div class="leech"><span><b lang="en">${esc(CH[cid] ? CH[cid].en : cid)}</b> <span class="muted">${esc(CH[cid] ? CH[cid].zh : "")}</span></span><span class="muted">失败 ${c.lapses} 次</span></div>`).join("")}</div>` : `<p class="muted" style="margin:0">暂时没有。同一个搭配失败 3 次以上会出现在这里。</p>`}</div>
   <div class="panel"><h2>设置</h2>
     <div class="setting"><label for="setCap">每天复习上限<span>填空和回译合计，超出的顺延到第二天</span></label><select id="setCap">${[10,15,25,40,60].map(n => `<option value="${n}" ${n === S.settings.reviewCap ? "selected" : ""}>${n} 题</option>`).join("")}</select></div>
