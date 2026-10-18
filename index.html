@@ -601,7 +601,7 @@ function renderAll(){
   renderToday(); renderBank(); if (!$("#stats").hidden) renderStats();
 }
 (async function boot(){
-  try { indexBank(await fetch("bank.json").then(r => { if (!r.ok) throw new Error(); return r.json(); })); }
+  try { indexBank(await fetch("bank.json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(); return r.json(); })); }
   catch (e) { $("#today").innerHTML = `<p class="muted">句库文件没有载入。刷新一下页面再试。</p>`; $("#mode").textContent = ""; return; }
   const h = location.hash.slice(1); if (TABS.includes(h)) showTab(h); else renderBank();
   const db = await Promise.race([connectCloud().catch(() => null), sleep(8000).then(() => null)]);
