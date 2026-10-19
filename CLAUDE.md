@@ -17,8 +17,8 @@ Train **sentence-building ability at B1–B2**, not idiomatic polish. The learne
 
 - Level B1 or B2. 12–22 words, common vocabulary, one main clause plus at most one or two subordinate structures.
 - Every sentence is built around 1–2 **frames**, plus at most one everyday collocation. Reuse existing frame chunk ids wherever they fit: a frame that recurs in 2–4 sentences on different topics is what makes review train the frame rather than one sentence. When adding a batch, prefer frames already in the bank that appear only once or twice.
-- `zh`: natural Chinese a learner would think in, so the frame has to be found, not copied.
-- `trap`: the sentence a B1 learner really writes (missing who, although…but, sb is difficult to, spend…to do, comma splice).
+- `zh`: natural Chinese a learner would think in, so the frame has to be found, not copied. Don't let the Chinese give the English away: no 被 where natural Chinese wouldn't use it (the learner must decide on the passive), and Chinese word order (purpose or reason first, topic first, no subject) rather than English order.
+- `trap`: the sentence a B1 learner really writes (missing who, although…but, sb is difficult to, spend…to do, comma splice). It must contain a real error. A trap that is merely a different correct structure (e.g. `If I have time, I will …` for an `If … would` frame) teaches the learner that correct English is wrong; for hypotheticals use a tense mismatch instead.
 - `tip`: one or two lines naming the sentence-building move. Add `alts` when a simpler structure is equally correct.
 - `tech` tags are structure categories: 形式主语 it, 定语从句, 名词从句, 让步从句, 条件从句, 结果与目的, 比较结构, 并列与递进, 动词句型, 非谓语, 被动语态, 主谓一致.
 - British spelling (`-ise`, `travelling`); the page's matcher accepts US spellings for `-isation`, `ageing`, `fuelled`.

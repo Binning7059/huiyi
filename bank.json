@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "chunks": {
   "some-argue-that": {
    "en": "Some argue that",
@@ -2655,7 +2655,7 @@
     "形式主语 it"
    ],
    "zh": "网上的信息太多了，人们很难判断哪些是真的。",
-   "en": "There is so much information online that it is hard for people to tell which is true.",
+   "en": "There is so much information online that it is hard for people to tell what is true.",
    "k": [
     [
      "so-that-result",
@@ -2669,7 +2669,7 @@
     ]
    ],
    "trap": "The information on the internet is too much, people are difficult to judge which is true.",
-   "tip": "两个分句之间没有连词时，用 so … that 连成一句；\"人们很难\"不能写 people are difficult，要写 it is hard for people to。"
+   "tip": "两个分句之间没有连词时，用 so … that 连成一句；\"人们很难\"不能写 people are difficult，要写 it is hard for people to；\"哪些是真的\"用 what is true。"
   },
   {
    "id": "env-04",
@@ -3613,8 +3613,8 @@
      "在……面前"
     ]
    ],
-   "trap": "Many students feel speaking English in front of others is difficult.",
-   "tip": "\"觉得做某事很……\"用 find it + 形容词 + to do，it 先占位，真正的内容放在 to do 里。"
+   "trap": "Many students feel difficult to speak English in front of others.",
+   "tip": "\"觉得做某事很……\"用 find it + 形容词 + to do；不能说 feel difficult to do，feel 后面缺了 it。"
   },
   {
    "id": "edu-15",
@@ -3793,7 +3793,7 @@
     "结果与目的",
     "被动语态"
    ],
-   "zh": "为了保护野生动物，很多森林应该被划为自然保护区。",
+   "zh": "为了保护野生动物，应该把很多森林划为自然保护区。",
    "en": "In order to protect wild animals, many forests should be turned into nature reserves.",
    "k": [
     [
@@ -3808,7 +3808,7 @@
     ]
    ],
    "trap": "For protecting wild animals, many forests should be listed as protect areas.",
-   "tip": "\"为了做某事\"用 In order to do，不用 for doing；森林是被划为保护区，用被动。"
+   "tip": "中文\"应该把森林划为……\"没有主语，英文要补主语：让 forests 做主语，用被动 should be turned into；\"为了做某事\"用 In order to do，不用 for doing。"
   },
   {
    "id": "env-10",
@@ -4059,8 +4059,8 @@
      "对……很重要"
     ]
    ],
-   "trap": "Diet and exercise both are important to lose weight.",
-   "tip": "\"A 和 B 都\"用 Both A and B 开头，谓语用复数；important for 后面接 doing。"
+   "trap": "Diet and exercise both is important for lose weight.",
+   "tip": "\"A 和 B 都\"用 Both A and B 开头，主语是两样东西，谓语用复数 are；for 后面接 doing（losing）。"
   },
   {
    "id": "city-08",
@@ -4472,7 +4472,7 @@
     "结果与目的",
     "定语从句"
    ],
-   "zh": "很多人在社区做志愿者，为了帮助有需要的人。",
+   "zh": "为了帮助有需要的人，很多人在社区做志愿者。",
    "en": "Many people volunteer in their community in order to help those who are in need.",
    "k": [
     [
@@ -4487,7 +4487,7 @@
     ]
    ],
    "trap": "Many people do volunteer in community for helping people who need help.",
-   "tip": "\"为了\"用 in order to do；\"有需要的人\"用 those who are in need。"
+   "tip": "中文习惯把目的放在前面，英文通常先说主干，再用 in order to do 把目的放到句末；\"有需要的人\"用 those who are in need。"
   },
   {
    "id": "cult-08",
@@ -6171,8 +6171,8 @@
      "治疗……的方法"
     ]
    ],
-   "trap": "If scientists can find the method to cure cancer, millions of people's lives will be saved.",
-   "tip": "这是假设，用 If + 过去式，主句 would；\"治愈……的方法\"是 a cure for。"
+   "trap": "If scientists can find a way to cure cancer, millions of lives will be saved.",
+   "tip": "这里说的是还没发生、可能性不大的假设，用 If + 过去式，主句 would；If … can …, … will … 是在说一件很可能发生的事，语气不对。\"治愈……的方法\"是 a cure for。"
   },
   {
    "id": "sci-16",
@@ -6503,7 +6503,7 @@
     "条件从句",
     "被动语态"
    ],
-   "zh": "只要数据可靠，研究结果就可以被其他研究者使用。",
+   "zh": "只要数据可靠，其他研究者就可以使用这些结果。",
    "en": "As long as the data is reliable, the results can be used by other researchers.",
    "k": [
     [
@@ -6518,7 +6518,10 @@
     ]
    ],
    "trap": "Only the data is reliable, the results can use by other researchers.",
-   "tip": "\"只要\"用 As long as；结果是被使用的，用被动 can be used by …。"
+   "tip": "\"只要\"用 As long as；让 the results 做主语、用被动 can be used by …，句子重心落在结果上；用 other researchers 做主语也对。",
+   "alts": [
+    "As long as the data is reliable, other researchers can use the results."
+   ]
   },
   {
    "id": "sci-21",
@@ -6844,7 +6847,7 @@
     "被动语态"
    ],
    "zh": "应该把更多公共资金花在照顾老人上。",
-   "en": "More public money should be spent on care for elderly people.",
+   "en": "More public money should be spent on caring for elderly people.",
    "k": [
     [
      "should-be-done",
@@ -6853,12 +6856,12 @@
     ],
     [
      "care-for",
-     "care for",
+     "caring for",
      "照顾"
     ]
    ],
    "trap": "Should spend more public money to take care of old people.",
-   "tip": "英文句子要有主语：让 money 做主语，用被动 should be spent on …。"
+   "tip": "中文\"应该把钱花在……\"没有主语，英文让 money 做主语，用被动 should be spent on；on 是介词，后面用 doing（caring for）。"
   },
   {
    "id": "cult-19",
@@ -6989,7 +6992,7 @@
     "比较结构"
    ],
    "zh": "说到选择新闻来源，年轻人更相信朋友而不是记者。",
-   "en": "When it comes to choosing news sources, young people trust their friends more than journalists.",
+   "en": "When it comes to choosing news sources, young people trust their friends more than they trust journalists.",
    "k": [
     [
      "when-it-comes-to",
@@ -7003,7 +7006,7 @@
     ]
    ],
    "trap": "Talking about choose news source, young people more believe friends than journalists.",
-   "tip": "When it comes to 的 to 是介词，后面接 doing（choosing）；more than 放在宾语后面。"
+   "tip": "When it comes to 的 to 是介词，后面接 doing（choosing）；比较时写全 more than they trust journalists，否则会被理解成\"比记者更信任朋友\"。"
   },
   {
    "id": "media-20",
@@ -7148,7 +7151,7 @@
     ]
    ],
    "trap": "Experts expect the sea level will rise at least half meter in this century.",
-   "tip": "expect + 宾语 + to do；\"上升了多少\"用 rise by + 数量。"
+   "tip": "expect + 宾语 + to do 最简洁（expect that … will … 也对）；\"上升了多少\"用 rise by + 数量；half a metre 里的 a 不能省。"
   },
   {
    "id": "env-23",
@@ -7619,8 +7622,8 @@
      "做……的时间"
     ]
    ],
-   "trap": "If robots do all the boring work, people will have more time to do creative things.",
-   "tip": "这是假设，用 If + 过去式（did），主句 would + 动词原形。"
+   "trap": "If robots do all the boring work, people would have more time to do creative things.",
+   "tip": "假设要前后一致：If + 过去式（did），主句 would + 动词原形；If 从句用现在时、主句用 would 是时态错配。"
   },
   {
    "id": "env-24",
@@ -8265,8 +8268,8 @@
      "让传统延续下去"
     ]
    ],
-   "trap": "Many parents hope their children can continue family traditions.",
-   "tip": "hope that + 句子，用 will；\"让……延续下去\"可以用 keep … alive。"
+   "trap": "Many parents hope their children will keep family traditions continue.",
+   "tip": "hope that + 句子，用 will；\"让……延续下去\"用 keep … alive，keep 后面不能再接动词原形。"
   },
   {
    "id": "cult-25",
@@ -8887,7 +8890,7 @@
     "主谓一致",
     "被动语态"
    ],
-   "zh": "由于污染，很多海滩已经被关闭了。",
+   "zh": "由于污染，很多海滩已经关闭了。",
    "en": "A number of beaches have been closed because of pollution.",
    "k": [
     [
@@ -8902,7 +8905,7 @@
     ]
    ],
    "trap": "A number of beaches has been closed because pollution.",
-   "tip": "a number of + 复数名词，谓语用复数 have；because of + 名词。"
+   "tip": "中文\"海滩关闭了\"不用\"被\"，英文要想清楚：海滩是被人关闭的，用 have been closed；a number of + 复数名词，谓语用复数；because of + 名词。"
   },
   {
    "id": "env-31",
@@ -9193,8 +9196,8 @@
      "需要被……"
     ]
    ],
-   "trap": "The roads and buildings in this area both need repair.",
-   "tip": "Both A and B 放在主语开头；需要被修，用 need to be repaired。"
+   "trap": "The roads and buildings in this area both need to repair.",
+   "tip": "Both A and B 放在主语开头；道路是被修的，用 need to be repaired，need to repair 意思变成了\"道路要去修别的东西\"。"
   },
   {
    "id": "city-33",
@@ -9289,8 +9292,8 @@
      "空闲时间"
     ]
    ],
-   "trap": "If I have more free time, I will learn a new skill.",
-   "tip": "说现在不真实的假设：If + 过去式（had），主句 would + 动词原形。"
+   "trap": "If I have more free time, I would learn a new skill.",
+   "tip": "说现在不真实的假设，前后都要\"退一步\"：If + 过去式（had），主句 would；If I have … 配 would 是时态错配。"
   },
   {
    "id": "work-32",
@@ -9361,8 +9364,8 @@
      "分担家务"
     ]
    ],
-   "trap": "Men and women both should share housework.",
-   "tip": "Both A and B 放在主语开头，should 跟在后面。"
+   "trap": "No matter men or women, they should share housework.",
+   "tip": "\"男人和女人都\"用 Both men and women 做主语；No matter 后面要接 how/what 等引导的句子，不能直接接名词。"
   },
   {
    "id": "soc-30",
